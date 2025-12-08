@@ -2279,7 +2279,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpp0ca1dphlspobM4VdOW
+                        /tmp/phpb3g0f8u42mj6a2EnqwS
                     </div>
                 </div>
             </div>
@@ -2553,7 +2553,7 @@ You can check the Dev Tools console for debugging information.</p>
     --form "full_name=b"\
     --form "password=]|{+-0pBNvYg"\
     --form "language=bn"\
-    --form "avatar=@/tmp/phpp0ca1dphlspobM4VdOW" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpb3g0f8u42mj6a2EnqwS" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -6195,7 +6195,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpcodjot55ficd0tabeq2
+                        /tmp/phpo9n73mlr20gd3Lk7e3Z
                     </div>
                 </div>
             </div>
@@ -6455,7 +6455,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Accept: application/json" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/phpcodjot55ficd0tabeq2" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpo9n73mlr20gd3Lk7e3Z" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7198,7 +7198,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpkj7fibl222os1d9Ssee
+                        /tmp/phpg5mqqd9luigr3ZH8tl5
                     </div>
                 </div>
             </div>
@@ -7491,7 +7491,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Accept: application/json" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/phpkj7fibl222os1d9Ssee" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpg5mqqd9luigr3ZH8tl5" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"

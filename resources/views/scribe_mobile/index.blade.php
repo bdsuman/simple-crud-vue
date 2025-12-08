@@ -5633,7 +5633,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php0gs90846gjer6bCs2Hg
+                        /tmp/phpub54j6cu86h0fgfZHje
                     </div>
                 </div>
             </div>
@@ -5919,7 +5919,7 @@ You can check the Dev Tools console for debugging information.</p>
     --form "full_name=John Doe"\
     --form "gender=male"\
     --form "date_of_birth=1990-05-15"\
-    --form "avatar=@/tmp/php0gs90846gjer6bCs2Hg" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpub54j6cu86h0fgfZHje" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7317,7 +7317,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpqpd5us5tr0tbdIn3aQy
+                        /tmp/phpjcpveg62g397dqnwvp5
                     </div>
                 </div>
             </div>
@@ -7346,7 +7346,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpdm2grln8oj3n5UUbx1N
+                        /tmp/phpa6v9u3kkqe2octXZcoK
                     </div>
                 </div>
             </div>
@@ -7787,8 +7787,8 @@ You can check the Dev Tools console for debugging information.</p>
     --form "voice_title=My Voice Recording"\
     --form "voice_text=Hello, this is a sample voice text."\
     --form "voice_status=approved"\
-    --form "voice=@/tmp/phpqpd5us5tr0tbdIn3aQy" \
-    --form "cloned_voice=@/tmp/phpdm2grln8oj3n5UUbx1N" </code></pre>                                        </div>
+    --form "voice=@/tmp/phpjcpveg62g397dqnwvp5" \
+    --form "cloned_voice=@/tmp/phpa6v9u3kkqe2octXZcoK" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -8390,7 +8390,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpb0ml3t215f0g6uGpnWD
+                        /tmp/phpv3si7r4keao831IqQaZ
                     </div>
                 </div>
             </div>
@@ -8419,7 +8419,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpal17cuhlum9q5siV6NO
+                        /tmp/phpar3as0egfd6mfFvA4ao
                     </div>
                 </div>
             </div>
@@ -8806,8 +8806,8 @@ You can check the Dev Tools console for debugging information.</p>
     --form "voice_title=My Voice Recording"\
     --form "voice_text=Hello, this is a sample voice text."\
     --form "voice_status=approved"\
-    --form "voice=@/tmp/phpb0ml3t215f0g6uGpnWD" \
-    --form "cloned_voice=@/tmp/phpal17cuhlum9q5siV6NO" </code></pre>                                        </div>
+    --form "voice=@/tmp/phpv3si7r4keao831IqQaZ" \
+    --form "cloned_voice=@/tmp/phpar3as0egfd6mfFvA4ao" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"

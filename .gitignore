@@ -6,6 +6,7 @@
 /public/storage
 /public/scribe
 /public/scribe_mobile
+/public/vendor
 /storage/*.key
 /storage/logs
 /storage/framework
