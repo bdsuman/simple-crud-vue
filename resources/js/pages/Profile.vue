@@ -7,10 +7,6 @@
             >
                 {{ $t("Profile") }}
             </div>
-            <LanguageDropdown
-                v-model="form.language"
-                @changed="(v) => form.language = v"
-            />
         </div>
         <div
             class="self-stretch p-8 bg-white rounded-2xl inline-flex flex-col items-end w-full !min-h-[calc(100vh-250px)] overflow-y-auto"
