@@ -19,7 +19,7 @@ require __DIR__ . '/api/v1/admin/without_authentication.php';
 Route::middleware(['auth:sanctum', 'role:super_admin,admin,dev'])->group(function () {
     require __DIR__ . '/api/v1/admin/auth.php';
     require __DIR__ . '/api/v1/admin/users.php';
-    require __DIR__ . '/api/v1/admin/testimonials.php';
+    require __DIR__ . '/api/v1/admin/tasks.php';
 });
 
 /******************************************For Mobile App API ******************************************************/
@@ -32,6 +32,6 @@ Route::prefix('mobile')->as('mobile.')->group(function () {
     Route::middleware(['auth:sanctum', 'role:user'])->group(function () {
         require __DIR__ . '/api/v1/mobile/auth.php';
         require __DIR__ . '/api/v1/mobile/users.php';
-        require __DIR__ . '/api/v1/mobile/testimonials.php';
+        require __DIR__ . '/api/v1/mobile/tasks.php';
     });
 });

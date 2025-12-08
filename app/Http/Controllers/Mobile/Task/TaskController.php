@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Mobile\Testimonial;
+namespace App\Http\Controllers\Mobile\Task;
 
-use App\Models\Testimonial;
+use App\Models\Task;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\TestimonialResource;
+use App\Http\Resources\TaskResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 /** 
- * @group Testimonial
+ * @group Task
  * @authenticated
  */
-class TestimonialController extends Controller
+class TaskController extends Controller
 {
     /**
      * List
@@ -26,7 +26,7 @@ class TestimonialController extends Controller
      *
      * @response 200 {
      *   "status": true,
-     *   "message": "testimonial_fetched_successfully",
+     *   "message": "task_fetched_successfully",
      *     "data": [
      *              {
      *                  "id": 9,
@@ -57,12 +57,12 @@ class TestimonialController extends Controller
             $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
             $testimonial = Testimonial::query()
                 ->withTranslations($lang)
-                ->where('testimonials.publish', true)
+                ->where('tasks.publish', true)
                 ->searchTranslations($request->search, $searchFields)
                 ->orderBy('id', 'DESC')
                 ->paginate($perPage);
 
-        return success_response(TestimonialResource::collection($testimonial), true, 'testimonial_fetched_successfully');
+        return success_response(TaskResource::collection($testimonial), true, 'task_fetched_successfully');
     }
 
     /**
@@ -72,7 +72,7 @@ class TestimonialController extends Controller
      *
      * @response {
      *   "status": true,
-     *   "message": "testimonial_fetched_successfully",
+     *   "message": "task_fetched_successfully",
      *     "data": [
      *              {
      *                  "id": 9,
@@ -92,6 +92,6 @@ class TestimonialController extends Controller
      */
     public function show(Testimonial $testimonial): JsonResponse
     {
-        return success_response(new TestimonialResource($testimonial), false, 'testimonial_fetched_successfully');
+        return success_response(new TaskResource($testimonial), false, 'task_fetched_successfully');
     }
 }

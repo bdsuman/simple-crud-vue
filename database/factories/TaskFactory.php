@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
-use App\Models\Testimonial;
+use App\Models\Task;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Testimonial>
+ * @extends Factory<Task>
  */
-class TestimonialFactory extends Factory
+class TaskFactory extends Factory
 {
-    protected $model = Testimonial::class;
+    protected $model = Task::class;
 
     public function definition(): array
     {

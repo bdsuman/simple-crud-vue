@@ -2,12 +2,10 @@
 
 namespace App\Models;
 
-use App\Enums\UserRoleEnum;
 use App\Enums\LoginTypeEnum;
 use App\Builders\UserBuilder;
 use App\Enums\UserGenderEnum;
 use App\Enums\AppLanguageEnum;
-use App\Enums\UserAccountStatusEnum;
 use App\Traits\FirebaseNotifiable;
 use Illuminate\Support\Facades\Storage;
 use Laravel\Sanctum\HasApiTokens;
@@ -19,10 +17,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, SoftDeletes, FirebaseNotifiable;
+    use HasApiTokens, HasFactory;
 
     protected $fillable = [
-        'role',
         'full_name',
         'gender',
         'date_of_birth',
@@ -30,30 +27,8 @@ class User extends Authenticatable
         'email_verify_token',
         'email_verified_at',
         'password',
-        'language',
         'avatar',
-        'voice',
-        'eleven_lab_voice_id',
-        'voice_title',
-        'status',
-        'profile_setup_completed',
-        'personality_profiling_completed',
-        'agreed_to_tos',
         'password_reset_token',
-        'login_type',
-        'last_login_at',
-        'facebook_user_id',
-        'facebook_email',
-        'google_email',
-        'google_user_id',
-        'apple_email',
-        'apple_user_id',
-        'deleted_by',
-        'created_by',
-        'cloned_voice',
-        'voice_text',
-        'provider',
-        'provider_id',
     ];
 
     protected $hidden = [
@@ -64,35 +39,22 @@ class User extends Authenticatable
 
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'last_login_at' => 'datetime',
         'date_of_birth' => 'date',
-        'profile_setup_completed' => 'boolean',
-        'personality_profiling_completed' => 'boolean',
-        'agreed_to_tos' => 'boolean',
         'deleted_at' => 'datetime',
-        'role' => UserRoleEnum::class,
         'gender' => UserGenderEnum::class,
-        'language' => AppLanguageEnum::class,
-        'status' => UserAccountStatusEnum::class,
-        'login_type' => LoginTypeEnum::class,
     ];
 
     protected static function booted()
     {
         static::creating(function ($user) {
-            do {
-                $uuid = 'UID' . random_int(10000, 99999);
-            } while (self::where('uuid', $uuid)->exists());
-
-            $user->uuid = $uuid;
             if ($user->isProfileSetupCompleted()) {
-                $user->profile_setup_completed = true;
+                // $user->profile_setup_completed = true;
             }
         });
 
         static::updating(function ($user) {
             if ($user->isProfileSetupCompleted()) {
-                $user->profile_setup_completed = true;
+                // $user->profile_setup_completed = true;
             }
         });
     }

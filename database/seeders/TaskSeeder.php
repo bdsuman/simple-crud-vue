@@ -2,16 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Testimonial;
+use App\Models\Task;
 use Illuminate\Database\Seeder;
 
-class TestimonialSeeder extends Seeder
+class TaskSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Testimonial::factory()->count(20)->create();
+        Task::factory()->count(20)->create();
     }
 }

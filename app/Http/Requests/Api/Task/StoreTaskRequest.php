@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Api\Testimonial;
+namespace App\Http\Requests\Api\Task;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateTestimonialRequest extends FormRequest
+class StoreTaskRequest extends FormRequest
 {
     public function authorize(): bool
     {
@@ -18,7 +18,7 @@ class UpdateTestimonialRequest extends FormRequest
             'job_title'   => ['required', 'string', 'max:250'],
             'title'       => ['required', 'string', 'max:250'],
             'content'     => ['required', 'string', 'max:500'],
-            'avatar'      => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:20480'],
+            'avatar'      => ['required', 'file', 'mimes:jpg,jpeg,png', 'max:20480'],
         ];
     }
 
@@ -40,7 +40,7 @@ class UpdateTestimonialRequest extends FormRequest
             'content.required'     => 'content_is_required',
             'content.max'          => 'content_must_not_exceed_500_characters',
 
-            'avatar.file'          => 'avatar_must_be_a_file',
+            'avatar.required'      => 'avatar_is_required',
             'avatar.mimes'         => 'avatar_must_be_jpg_jpeg_or_png',
             'avatar.max'           => 'avatar_must_not_exceed_20MB',
         ];
@@ -53,23 +53,23 @@ class UpdateTestimonialRequest extends FormRequest
     {
         return [
             'author_name' => [
-                'example' => 'Jane Smith',
-                'description' => 'Updated full name of the testimonial author'
+                'example' => 'John Doe',
+                'description' => 'The full name of the testimonial author'
             ],
             'job_title' => [
-                'example' => 'Product Manager',
-                'description' => 'Updated job title or designation of the author'
+                'example' => 'Software Engineer',
+                'description' => 'The job title or designation of the author'
             ],
             'title' => [
-                'example' => 'Outstanding Support!',
-                'description' => 'Updated title or heading of the testimonial'
+                'example' => 'Excellent Service!',
+                'description' => 'Short title or heading of the testimonial'
             ],
             'content' => [
-                'example' => 'The team provided exceptional support throughout the project.',
-                'description' => 'Updated testimonial content (max 500 characters)'
+                'example' => 'The service was outstanding and exceeded expectations.',
+                'description' => 'Main testimonial content (max 500 characters)'
             ],
             'avatar' => [
-                'description' => 'Optional new avatar file (jpg, jpeg, png, max 20MB)'
+                'description' => 'Uploaded file (jpg, jpeg, png, max 20MB)'
             ],
         ];
     }
