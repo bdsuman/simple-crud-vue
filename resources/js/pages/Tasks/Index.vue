@@ -8,8 +8,8 @@
             </div>
             <Button
                 :show="true"
-                title="add_success_story"
-                :to="{ name: 'TestimonialCreate' }"
+                title="add_task"
+                :to="{ name: 'TaskCreate' }"
             />
         </div>
 

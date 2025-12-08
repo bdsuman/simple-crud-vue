@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import { trans, loadLanguageAsync } from "laravel-vue-i18n";
 import { useUserStore } from "@/stores/useUserStore";
 import userRoutes from "./users";
-import testimonial from "./testimonial";
+import testimonial from "./task";
 
 const AuthenticatedLayout = () => import("@/layouts/AuthenticatedLayout.vue");
 
@@ -14,7 +14,7 @@ const routes = [
             {
                 path: "/",
                 name: "home",
-                component: () => import("@/pages/users/Index.vue"),
+                component: () => import("@/pages/Tasks/Index.vue"),
                 meta: {
                     requiresAuth: true,
                     title: "Home",

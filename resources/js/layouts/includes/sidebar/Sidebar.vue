@@ -259,89 +259,9 @@ const restrictedRoutes = restrictedModules.flatMap(
 
 const allTabs = [
     {
-        label: "User Management",
-        route: ["/", "/users"],
+        label: "Task Management",
+        route: ["/", "/tasks"],
         iconComponent: UserManagementIcon,
-        children: [
-            {
-                label: "Users",
-                route: ["/users"],
-            },
-            {
-                label: "Profile Setup",
-                route: ["/users/profile/setup"],
-            },
-        ],
-    },
-    {
-        label: "Personality Profile",
-        route: ["/personality-profile/questionnaire"],
-        iconComponent: PersonalityProfileIcon,
-        children: [
-            {
-                label: "Questionnaire",
-                route: ["/personality-profile/questionnaire"],
-            },
-            {
-                label: "User Status",
-                route: ["/personality-profile/questionnaire/user-status"],
-            },
-        ],
-    },
-    {
-        label: "Development Journey",
-        route: ["/development-journey"],
-        iconComponent: DevelopmentJourneyIcon,
-    },
-    {
-        label: "Sessions",
-        route: ["/sessions"],
-        iconComponent: SessionIcon,
-    },
-    {
-        label: "Music Management",
-        route: ["/music-management"],
-        iconComponent: MusicManagementIcon,
-        children: [
-            { label: "background_music", route: ["/music-management"] },
-            {
-                label: "voice_preference",
-                route: ["/music-management/voice-preference-male"],
-            },
-        ],
-    },
-    {
-        label: "Content Management",
-        route: ["/cms"],
-        iconComponent: ContentManagementIcon,
-        children: [
-            { label: "success_stories", route: ["/cms/testimonial"] },
-            { label: "background_image", route: ["/cms/background-image"] },
-            { label: "experts", route: ["/cms/experts"] },
-        ],
-    },
-    {
-        label: "Feedback",
-        route: ["/feedback"],
-        iconComponent: FeedbackManagementIcon,
-        children: [
-            { label: "Management", route: ["/feedback/management"] },
-            { label: "Creation", route: ["/feedback/creation"] },
-        ],
-    },
-    {
-        label: "Report",
-        route: ["/journal"],
-        iconComponent: ReportManagementIcon,
-        children: [
-            { label: "Journal", route: ["/journal/daily"] },
-            { label: "journal User Response", route: ["/journal/user/daily"] },
-        ],
-    },
-    {
-        label: "Dummy Components",
-        route: ["/dummy-components"],
-        iconComponent: ContentManagementIcon,
     },
 ];
 
@@ -356,7 +276,7 @@ const tabs = computed(() => {
 
         // Hide User Management for normal users
         const isRestrictedForUserRole =
-            role === "user" && tab.label === "User Management";
+            role === "user" && tab.label === "Task Management";
 
         // Show Dummy Components only for dev users
         const isRestrictedForNonDev =
