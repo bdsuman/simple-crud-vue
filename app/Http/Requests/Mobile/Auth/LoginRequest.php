@@ -33,7 +33,6 @@ class LoginRequest extends FormRequest
                 // ->preventSpoofing()
             ],
             'password' => ['required', Password::min(8)->letters()->mixedCase()->numbers()->symbols()],
-            'fcm_token' => 'required|string'
         ];
     }
 
@@ -48,7 +47,6 @@ class LoginRequest extends FormRequest
             'password.mixed' => 'password_must_contain_upper_and_lowercase_letters',
             'password.numbers' => 'password_must_contain_numbers',
             'password.symbols' => 'password_must_contain_symbols',
-            'fcm_token.required' => 'fcm_token_is_required',
         ];
     }
 
@@ -60,9 +58,6 @@ class LoginRequest extends FormRequest
             ],
             'password' => [
                 'example' => '12345678Aa#',
-            ],
-            'fcm_token' => [
-                'example' => 'abc123xyz',
             ],
         ];
     }

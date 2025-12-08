@@ -34,8 +34,7 @@ class VerifyOtpRequest extends FormRequest
                 //     ->preventSpoofing()
             ],
             'otp'   => ['required', 'digits:6'],
-            'otp_type' => ['required', new Enum(OtpTypeEnum::class)],
-            'fcm_token' => 'required|string'
+            'otp_type' => ['required', new Enum(OtpTypeEnum::class)]
         ];
     }
 
@@ -49,8 +48,6 @@ class VerifyOtpRequest extends FormRequest
             'otp.digits' => 'otp_must_be_6_digits',
             'otp_type.required' => 'otp_type_is_required',
             'otp_type.enum' => 'invalid_otp_type',
-            'fcm_token.required' => 'fcm_token_is_required',
-            'fcm_token.string' => 'invalid_fcm_token_format',
         ];
     }
 
@@ -66,9 +63,6 @@ class VerifyOtpRequest extends FormRequest
             ],
             'otp_type' => [
                 'example' => OtpTypeEnum::REGISTRATION->value,
-            ],
-            'fcm_token' => [
-                'example' => 'abc123xyz',
             ],
         ];
     }

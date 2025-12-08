@@ -14,6 +14,7 @@ class Task extends Model
     use HasFactory,TranslatAble;
 
     protected $fillable = [
+        'user_id',
         'is_completed',
         'avatar',
     ];
@@ -51,5 +52,10 @@ class Task extends Model
     public function newEloquentBuilder($query): TaskBuilder
     {
         return new TaskBuilder($query);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }

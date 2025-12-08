@@ -10,6 +10,7 @@ class TaskArchives extends Model
 {
     protected $fillable = [
         'original_task_id',
+        'user_id',
         'is_completed',
         'avatar',
     ];

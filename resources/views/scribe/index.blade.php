@@ -499,68 +499,75 @@
                                                     <div class="children" style="display: none;">
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-task">
-                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Task">
+                                             id="toc-item-task-module-GETapi-tasks">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="List">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-task">
-                                                    Task
+                                                   href="#task-module-GETapi-tasks">
+                                                    List
                                                 </a>
                                             </div>
-                                                                                            <div class="sl-flex sl-items-center sl-text-xs expansion-chevrons">
-                                                    <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                                         data-icon="chevron-right"
-                                                         class="svg-inline--fa fa-chevron-right fa-fw sl-icon sl-text-muted"
-                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                                        <path fill="currentColor"
-                                                              d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"></path>
-                                                    </svg>
-                                                </div>
                                                                                     </div>
 
-                                                                                    <div class="children" style="display: none;">
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-GETapi-tasks">
-                                                        <div title="List all tasks with filtering and pagination" id="toc-item-task-module-GETapi-tasks"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            List all tasks with filtering and pagination
-                                                        </div>
-                                                    </a>
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-POSTapi-tasks">
-                                                        <div title="Store a new task" id="toc-item-task-module-POSTapi-tasks"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            Store a new task
-                                                        </div>
-                                                    </a>
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-GETapi-tasks--id-">
-                                                        <div title="Show a single task" id="toc-item-task-module-GETapi-tasks--id-"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            Show a single task
-                                                        </div>
-                                                    </a>
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-PUTapi-tasks--id-">
-                                                        <div title="Update an existing task" id="toc-item-task-module-PUTapi-tasks--id-"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            Update an existing task
-                                                        </div>
-                                                    </a>
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-DELETEapi-tasks--id-">
-                                                        <div title="Delete a task with soft-delete and data masking" id="toc-item-task-module-DELETEapi-tasks--id-"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            Delete a task with soft-delete and data masking
-                                                        </div>
-                                                    </a>
-                                                                                                    <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                       href="#task-module-PUTapi-tasks-completed--task_id-">
-                                                        <div title="Toggle publish status of a task" id="toc-item-task-module-PUTapi-tasks-completed--task_id-"
-                                                             class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-12 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none">
-                                                            Toggle publish status of a task
-                                                        </div>
-                                                    </a>
-                                                                                            </div>
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-task-module-POSTapi-tasks">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Store">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#task-module-POSTapi-tasks">
+                                                    Store
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-task-module-GETapi-tasks--id-">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Show">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#task-module-GETapi-tasks--id-">
+                                                    Show
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-task-module-PUTapi-tasks--id-">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Update">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#task-module-PUTapi-tasks--id-">
+                                                    Update
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-task-module-DELETEapi-tasks--id-">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Delete">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#task-module-DELETEapi-tasks--id-">
+                                                    Delete
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-task-module-PUTapi-tasks-completed--task_id-">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Toggle Completed">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#task-module-PUTapi-tasks-completed--task_id-">
+                                                    Toggle Completed
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
                                                                             </div>
                                                             </div>
                                             </div>
@@ -1200,7 +1207,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        es
+                        de
                     </div>
                 </div>
             </div>
@@ -1297,7 +1304,7 @@ fetch(url, {
     "full_name": "b",
     "email": "zbailey@example.net",
     "password": "-0pBNvYgxw",
-    "language": "es"
+    "language": "de"
 }</div>
                             </div>
                                             </div>
@@ -1396,7 +1403,7 @@ You can check the Dev Tools console for debugging information.</p>
     \"full_name\": \"b\",
     \"email\": \"zbailey@example.net\",
     \"password\": \"-0pBNvYgxw\",
-    \"language\": \"es\"
+    \"language\": \"de\"
 }"
 </code></pre>                                        </div>
                                     </div>
@@ -1418,7 +1425,7 @@ let body = {
     "full_name": "b",
     "email": "zbailey@example.net",
     "password": "-0pBNvYgxw",
-    "language": "es"
+    "language": "de"
 };
 
 fetch(url, {
@@ -2254,7 +2261,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        bn
+                        en
                     </div>
                 </div>
             </div>
@@ -2279,7 +2286,7 @@ access-control-allow-origin: *</code></pre>
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpb3g0f8u42mj6a2EnqwS
+                        /tmp/phpl8302ga4oll2eXAaaet
                     </div>
                 </div>
             </div>
@@ -2439,7 +2446,7 @@ access-control-allow-origin: *</code></pre>
                                                                                             <input aria-label="language" name="language"
                                                        id="bodyparam-PUTapi-update-profile-language"
                                                        placeholder=""
-                                                       value="bn" data-component="body"
+                                                       value="en" data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
                                                 >
                                                                                     </div>
@@ -2552,8 +2559,8 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Accept: application/json" \
     --form "full_name=b"\
     --form "password=]|{+-0pBNvYg"\
-    --form "language=bn"\
-    --form "avatar=@/tmp/phpb3g0f8u42mj6a2EnqwS" </code></pre>                                        </div>
+    --form "language=en"\
+    --form "avatar=@/tmp/phpl8302ga4oll2eXAaaet" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -2573,7 +2580,7 @@ const headers = {
 const body = new FormData();
 body.append('full_name', 'b');
 body.append('password', ']|{+-0pBNvYg');
-body.append('language', 'bn');
+body.append('language', 'en');
 body.append('avatar', document.querySelector('input[name="avatar"]').files[0]);
 
 fetch(url, {
@@ -5380,19 +5387,13 @@ access-control-allow-origin: *</code></pre>
 
     
 
-                        <h2 id="task-module-task"
-                class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-3"
-            >
-                Task
-            </h2>
-                                    <br>
-                            <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
+                                <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
     <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-GETapi-tasks">
-                    List all tasks with filtering and pagination
+                    List
                 </h2>
             </div>
         </div>
@@ -5443,6 +5444,24 @@ access-control-allow-origin: *</code></pre>
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -5699,6 +5718,17 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-GETapi-tasks-X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-GETapi-tasks-X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-GETapi-tasks-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -5914,6 +5944,7 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/tasks?sort_by=id&amp;sort_dir=DESC&amp;page=1&amp;per_page=10&amp;search=Jhon&amp;publish=1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
                                     </div>
@@ -5939,6 +5970,7 @@ Object.keys(params)
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6022,7 +6054,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-POSTapi-tasks">
-                    Store a new task
+                    Store
                 </h2>
             </div>
         </div>
@@ -6073,6 +6105,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -6195,7 +6245,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpo9n73mlr20gd3Lk7e3Z
+                        /tmp/php641la0ic2l5pdlqaxLT
                     </div>
                 </div>
             </div>
@@ -6276,6 +6326,17 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-POSTapi-tasks-X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-POSTapi-tasks-X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-POSTapi-tasks-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -6451,11 +6512,12 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request POST \
     "http://localhost:8000/api/tasks" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/phpo9n73mlr20gd3Lk7e3Z" </code></pre>                                        </div>
+    --form "avatar=@/tmp/php641la0ic2l5pdlqaxLT" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -6468,6 +6530,7 @@ You can check the Dev Tools console for debugging information.</p>
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -6524,14 +6587,12 @@ fetch(url, {
     &quot;message&quot;: &quot;success_task_created&quot;,
     &quot;data&quot;: {
         &quot;id&quot;: 21,
-        &quot;author_name&quot;: &quot;author_name&quot;,
-        &quot;job_title&quot;: &quot;job_title&quot;,
+        &quot;user_id&quot;: 1,
         &quot;title&quot;: &quot;title&quot;,
-        &quot;content&quot;: &quot;content&quot;,
-        &quot;rating&quot;: 5,
+        &quot;description&quot;: &quot;content&quot;,
+        &quot;is_completed&quot;: true,
         &quot;avatar&quot;: &quot;task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
         &quot;avatar_url&quot;: &quot;http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
-        &quot;publish&quot;: true,
         &quot;created_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;,
         &quot;updated_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;
     }
@@ -6549,7 +6610,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-GETapi-tasks--id-">
-                    Show a single task
+                    Show
                 </h2>
             </div>
         </div>
@@ -6600,6 +6661,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -6750,6 +6829,17 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-GETapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-GETapi-tasks--id--X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-GETapi-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -6899,6 +6989,7 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request GET \
     --get "http://localhost:8000/api/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
                                     </div>
@@ -6913,6 +7004,7 @@ You can check the Dev Tools console for debugging information.</p>
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -6963,14 +7055,12 @@ fetch(url, {
     &quot;message&quot;: &quot;task_fetched_successfully&quot;,
     &quot;data&quot;: {
         &quot;id&quot;: 9,
-        &quot;author_name&quot;: &quot;Mrs. Petra Pollich&quot;,
-        &quot;job_title&quot;: &quot;Credit Checkers Clerk&quot;,
+        &quot;user_id&quot;: 1,
         &quot;title&quot;: &quot;Voluptatibus quidem minima atque.&quot;,
-        &quot;content&quot;: &quot;Temporibus tempora eum nesciunt doloremque. ae nostrum.&quot;,
-        &quot;rating&quot;: 5,
+        &quot;description&quot;: &quot;Temporibus tempora eum nesciunt doloremque. ae nostrum.&quot;,
+        &quot;is_completed&quot;: true,
         &quot;avatar&quot;: &quot;https://placehold.co/100x100&quot;,
         &quot;avatar_url&quot;: &quot;https://placehold.co/100x100&quot;,
-        &quot;publish&quot;: true,
         &quot;created_at&quot;: &quot;2025-08-28T05:09:49.000000Z&quot;,
         &quot;updated_at&quot;: &quot;2025-08-28T05:09:49.000000Z&quot;
     }
@@ -6988,7 +7078,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-PUTapi-tasks--id-">
-                    Update an existing task
+                    Update
                 </h2>
             </div>
         </div>
@@ -7044,6 +7134,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -7198,7 +7306,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpg5mqqd9luigr3ZH8tl5
+                        /tmp/phpq3m3jutt7u8rbh7WGNT
                     </div>
                 </div>
             </div>
@@ -7279,6 +7387,17 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-PUTapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-PUTapi-tasks--id--X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-PUTapi-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -7487,11 +7606,12 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/phpg5mqqd9luigr3ZH8tl5" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpq3m3jutt7u8rbh7WGNT" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7504,6 +7624,7 @@ You can check the Dev Tools console for debugging information.</p>
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
 };
@@ -7560,14 +7681,12 @@ fetch(url, {
     &quot;message&quot;: &quot;success_task_updated&quot;,
     &quot;data&quot;: {
         &quot;id&quot;: 21,
-        &quot;author_name&quot;: &quot;Jane Smith&quot;,
-        &quot;job_title&quot;: &quot;Product Manager&quot;,
+        &quot;user_id&quot;: 1,
         &quot;title&quot;: &quot;Outstanding Support!&quot;,
-        &quot;content&quot;: &quot;The team provided exceptional support throughout the project.&quot;,
-        &quot;rating&quot;: 5,
+        &quot;description&quot;: &quot;The team provided exceptional support throughout the project.&quot;,
         &quot;avatar&quot;: &quot;task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
         &quot;avatar_url&quot;: &quot;http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
-        &quot;status&quot;: true,
+        &quot;is_completed&quot;: true,
         &quot;created_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;,
         &quot;updated_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;
     }
@@ -7585,7 +7704,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-DELETEapi-tasks--id-">
-                    Delete a task with soft-delete and data masking
+                    Delete
                 </h2>
             </div>
         </div>
@@ -7638,6 +7757,24 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -7788,6 +7925,17 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-DELETEapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-DELETEapi-tasks--id--X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-DELETEapi-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -7937,6 +8085,7 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request DELETE \
     "http://localhost:8000/api/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
                                     </div>
@@ -7951,6 +8100,7 @@ You can check the Dev Tools console for debugging information.</p>
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8014,7 +8164,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="task-module-PUTapi-tasks-completed--task_id-">
-                    Toggle publish status of a task
+                    Toggle Completed
                 </h2>
             </div>
         </div>
@@ -8066,6 +8216,24 @@ If it was published, it will be unpublished, and vice versa.</p>
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">X-Request-Language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        string Optional language for translated fields. Example: en
                     </div>
                 </div>
             </div>
@@ -8216,6 +8384,17 @@ If it was published, it will be unpublished, and vice versa.</p>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
+                                       for="header-PUTapi-tasks-completed--task_id--X-Request-Language">X-Request-Language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="X-Request-Language" name="X-Request-Language"
+                                               id="header-PUTapi-tasks-completed--task_id--X-Request-Language"
+                                               value="string Optional language for translated fields. Example: en" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
                                        for="header-PUTapi-tasks-completed--task_id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
@@ -8365,6 +8544,7 @@ You can check the Dev Tools console for debugging information.</p>
                                             <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/tasks/completed/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
                                     </div>
@@ -8379,6 +8559,7 @@ You can check the Dev Tools console for debugging information.</p>
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
@@ -8432,11 +8613,10 @@ fetch(url, {
         &quot;author_name&quot;: &quot;Jane Smith&quot;,
         &quot;job_title&quot;: &quot;Product Manager&quot;,
         &quot;title&quot;: &quot;Outstanding Support!&quot;,
-        &quot;content&quot;: &quot;The team provided exceptional support throughout the project.&quot;,
-        &quot;rating&quot;: 5,
+        &quot;description&quot;: &quot;The team provided exceptional support throughout the project.&quot;,
+        &quot;is_completed&quot;: true,
         &quot;avatar&quot;: &quot;task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
         &quot;avatar_url&quot;: &quot;http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png&quot;,
-        &quot;status&quot;: true,
         &quot;created_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;,
         &quot;updated_at&quot;: &quot;2025-08-28T08:49:59.000000Z&quot;
     }

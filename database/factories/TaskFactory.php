@@ -16,6 +16,7 @@ class TaskFactory extends Factory
     {
         return [
             // Use a stable placeholder image to avoid broken remote faker URLs
+            'user_id' => \App\Models\User::factory(),
             'avatar' => 'https://placehold.co/100x100?text=Task',
             'is_completed' => $this->faker->randomElement([true, false]),
         ];

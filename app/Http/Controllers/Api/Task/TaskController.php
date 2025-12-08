@@ -18,7 +18,6 @@ use App\Traits\UploadAble;
 
 /** 
  * @group Task Module
- * @subgroup Task
  * @authenticated
  */
 class TaskController extends Controller
@@ -34,7 +33,7 @@ class TaskController extends Controller
     ];
 
     /**
-     * List all tasks with filtering and pagination
+     * List
      *
      * @queryParam sort_by string The column to order by. Example: id
      * @queryParam sort_dir string Order direction (ASC|DESC). Example: DESC
@@ -42,6 +41,7 @@ class TaskController extends Controller
      * @queryParam per_page integer Number of items per page. Example: 10.
      * @queryParam search string Search by title,author_name,job_title Example: Jhon
      * @queryParam publish boolean Filter by publish status. Example: true
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      *
      * @response 200 {
      *   "status": true,
@@ -74,6 +74,7 @@ class TaskController extends Controller
         $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
 
         $tasks = Task::query()
+            ->where('user_id', $request->user()->id)
             ->isCompletedFilter($request->is_completed)
             ->searchFilter($request->search)
             ->orderBy('id', 'DESC')
@@ -83,24 +84,23 @@ class TaskController extends Controller
     }
 
     /**
-     * Store a new task
+     * Store
      *
      * @param StoreTaskRequest $request
      * @return JsonResponse
      *
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      * @response 201 {
      *  "status": true,
      *  "message": "success_task_created",
      *  "data": {
      *      "id": 21,
-     *      "author_name": "author_name",
-     *      "job_title": "job_title",
+     *      "user_id": 1,
      *      "title": "title",
-     *      "content": "content",
-     *      "rating": 5,
+     *      "description": "content",
+     *      "is_completed": true,
      *      "avatar": "task/avatar/FILE_68b018378dc0e_68b01837.png",
      *      "avatar_url": "http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png",
-     *      "publish": true,
      *      "created_at": "2025-08-28T08:49:59.000000Z",
      *      "updated_at": "2025-08-28T08:49:59.000000Z"
      *  }
@@ -112,6 +112,7 @@ class TaskController extends Controller
 
         try {
             $data = $request->safe()->except('avatar');
+            $data['user_id'] = $request->user()->id;
 
             if ($request->hasFile('avatar')) {
                 $data['avatar'] = $this->uploadFile(
@@ -150,23 +151,22 @@ class TaskController extends Controller
     }
 
     /**
-     * Show a single task
+     * Show
      *
      * @param Task $task
      *
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      * @response 200 {
      *   "status": true,
      *   "message": "task_fetched_successfully",
      *     "data": {
      *                  "id": 9,
-     *                  "author_name": "Mrs. Petra Pollich",
-     *                  "job_title": "Credit Checkers Clerk",
+     *                  "user_id": 1,
      *                  "title": "Voluptatibus quidem minima atque.",
-     *                  "content": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
-     *                  "rating": 5,
+     *                  "description": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
+     *                  "is_completed": true,
      *                  "avatar": "https://placehold.co/100x100",
      *                  "avatar_url": "https://placehold.co/100x100",
-     *                  "publish": true,
      *                  "created_at": "2025-08-28T05:09:49.000000Z",
      *                  "updated_at": "2025-08-28T05:09:49.000000Z"
      *              }
@@ -182,25 +182,24 @@ class TaskController extends Controller
     }
 
     /**
-     * Update an existing task
+     * Update
      *
      * @param UpdateTaskRequest $request
      * @param Task $task
      * @return JsonResponse
      *
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      * @response 200 {
      *  "status": true,
      *  "message": "success_task_updated",
      *  "data": {
      *      "id": 21,
-     *      "author_name": "Jane Smith",
-     *      "job_title": "Product Manager",
+     *      "user_id": 1,
      *      "title": "Outstanding Support!",
-     *      "content": "The team provided exceptional support throughout the project.",
-     *      "rating": 5,
+     *      "description": "The team provided exceptional support throughout the project.",
      *      "avatar": "task/avatar/FILE_68b018378dc0e_68b01837.png",
      *      "avatar_url": "http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png",
-     *      "status": true,
+     *      "is_completed": true,
      *      "created_at": "2025-08-28T08:49:59.000000Z",
      *      "updated_at": "2025-08-28T08:49:59.000000Z"
      *  }
@@ -246,13 +245,14 @@ class TaskController extends Controller
     }
 
     /**
-     * Delete a task with soft-delete and data masking
+     * Delete
      *
      * Soft delete the specified task.  
      * The record is not permanently removed; instead, its `deleted_at` timestamp is set  
      * and the `title` & `author_name` is updated with a `DELETED_` prefix.
      *
      * @param Task $task
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      *
      * @response 200 {
      *   "status": true,
@@ -263,6 +263,7 @@ class TaskController extends Controller
     public function destroy(Task $task): JsonResponse
     {
         $task_archives = TaskArchives::create([
+            'user_id' => $task->user_id,
             'original_task_id' => $task->id,
             'avatar' => $task->avatar,
             'is_completed' => $task->is_completed,
@@ -281,12 +282,13 @@ class TaskController extends Controller
     }
 
     /**
-     * Toggle publish status of a task
+     * Toggle Completed
      *
      * This endpoint switches the `publish` status of the given Task.
      * If it was published, it will be unpublished, and vice versa.
      *
      * @param Task $task
+     * @header X-Request-Language string Optional language for translated fields. Example: en
      *
      * @response 200 {
      *  "status": true,
@@ -296,11 +298,10 @@ class TaskController extends Controller
      *      "author_name": "Jane Smith",
      *      "job_title": "Product Manager",
      *      "title": "Outstanding Support!",
-     *      "content": "The team provided exceptional support throughout the project.",
-     *      "rating": 5,
+     *      "description": "The team provided exceptional support throughout the project.",
+     *      "is_completed": true,
      *      "avatar": "task/avatar/FILE_68b018378dc0e_68b01837.png",
      *      "avatar_url": "http://localhost:8000/storage/task/avatar/FILE_68b018378dc0e_68b01837.png",
-     *      "status": true,
      *      "created_at": "2025-08-28T08:49:59.000000Z",
      *      "updated_at": "2025-08-28T08:49:59.000000Z"
      *  }

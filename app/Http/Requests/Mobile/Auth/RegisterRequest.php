@@ -33,7 +33,6 @@ class RegisterRequest extends FormRequest
                 // ->preventSpoofing()
             ],
             'password' => ['required', Password::min(8)->letters()->mixedCase()->numbers()->symbols()],
-            'fcm_token' => 'required|string'
         ];
 
         $provider = $this->provider ?? null;
@@ -65,8 +64,6 @@ class RegisterRequest extends FormRequest
             'password.mixed' => 'password_must_contain_upper_and_lowercase_letters',
             'password.numbers' => 'password_must_contain_numbers',
             'password.symbols' => 'password_must_contain_symbols',
-            'fcm_token.required' => 'fcm_token_is_required',
-            'fcm_token.string' => 'fcm_token_must_be_a_string',
             'provider.string' => 'provider_must_be_a_string',
             'provider.in' => 'provider_must_be_one_of_google_apple_facebook',
             'provider_id.required' => 'provider_id_is_required',
@@ -85,9 +82,6 @@ class RegisterRequest extends FormRequest
             ],
             'password' => [
                 'example' => '12345678Aa#',
-            ],
-            'fcm_token' => [
-                'example' => 'abc123xyz',
             ],
             'provider' => [
                 'example' => 'google',

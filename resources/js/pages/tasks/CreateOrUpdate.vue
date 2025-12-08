@@ -24,7 +24,6 @@
         <div class="flex-col justify-start items-start flex">
           <DragAndDropUpload
             v-model="form.avatar"
-            required
             class="w-full"
             label="avatar"
             attachmentLabelClass="!py-10"
@@ -33,12 +32,12 @@
             :maxFiles="1"
             :maxFileSize="20"
             :allowedExtensions="['.jpg', '.JPEG', '.png']"
-            :extraClass="v$.avatar.$error ? '!border-red-500' : ''"
+            :extraClass="v$?.avatar?.$error ? '!border-red-500' : ''"
             @blur="validate('avatar')" />
           <div
-            v-if="v$.avatar.$errors"
+            v-if="v$?.avatar?.$errors"
             class="justify-start text-xs font-normal leading-none text-red-500">
-            {{ v$.avatar.$errors?.[0]?.$message }}
+            {{ v$?.avatar?.$errors?.[0]?.$message }}
           </div>
         </div>
         <TextInput
@@ -99,9 +98,9 @@ const validate = (fieldName) => {
 };
 
 const dynamicRules = computed(() => ({
-  avatar: {
-    required: helpers.withMessage(trans("field_input_is_missing"), required),
-  },
+  // avatar: {
+  //   required: helpers.withMessage(trans("field_input_is_missing"), required),
+  // },
 }));
 
 const v$ = useVuelidate(dynamicRules, form);
