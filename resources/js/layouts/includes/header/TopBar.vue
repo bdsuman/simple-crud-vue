@@ -31,15 +31,12 @@
                     <!-- name + role -->
                     <div class="hidden sm:flex flex-col items-start min-w-0">
                         <span
-                            class="self-stretch justify-start text-secondary text-base font-medium capitalize"
+                            class="self-stretch justify-start text-secondary text-base font-medium capitalize truncate max-w-[180px]"
+                            :title="displayName"
                         >
                             {{ displayName }}
                         </span>
-                        <span
-                            class="text-[#002d45] text-sm font-normal capitalize"
-                        >
-                            {{ $t(displayRole) }} 
-                        </span>
+
                     </div>
 
                     <!-- NEW white circular dropdown toggle -->
@@ -97,10 +94,10 @@
                                 class="px-3 border-t border-white flex items-center hover:bg-white/10"
                             > -->
                             <li
-                                class="px-3 flex items-center hover:bg-white/10 h-12"
+                                class="px-4 py-2 flex items-center gap-2 hover:bg-white/10 h-12"
                             >
                                 <span
-                                    class="text-sm text-white/90 hover:text-white"
+                                    class="text-sm text-white/90"
                                 >
                                     {{ $t("Change Language") }}:
                                 </span>
@@ -157,7 +154,10 @@ const userPhoto = ref(
         localStorage.getItem("avatar") ||
         "https://placehold.co/36x36"
 );
-const displayName = computed(() => store.user?.full_name || "No Name");
+const displayName = computed(() => {
+    const name = store.user?.full_name || "No Name";
+    return name.length > 30 ? `${name.slice(0, 30)}…` : name;
+});
 const displayRole = computed(() => store.user?.role || "No role");
 
 /* ---------- Dropdown state ---------- */

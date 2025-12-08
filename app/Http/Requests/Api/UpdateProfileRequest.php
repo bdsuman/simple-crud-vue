@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Api;
 
+use App\Enums\AppLanguageEnum;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
@@ -23,12 +24,10 @@ class UpdateProfileRequest extends FormRequest
      */
     public function rules(): array
     {
-        $userId = auth()->id();
-
         return [
             'full_name' => 'required|string|min:2|max:255',
             'password' => 'nullable|string|min:8|confirmed',
-            'language' => 'nullable|string|in:en,de,fr,es',
+            'language' => 'nullable|string|in:' . implode(',', array_column(AppLanguageEnum::cases(), 'value')),
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg|max:20480',
         ];
     }

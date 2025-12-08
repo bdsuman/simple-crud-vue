@@ -4,7 +4,7 @@
             <div
                 class="self-stretch justify-start text-[#002d45] text-[32px] font-semibold mb-[48px]"
             >
-                {{ $t("success_stories") }}
+                {{ $t("Tasks") }}
             </div>
             <Button
                 :show="true"
@@ -31,9 +31,9 @@
                 <TableRows
                     :items="items"
                     :columns="columns"
-                    @openScript="openScript"
+                    @openDescription="openDescription"
                     @delete="handleDelete"
-                    @publish="handlePublish"
+                    @complete="handleComplete"
                 />
             </template>
         </BaseTable>
@@ -49,12 +49,12 @@
     />
     <BaseModal
         :show="isModalOpen"
-        title="Text"
+        title="Description"
         :width="665"
         @close="isModalOpen = false"
     >
         <template #body>
-            {{ selectedScript }}
+            {{ selectedDescription }}
         </template>
     </BaseModal>
 </template>
@@ -78,11 +78,9 @@ const error = ref("");
 const emitter = inject("emitter");
 const showConfirmationModal = ref(false);
 const columns = [
-    { key: "name", label: "name", sortable: true, width: "100px" },
-    { key: "profession", label: "profession", sortable: true, width: "80px" },
     { key: "title", label: "title", sortable: true, width: "100px" },
-    { key: "publish", label: "publish", sortable: false, width: "50px" },
-    { key: "text", label: "text", sortable: false, width: "50px" },
+    { key: "description", label: "description", sortable: false, width: "50px" },
+    { key: "completed", label: "completed", sortable: false, width: "50px" },
     { key: "image", label: "image", sortable: true, width: "50px" },
     { key: "action", label: "", sortable: false, width: "20px" },
 ];
@@ -96,7 +94,7 @@ async function fetchData({ page: p, pageSize: ps, sort, search: q }) {
     loading.value = true;
     error.value = "";
     try {
-        const res = await axios.get(route("testimonials.index"), {
+        const res = await axios.get(route("tasks.index"), {
             params: {
                 page: p,
                 per_page: ps,
@@ -125,8 +123,8 @@ const deleted_message = ref(null);
 const actionDelete = async () => {
     try {
         await axios.delete(
-            route("testimonials.destroy", {
-                testimonial: deleted_item.value?.id,
+            route("tasks.destroy", {
+                task: deleted_item.value?.id,
             })
         );
 
@@ -153,31 +151,31 @@ const handleDelete = (item) => {
     showConfirmationModal.value = true;
 };
 
-const handlePublish = async (data) => {
+const handleComplete = async (data) => {
     try {
         const res = await axios.put(
-            route("testimonials.publish", { testimonial: data.id })
+            route("tasks.completed", { task: data.id })
         );
 
         items.value = items.value.map((item) =>
             item.id === data.id ? res.data.data : item
         );
 
-        const publishedStatus = res.data.data.publish ? "success_story_published_successfully" : "success_story_unpublished_successfully";
+        const completedStatus = res.data.data.is_completed ? "success_task_completed_successfully" : "success_task_uncompleted_successfully";
 
         notify.success({
-            message: publishedStatus,
+            message: completedStatus,
         });
     } catch (error) {
         // console.log(error);
     }
 };
 
-const selectedScript = ref(null);
+const selectedDescription = ref(null);
 const isModalOpen = ref(false);
 
-const openScript = (text) => {
-    selectedScript.value = text ?? "";
+const openDescription = (text) => {
+    selectedDescription.value = text ?? "";
     isModalOpen.value = true;
 };
 emitter.on("languageChanged", async () => {

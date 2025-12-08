@@ -21,7 +21,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password', 255)->nullable();
             $table->string('avatar', 255)->nullable();
-            $table->enum('language', array_column(AppLanguageEnum::cases(), 'value'))->default('en');
+            $table->string('language', 2)->default('en');
             $table->string('password_reset_token', 255)->nullable();
             $table->rememberToken();
             $table->timestamps();

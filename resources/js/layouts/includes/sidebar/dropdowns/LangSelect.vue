@@ -45,7 +45,7 @@ const props = defineProps({
 const emitter = inject("emitter");
 
 const langArr = ref({
-    de: "DE",
+    bn: "BN",
     en: "EN",
 });
 
@@ -60,7 +60,8 @@ const setLang = async (lang, index) => {
     showLangOption.value = false;
     selectedLang.value = index;
 
-    const res = await axios.post("/update-profile", {
+    const res = await axios.put(route("auth.update-profile"), {
+        full_name: store.user.full_name,
         language: index,
     });
     store.setUser(res.data.data);

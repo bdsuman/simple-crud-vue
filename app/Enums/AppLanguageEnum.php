@@ -5,13 +5,13 @@ namespace App\Enums;
 enum AppLanguageEnum: string
 {
     case EN = 'en';
-    case DE = 'de';
+    case BN = 'bn';
 
     public function label(): string
     {
         return match ($this) {
             self::EN => 'English',
-            self::DE => 'German',
+            self::BN => 'Bangla',
         };
     }
 }

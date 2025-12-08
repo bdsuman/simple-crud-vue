@@ -15,33 +15,29 @@ use Illuminate\Http\Request;
 class TaskController extends Controller
 {
     /**
-     * List
+     * List published tasks with filtering and pagination
      *
      * @queryParam sort_by string The column to order by. Example: id
      * @queryParam sort_dir string Order direction (ASC|DESC). Example: DESC
      * @queryParam page integer Number of page. Example: 1.
      * @queryParam per_page integer Number of items per page. Example: 10.
      * @queryParam search string Search by title,author_name,job_title Example: Jhon
-     * @queryParam publish boolean Comma-separated list of publish to filter by Filter by Example: true
      *
      * @response 200 {
      *   "status": true,
      *   "message": "task_fetched_successfully",
-     *     "data": [
-     *              {
-     *                  "id": 9,
-     *                  "author_name": "Mrs. Petra Pollich",
-     *                  "job_title": "Credit Checkers Clerk",
-     *                  "title": "Voluptatibus quidem minima atque.",
-     *                  "content": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
-     *                  "rating": 5,
-     *                  "avatar": "https://placehold.co/100x100",
-     *                  "avatar_url": "https://placehold.co/100x100",
-     *                  "publish": true,
-     *                  "created_at": "2025-08-28T05:09:49.000000Z",
-     *                  "updated_at": "2025-08-28T05:09:49.000000Z"
-     *              }
-     *             ],
+     *   "data": [
+     *     {
+     *       "id": 9,
+     *       "title": "Voluptatibus quidem minima atque.",
+     *       "description": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
+     *       "is_completed": false,
+     *       "avatar": "https://placehold.co/100x100",
+     *       "avatar_url": "https://placehold.co/100x100",
+     *       "created_at": "2025-08-28T05:09:49.000000Z",
+     *       "updated_at": "2025-08-28T05:09:49.000000Z"
+     *     }
+     *   ],
      *   "meta": {
      *     "total": 40,
      *     "last_page": 40,
@@ -52,46 +48,48 @@ class TaskController extends Controller
      */
     public function index(Request $request): JsonResponse
     {
-            $searchFields = ['title', 'author_name', 'job_title'];
-            $lang = app('language');
-            $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
-            $testimonial = Testimonial::query()
-                ->withTranslations($lang)
-                ->where('tasks.publish', true)
-                ->searchTranslations($request->search, $searchFields)
-                ->orderBy('id', 'DESC')
-                ->paginate($perPage);
+        $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
 
-        return success_response(TaskResource::collection($testimonial), true, 'task_fetched_successfully');
+        $tasks = Task::query()
+            ->searchFilter($request->search)
+            ->orderBy('id', 'DESC')
+            ->paginate($perPage);
+
+        return success_response(
+            TaskResource::collection($tasks),
+            true,
+            'task_fetched_successfully'
+        );
     }
 
     /**
-     * Show
+     * Show a single published task
      *
-     * @param Testimonial $testimonial
+     * @param Task $task
      *
      * @response {
      *   "status": true,
      *   "message": "task_fetched_successfully",
-     *     "data": [
-     *              {
-     *                  "id": 9,
-     *                  "author_name": "Mrs. Petra Pollich",
-     *                  "job_title": "Credit Checkers Clerk",
-     *                  "title": "Voluptatibus quidem minima atque.",
-     *                  "content": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
-     *                  "rating": 5,
-     *                  "avatar": "https://placehold.co/100x100",
-     *                  "avatar_url": "https://placehold.co/100x100",
-     *                  "publish": true,
-     *                  "created_at": "2025-08-28T05:09:49.000000Z",
-     *                  "updated_at": "2025-08-28T05:09:49.000000Z"
-     *              }
-     *             ],
+     *   "data": {
+     *     "id": 9,
+     *     "author_name": "Mrs. Petra Pollich",
+     *     "job_title": "Credit Checkers Clerk",
+     *     "title": "Voluptatibus quidem minima atque.",
+     *     "description": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
+     *     "is_completed": false,
+     *     "avatar": "https://placehold.co/100x100",
+     *     "avatar_url": "https://placehold.co/100x100",
+     *     "created_at": "2025-08-28T05:09:49.000000Z",
+     *     "updated_at": "2025-08-28T05:09:49.000000Z"
+     *   }
      * }
      */
-    public function show(Testimonial $testimonial): JsonResponse
+    public function show(Task $task): JsonResponse
     {
-        return success_response(new TaskResource($testimonial), false, 'task_fetched_successfully');
+        return success_response(
+            $task->makeHidden('avatar_url')->append('avatar_url'),
+            false,
+            'task_fetched_successfully'
+        );
     }
 }

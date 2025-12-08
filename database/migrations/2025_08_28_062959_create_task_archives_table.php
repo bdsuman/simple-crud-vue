@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-       Schema::create('tasks', function (Blueprint $table) {
+       Schema::create('task_archives', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('original_task_id');
             $table->string('title');
             $table->text('description')->nullable(); 
             $table->string('avatar')->nullable();
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tasks');
+        Schema::dropIfExists('task_archives');
     }
 };

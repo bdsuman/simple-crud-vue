@@ -15,13 +15,11 @@ class TaskFactory extends Factory
     public function definition(): array
     {
         return [
-            'author_name' => $this->faker->name(),
-            'job_title' => $this->faker->jobTitle(),
             'title' => $this->faker->sentence(4),
-            'content' => $this->faker->paragraph(),
-            'rating' => $this->faker->numberBetween(3, 5),
-            'avatar' => $this->faker->imageUrl(100, 100, 'people'),
-            'publish' => true,
+            'description' => $this->faker->paragraph(),
+            // Use a stable placeholder image to avoid broken remote faker URLs
+            'avatar' => 'https://placehold.co/100x100?text=Task',
+            'is_completed' => $this->faker->randomElement([true, false]),
         ];
     }
 }

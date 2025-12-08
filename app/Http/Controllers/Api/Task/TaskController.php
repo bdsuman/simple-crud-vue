@@ -7,11 +7,12 @@ use App\Http\Requests\Api\Task\StoreTaskRequest;
 use App\Http\Requests\Api\Task\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Models\Task;
-use Illuminate\Http\Request;
-use App\Traits\UploadAble;
+use App\Models\TaskArchives;
 use Exception;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Traits\UploadAble;
 
 /** 
  * @group Task Module
@@ -21,26 +22,24 @@ use Illuminate\Http\JsonResponse;
 class TaskController extends Controller
 {
     use UploadAble;
-    protected $options;
 
-    public function __construct()
-    {
-        $this->options = [
-            // 'crop' => ['width' => 300, 'height' => 300, 'x' => 50, 'y' => 50],
-            'resize' => ['width' => 800, 'height' => 600],
-            'quality' => 85
-        ];
-    }
     /**
-     * List
+     * Upload options for image optimization
+     */
+    private const UPLOAD_OPTIONS = [
+        'resize' => ['width' => 800, 'height' => 600],
+        'quality' => 85
+    ];
+
+    /**
+     * List all tasks with filtering and pagination
      *
      * @queryParam sort_by string The column to order by. Example: id
      * @queryParam sort_dir string Order direction (ASC|DESC). Example: DESC
-
      * @queryParam page integer Number of page. Example: 1.
      * @queryParam per_page integer Number of items per page. Example: 10.
      * @queryParam search string Search by title,author_name,job_title Example: Jhon
-     * @queryParam publish boolean Comma-separated list of publish to filter by Filter by Example: true
+     * @queryParam publish boolean Filter by publish status. Example: true
      *
      * @response 200 {
      *   "status": true,
@@ -71,19 +70,20 @@ class TaskController extends Controller
     public function index(Request $request): JsonResponse
     {
         $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
-        $task = Task::query()
-            ->publishFilter($request->publish)
-            ->searchFilter($request->search)
-            ->orderBy('id', 'DESC')
-            ->paginate($perPage);
 
-        return success_response(TaskResource::collection($task), true, 'task_fetched_successfully');
+        $tasks = Task::query()
+                ->isCompletedFilter($request->is_completed)
+                ->searchFilter($request->search)
+                ->orderBy('id', 'DESC')
+                ->paginate($perPage);
+
+        return success_response(TaskResource::collection($tasks), true, 'task_fetched_successfully');
     }
 
     /**
-     * Store
+     * Store a new task
      *
-     * @param Store:TaskRequest $request
+     * @param StoreTaskRequest $request
      * @return JsonResponse
      *
      * @response 201 {
@@ -103,7 +103,6 @@ class TaskController extends Controller
      *      "updated_at": "2025-08-28T08:49:59.000000Z"
      *  }
      * }
-     *
      */
     public function store(StoreTaskRequest $request): JsonResponse
     {
@@ -111,29 +110,40 @@ class TaskController extends Controller
 
         try {
             $data = $request->safe()->except('avatar');
+
             if ($request->hasFile('avatar')) {
-                $data['avatar'] = $this->uploadFile($request->avatar, 'task/avatar', config('filesystems.default'), null, $this->options);
+                $data['avatar'] = $this->uploadFile(
+                    $request->avatar,
+                    'task/avatar',
+                    config('filesystems.default'),
+                    null,
+                    self::UPLOAD_OPTIONS
+                );
             }
 
             $task = Task::create($data);
             DB::commit();
-            return success_response(new TaskResource($task->fresh()), false, 'success_task_created');
+
+            return success_response(
+                new TaskResource($task->makeHidden('avatar_url')->append('avatar_url')),
+                false,
+                'success_task_created'
+            );
         } catch (Exception $e) {
             DB::rollBack();
-            return error_response('task_update_failed', 500);
+            return error_response('task_creation_failed', 500);
         }
     }
 
     /**
-     * Show
+     * Show a single task
      *
-     * @param :Task $task
+     * @param Task $task
      *
      * @response 200 {
      *   "status": true,
      *   "message": "task_fetched_successfully",
-     *     "data": [
-     *              {
+     *     "data": {
      *                  "id": 9,
      *                  "author_name": "Mrs. Petra Pollich",
      *                  "job_title": "Credit Checkers Clerk",
@@ -146,20 +156,23 @@ class TaskController extends Controller
      *                  "created_at": "2025-08-28T05:09:49.000000Z",
      *                  "updated_at": "2025-08-28T05:09:49.000000Z"
      *              }
-     *             ],
      * }
      */
     public function show(Task $task): JsonResponse
     {
-        return success_response(new TaskResource($task), false, 'task_fetched_successfully');
+        return success_response(
+            new TaskResource($task),
+            false,
+            'task_fetched_successfully'
+        );
     }
 
     /**
-     * Update
+     * Update an existing task
      *
      * @param UpdateTaskRequest $request
      * @param Task $task
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      *
      * @response 200 {
      *  "status": true,
@@ -178,7 +191,6 @@ class TaskController extends Controller
      *      "updated_at": "2025-08-28T08:49:59.000000Z"
      *  }
      * }
-     *
      */
     public function update(UpdateTaskRequest $request, Task $task): JsonResponse
     {
@@ -186,20 +198,18 @@ class TaskController extends Controller
 
         try {
             $data = $request->safe()->except('avatar');
+
             if ($request->hasFile('avatar')) {
-
-
                 $data['avatar'] = $this->uploadFile(
                     $request->avatar,
                     'task/avatar',
                     config('filesystems.default'),
                     null,
-                    $this->options
+                    self::UPLOAD_OPTIONS
                 );
             }
 
             $task->update($data);
-
             DB::commit();
 
             return success_response(
@@ -214,37 +224,42 @@ class TaskController extends Controller
     }
 
     /**
-     * Delete
+     * Delete a task with soft-delete and data masking
      *
      * Soft delete the specified task.  
      * The record is not permanently removed; instead, its `deleted_at` timestamp is set  
-     * and the `title` & `author_name` is updated with a `DELETED_` prefix to indicate it has been deleted.
-     * @param :Task $task
+     * and the `title` & `author_name` is updated with a `DELETED_` prefix.
+     *
+     * @param Task $task
      *
      * @response 200 {
      *   "status": true,
      *   "message": "success_task_deleted",
      *   "data": []
      * }
-     *
      */
-
     public function destroy(Task $task): JsonResponse
     {
-        $task->title = 'DELETED_' . $task->title;
-        $task->author_name = 'DELETED_' . $task->author_name;
-        $task->save();
+        TaskArchives::create([
+            'original_task_id' => $task->id,
+            'title' => $task->title,
+            'description' => $task->description,
+            'avatar' => $task->avatar,
+            'is_completed' => $task->is_completed,
+        ]);
+        
         $task->delete();
 
         return success_response([], false, 'success_task_deleted');
     }
+
     /**
-     * Publish
+     * Toggle publish status of a task
      *
-     * This endpoint switches the `publish` status of the given :Task.
+     * This endpoint switches the `publish` status of the given Task.
      * If it was published, it will be unpublished, and vice versa.
      *
-     * @param :Task $task
+     * @param Task $task
      *
      * @response 200 {
      *  "status": true,
@@ -264,11 +279,15 @@ class TaskController extends Controller
      *  }
      * }
      */
-    public function togglePublish(Task $task): JsonResponse
+    public function toggleCompleted(Task $task): JsonResponse
     {
-        $task->publish = $task->publish ? false : true;
-        $task->save();
+        $task->update(['is_completed' => !$task->is_completed]);
 
-        return success_response(new TaskResource($task), false, 'task_update_successfully');
+        return success_response(
+            new TaskResource($task->fresh()),
+            false,
+            'success_task_updated'
+        );
     }
+   
 }

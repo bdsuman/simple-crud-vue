@@ -2,17 +2,14 @@
 
 namespace App\Models;
 
-use App\Builders\TaskBuilder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Builders\TaskArchivesBuilder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 
-class Task extends Model
+class TaskArchives extends Model
 {
-    /** @use HasFactory<\Database\Factories\TaskFactory> */
-    use HasFactory;
-
     protected $fillable = [
+        'original_task_id',
         'title',
         'description',
         'is_completed',
@@ -46,8 +43,8 @@ class Task extends Model
     /**
      * Build a custom Eloquent query builder.
      */
-    public function newEloquentBuilder($query): TaskBuilder
+    public function newEloquentBuilder($query): TaskArchivesBuilder
     {
-        return new TaskBuilder($query);
+        return new TaskArchivesBuilder($query);
     }
 }
