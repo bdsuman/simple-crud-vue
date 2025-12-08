@@ -34,8 +34,7 @@
             :maxFileSize="20"
             :allowedExtensions="['.jpg', '.JPEG', '.png']"
             :extraClass="v$.avatar.$error ? '!border-red-500' : ''"
-            @blur="validate('avatar')"
-            :modelValue="form.avatar" />
+            @blur="validate('avatar')" />
           <div
             v-if="v$.avatar.$errors"
             class="justify-start text-xs font-normal leading-none text-red-500">
@@ -52,11 +51,8 @@
           :helpText="$t('max_200_characters')" />
       </div>
 
-      <div class="w-full grid grid-cols-2 gap-4 mt-4"></div>
-      <div
-        class="w-full inline-flex flex-col justify-start items-start gap-3 mt-4"></div>
       <div class="flex gap-4 mt-[40px]">
-        <OutlineButton :show="true" title="reset" @click="resetForm" />
+        <OutlineButton title="reset" @click="resetForm" />
         <Button
           :title="isEdit ? 'update' : 'add'"
           :width="'w-40'"
@@ -109,10 +105,6 @@ const dynamicRules = computed(() => ({
 }));
 
 const v$ = useVuelidate(dynamicRules, form);
-
-const handleCancel = () => {
-  isEdit ? vRouter.push({ name: "TestimonialIndex" }) : resetForm();
-};
 const resetForm = () => {
   form.reset();
   form.clear();
@@ -139,8 +131,7 @@ const handleSubmit = async () => {
     notify.success({
       message: trans(message),
     });
-
-    vRouter.push({ name: "TaskIndex" });
+    isEdit ? getDetails(form.language) : vRouter.push({ name: "TaskIndex" });
   } catch (error) {
     // console.error(error);
   }
