@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Builders\TaskBuilder;
+use App\Traits\TranslatAble;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
@@ -10,11 +11,9 @@ use Illuminate\Support\Facades\Storage;
 class Task extends Model
 {
     /** @use HasFactory<\Database\Factories\TaskFactory> */
-    use HasFactory;
+    use HasFactory,TranslatAble;
 
     protected $fillable = [
-        'title',
-        'description',
         'is_completed',
         'avatar',
     ];
@@ -22,6 +21,9 @@ class Task extends Model
     protected $casts = [
         'is_completed' => 'boolean',
     ];
+
+    public array $translatable = ['title', 'description'];
+
 
     /**
      * Get the avatar URL. Appended only when specifically requested.

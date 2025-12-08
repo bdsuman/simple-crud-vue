@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Api\Task;
 
+use App\Enums\AppLanguageEnum;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Task\StoreTaskRequest;
 use App\Http\Requests\Api\Task\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Models\Task;
 use App\Models\TaskArchives;
+use App\Models\Translation;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -72,10 +74,10 @@ class TaskController extends Controller
         $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
 
         $tasks = Task::query()
-                ->isCompletedFilter($request->is_completed)
-                ->searchFilter($request->search)
-                ->orderBy('id', 'DESC')
-                ->paginate($perPage);
+            ->isCompletedFilter($request->is_completed)
+            ->searchFilter($request->search)
+            ->orderBy('id', 'DESC')
+            ->paginate($perPage);
 
         return success_response(TaskResource::collection($tasks), true, 'task_fetched_successfully');
     }
@@ -122,6 +124,17 @@ class TaskController extends Controller
             }
 
             $task = Task::create($data);
+            foreach ($task->translatable as $field) {
+
+                // Check if request has this field
+                if ($request->has($field)) {
+                    $value = $request->input($field);
+
+                    foreach (AppLanguageEnum::cases() as $langEnum) {
+                        $task->setTranslation($field, $value, $langEnum->value);
+                    }
+                }
+            }
             DB::commit();
 
             return success_response(
@@ -199,6 +212,7 @@ class TaskController extends Controller
 
         try {
             $data = $request->safe()->except('avatar');
+            $lang = $request->has('language') ? $request->language : app('language');
 
             if ($request->hasFile('avatar')) {
                 $data['avatar'] = $this->uploadFile(
@@ -211,6 +225,13 @@ class TaskController extends Controller
             }
 
             $task->update($data);
+            foreach ($task->translatable as $field) {
+                // Check if request has this field
+                if ($request->has($field)) {
+                    $value = $request->input($field);
+                    $task->setTranslation($field, $value, $lang);
+                }
+            }
             DB::commit();
 
             return success_response(
@@ -241,14 +262,19 @@ class TaskController extends Controller
      */
     public function destroy(Task $task): JsonResponse
     {
-        TaskArchives::create([
+        $task_archives = TaskArchives::create([
             'original_task_id' => $task->id,
-            'title' => $task->title,
-            'description' => $task->description,
             'avatar' => $task->avatar,
             'is_completed' => $task->is_completed,
         ]);
-        
+
+        Translation::where('translatable_type', Task::class)
+            ->where('translatable_id', $task->id)->update([
+                'translatable_type' => TaskArchives::class,
+                'translatable_id' => $task_archives->id,
+            ]);
+
+
         $task->delete();
 
         return success_response([], false, 'success_task_deleted');
@@ -290,5 +316,4 @@ class TaskController extends Controller
             'success_task_updated'
         );
     }
-   
 }

@@ -14,8 +14,6 @@ return new class extends Migration
        Schema::create('task_archives', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('original_task_id');
-            $table->string('title');
-            $table->text('description')->nullable(); 
             $table->string('avatar')->nullable();
             $table->boolean('is_completed')->default(true);
             $table->timestamps();

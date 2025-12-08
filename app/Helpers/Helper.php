@@ -214,3 +214,25 @@ if (! function_exists('default_cover_image_url')) {
         });
     }
 }
+
+
+//text meannigfull word like faker generation helper by length
+
+if (! function_exists('generateTextByLength')) {
+    /**
+     * Generate meaningful text of a specific length using Faker.
+     * @param  int  $length
+     * @return string
+     */
+    function generateTextByLength(int $length): string
+    {
+        $faker = \Faker\Factory::create();
+        $text = '';
+        
+        while (strlen($text) < $length) {
+            $text .= $faker->word() . ' ';
+        }
+        
+        return trim(substr($text, 0, $length));
+    }
+}
