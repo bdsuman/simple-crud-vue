@@ -56,7 +56,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'email' => [
-                'example' => 'user1@deepgrow.io',
+                'example' => 'user1@crud.io',
             ],
             'password' => [
                 'example' => '12345678Aa#',

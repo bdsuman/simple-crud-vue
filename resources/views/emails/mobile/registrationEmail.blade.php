@@ -43,7 +43,7 @@
                 </p>
 
                 <p style="font-size:0.95rem;color:#00A5BF;margin:0 0 24px 0;">
-                    {{ __('If you didn\'t sign up for a DeepGrow account, you can safely ignore this email.', [], $lang) }}
+                    {{ __('If you didn\'t sign up for a crud account, you can safely ignore this email.', [], $lang) }}
                 </p>
             </td>
         </tr>

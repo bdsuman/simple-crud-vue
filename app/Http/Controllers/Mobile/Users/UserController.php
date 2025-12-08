@@ -297,7 +297,7 @@ class UserController extends Controller
         if ($user) {
             // Send the FCM notification
             $user->fcmNotify(
-                'DeepGrow Reminder 🌱',
+                'crud Reminder 🌱',
                 'Your daily mindfulness session is ready.',
                 ['screen' => 'session_created', 'session_id' => 24,'path_id' => 1,'path_name' => 'Path name']
             );

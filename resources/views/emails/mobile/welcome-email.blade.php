@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ __('Welcome to DeepGrow', [], $lang) }}</title>
+    <title>{{ __('Welcome to crud', [], $lang) }}</title>
 </head>
 <body>
     <div style="max-width: 480px; margin: 40px auto; background: #fff; border-radius: 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); padding: 32px 24px 0 24px; font-family: 'Inter', Arial, sans-serif;">
@@ -15,7 +15,7 @@
             </div>
 
             <h1 style="font-size: 2rem; font-weight: 700; color: #3AB57C; margin: 0;">
-                {{ __('Welcome to DeepGrow!', [], $lang) }}
+                {{ __('Welcome to crud!', [], $lang) }}
             </h1>
         </div>
 
@@ -31,7 +31,7 @@
             </p>
 
             <p style="margin: 0 0 8px 0;">
-                {{ __('Welcome aboard! Your account at DeepGrow has been successfully created.', [], $lang) }}
+                {{ __('Welcome aboard! Your account at crud has been successfully created.', [], $lang) }}
             </p>
 
             <p style="margin: 0 0 24px 0;">
@@ -40,7 +40,7 @@
 
             <p style="margin: 0 0 4px 0;">{{ __('Thanks,', [], $lang) }}</p>
             <p style="font-weight: 700; color: #3F8B77; margin: 0;">
-                {{ __('The DeepGrow Team', [], $lang) }}
+                {{ __('The crud Team', [], $lang) }}
             </p>
         </div>
 
