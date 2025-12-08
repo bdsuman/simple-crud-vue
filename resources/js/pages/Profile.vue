@@ -27,12 +27,6 @@
                         v-model="form.full_name"
                         @blur="validate('full_name')"
                     />
-                    <div
-                        v-if="v$.full_name.$errors"
-                        class="justify-start text-xs font-normal leading-none text-red-500"
-                    >
-                        {{ v$.full_name.$errors?.[0]?.$message }}
-                    </div>
                 </div>
                 <div
                     class="w-full inline-flex flex-col justify-start items-start gap-3"
@@ -62,15 +56,14 @@
                         :maxFiles="1"
                         :maxFileSize="20"
                         :allowedExtensions="['.jpg', '.JPEG', '.png']"
-                        :extraClass="v$.avatar.$error ? '!border-red-500' : ''"
+                        :extraClass="v$.avatar?.$error ? '!border-red-500' : ''"
                         @blur="validate('avatar')"
-                        :modelValue="form.avatar"
                     />
                     <div
-                        v-if="v$.avatar.$errors"
+                        v-if="v$.avatar?.$errors"
                         class="justify-start text-xs font-normal leading-none text-red-500"
                     >
-                        {{ v$.avatar.$errors?.[0]?.$message }}
+                        {{ v$.avatar?.$errors?.[0]?.$message }}
                     </div>
                 </div>
             </div>
@@ -83,7 +76,6 @@
             </div>
 
             <div class="flex gap-4 mt-[40px]">
-                <OutlineButton :show="true" title="reset" @click="resetForm" />
                 <Button
                     title="update"
                     :width="'w-40'"
@@ -100,7 +92,6 @@ import axios from "axios";
 import GoBack from "@/components/common/GoBack.vue";
 import TextInput from "@/components/form/TextInput.vue";
 import Button from "@/components/buttons/Button.vue";
-import OutlineButton from "@/components/buttons/OutlineButton.vue";
 import DragAndDropUpload from "@/components/form/DragAndDropSingleUpload.vue";
 import Form from "vform";
 import { useNotify } from "@/composables/useNotification";
@@ -143,19 +134,10 @@ const dynamicRules = computed(() => ({
             minLength(2)
         ),
     },
-    avatar: {},
 }));
 
 const v$ = useVuelidate(dynamicRules, form);
 
-const resetForm = () => {
-    form.full_name = store.user?.full_name || "";
-    form.email = store.user?.email || "";
-    form.language = store.user?.language ?? "en";
-    form.avatar = null;
-    v$.value.$reset();
-    errorMessage.value = "";
-};
 
 const handleSubmit = async () => {
     v$.value.$touch();
@@ -182,7 +164,7 @@ const handleSubmit = async () => {
 
         formData.append("_method", "PUT");
 
-        const res = await axios.post("/update-profile", formData, {
+        const res = await axios.post(route("auth.update-profile"), formData, {
             headers: { "Content-Type": "multipart/form-data" },
         });
 
@@ -193,10 +175,6 @@ const handleSubmit = async () => {
             message: trans("profile_updated"),
         });
 
-        // Auto-hide success message after 5 seconds
-        setTimeout(() => {
-            notify.clearNotifications();
-        }, 5000);
     } catch (error) {
         if (error.response?.data?.errors) {
             const errors = error.response.data.errors;
@@ -209,10 +187,6 @@ const handleSubmit = async () => {
             errorMessage.value = trans("something_went_wrong");
         }
 
-        // Auto-hide error message after 5 seconds
-        setTimeout(() => {
-            errorMessage.value = "";
-        }, 5000);
     } finally {
         isSubmitting.value = false;
     }
@@ -224,6 +198,9 @@ onMounted(() => {
         form.full_name = store.user.full_name;
         form.email = store.user.email;
         form.language = store.user.language || "en";
+        form.avatar = store.user.avatar_url
+            ? { url: store.user.avatar_url, file_type: "image" }
+            : null;
     }
 });
 </script>

@@ -21,12 +21,12 @@
                 <!-- Right: user menu -->
                 <div class="relative flex items-center gap-3">
                     <!-- Avatar -->
-                    <!-- <img
+                    <img
                         :src="userPhoto"
                         alt="User"
                         class="size-12 rounded-full object-cover ring-2 ring-white/20"
-                    /> -->
-                    <AvatarIcon class="size-12" />
+                    />
+                    <!-- <AvatarIcon class="size-12" /> -->
 
                     <!-- name + role -->
                     <div class="hidden sm:flex flex-col items-start min-w-0">
@@ -149,10 +149,11 @@ const handleCollapse = () => {
 };
 
 /* ---------- User data ---------- */
-const userPhoto = ref(
+const userPhoto = computed(() =>
+    store.user?.avatar_url ||
     store.user?.avatar ||
-        localStorage.getItem("avatar") ||
-        "https://placehold.co/36x36"
+    localStorage.getItem("avatar") ||
+    "https://placehold.co/36x36"
 );
 const displayName = computed(() => {
     const name = store.user?.full_name || "No Name";

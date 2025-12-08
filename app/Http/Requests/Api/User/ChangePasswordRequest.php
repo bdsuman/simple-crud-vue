@@ -1,10 +1,8 @@
 <?php
 
-namespace App\Http\Requests\Api;
+namespace App\Http\Requests\Api\User;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Http\Exceptions\HttpResponseException;
 
 class ChangePasswordRequest extends FormRequest
 {
@@ -45,22 +43,21 @@ class ChangePasswordRequest extends FormRequest
         ];
     }
 
-    /**
-     * Handle a failed validation attempt.
-     *
-     * @param Validator $validator
-     * @return void
-     *
-     * @throws HttpResponseException
-     */
-    protected function failedValidation(Validator $validator)
+    public function bodyParameters(): array
     {
-        throw new HttpResponseException(
-            response()->json([
-                'success' => false,
-                'message' => 'validation_failed',
-                'errors' => $validator->errors(),
-            ], 422)
-        );
+        return [
+            'current_password' => [
+                'description' => 'The current password of the user.',
+                'example' => 'currentpassword123',
+            ],
+            'password' => [
+                'description' => 'The new password for the user account.',
+                'example' => 'newsecurepassword456',
+            ],
+            'password_confirmation' => [
+                'description' => 'Confirmation of the new password.',
+                'example' => 'newsecurepassword456',
+            ],
+        ];
     }
 }

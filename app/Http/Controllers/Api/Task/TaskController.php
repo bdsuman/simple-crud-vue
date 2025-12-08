@@ -6,7 +6,7 @@ use App\Enums\AppLanguageEnum;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Task\StoreTaskRequest;
 use App\Http\Requests\Api\Task\UpdateTaskRequest;
-use App\Http\Resources\TaskResource;
+use App\Http\Resources\Api\Task\TaskResource;
 use App\Models\Task;
 use App\Models\TaskArchives;
 use App\Models\Translation;

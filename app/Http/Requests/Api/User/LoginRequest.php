@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Mobile\Auth;
+namespace App\Http\Requests\Api\User;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class ForgotPasswordRequest extends FormRequest
+class LoginRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,31 +22,35 @@ class ForgotPasswordRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => [
-                'required',
-                'exists:users,email',
-                Rule::email()
-                //     ->rfcCompliant(strict: false)
-                //     ->validateMxRecord()
-                //     ->preventSpoofing()
-            ],
+            'email' => 'required|email',
+            'password' => 'required|string|min:6',
         ];
     }
 
+    /**
+     * Get custom messages for validator errors.
+     *
+     * @return array<string, string>
+     */
     public function messages(): array
     {
         return [
-            'email.required' => 'email_is_required',
+            'email.required' => 'field_input_is_missing',
             'email.email' => 'invalid_email_format',
-            'email.exists' => 'email_not_found',
+            'password.required' => 'field_input_is_missing',
+            'password.min' => 'password_must_be_at_least_6_characters',
         ];
     }
-
     public function bodyParameters(): array
     {
         return [
             'email' => [
+                'description' => 'The email address of the user.',
                 'example' => 'user@example.com',
+            ],
+            'password' => [
+                'description' => 'The password of the user.',
+                'example' => 'password123',
             ],
         ];
     }

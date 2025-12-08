@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Api\Auth;
 
-use App\Enums\UserRoleEnum;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\LoginRequest;
-use App\Http\Requests\Api\ChangePasswordRequest;
-use App\Http\Requests\Api\UpdateProfileRequest;
-use App\Http\Resources\Api\AuthUserResource;
+use App\Http\Requests\Api\User\{LoginRequest, ChangePasswordRequest, UpdateProfileRequest};
+use App\Http\Resources\Api\User\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -16,12 +13,12 @@ use Illuminate\Support\Facades\Storage;
 
 /**
  * @group Auth
- * @unauthenticated 
  */
 class AuthController extends Controller
 {
     /**
      * Login
+     * @unauthenticated 
      * 
      * @param LoginRequest $request
      * @return JsonResponse
@@ -36,7 +33,7 @@ class AuthController extends Controller
             return error_response('unauthorized', 401);
         }
 
-       
+
 
         // Issue a fresh Sanctum token
         $user->tokens()->delete();
@@ -55,11 +52,14 @@ class AuthController extends Controller
      */
     public function me(Request $request): JsonResponse
     {
-        return success_response(new AuthUserResource($request->user()));
+        return success_response(new UserResource($request->user()));
     }
 
     /**
      * Logout
+     * 
+     * @group Auth
+     * @authenticated
      * 
      * @return JsonResponse
      */
@@ -76,6 +76,9 @@ class AuthController extends Controller
 
     /**
      * Refresh a token.
+     * 
+     * @group Auth
+     * @authenticated
      * 
      * @return JsonResponse
      */
@@ -103,7 +106,7 @@ class AuthController extends Controller
             'access_token' => $token,
             'token_type' => 'Bearer',
             'expires_in' => $ttl ? $ttl * 60 : null,
-            'user' => new AuthUserResource($user),
+            'user' => new UserResource($user),
         ]);
     }
 
@@ -144,7 +147,7 @@ class AuthController extends Controller
 
         $user->save();
 
-        return success_response(new AuthUserResource($user), false, 'profile_updated');
+        return success_response(new UserResource($user), false, 'profile_updated');
     }
 
     /**
@@ -170,7 +173,6 @@ class AuthController extends Controller
         $user->password = Hash::make($validated['password']);
         $user->save();
 
-        return success_response(new AuthUserResource($user), false, 'password_changed');
+        return success_response(new UserResource($user), false, 'password_changed');
     }
 }
-

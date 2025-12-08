@@ -15,7 +15,7 @@ class UpdateTaskRequest extends FormRequest
     {
         return [
             'title'       => ['required', 'string', 'max:250'],
-            'description' => ['nullable', 'string', 'max:500'],
+            'description' => ['required', 'string', 'max:500'],
             'avatar'      => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:20480'],
         ];
     }
@@ -30,6 +30,7 @@ class UpdateTaskRequest extends FormRequest
             'title.required'       => 'title_is_required',
             'title.max'            => 'title_must_not_exceed_250_characters',
             'description.max'      => 'description_must_not_exceed_500_characters',
+            'description.required' => 'description_is_required',
             'avatar.mimes'         => 'avatar_must_be_jpg_jpeg_or_png',
             'avatar.max'           => 'avatar_must_not_exceed_20MB',
         ];

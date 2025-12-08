@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Requests\Api;
+namespace App\Http\Requests\Api\User;
 
 use App\Enums\AppLanguageEnum;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Contracts\Validation\Validator;
-use Illuminate\Http\Exceptions\HttpResponseException;
 
 class UpdateProfileRequest extends FormRequest
 {
@@ -50,22 +48,24 @@ class UpdateProfileRequest extends FormRequest
         ];
     }
 
-    /**
-     * Handle a failed validation attempt.
-     *
-     * @param Validator $validator
-     * @return void
-     *
-     * @throws HttpResponseException
-     */
-    protected function failedValidation(Validator $validator)
-    {
-        throw new HttpResponseException(
-            response()->json([
-                'success' => false,
-                'message' => 'validation_failed',
-                'errors' => $validator->errors(),
-            ], 422)
-        );
+    public function bodyParameters(): array{
+        return [
+            'full_name' => [
+                'description' => 'Full name of the user',
+                'example' => 'John Doe',
+            ],
+            'password' => [
+                'description' => 'Password of the user',
+                'example' => 'password123',
+            ],
+            'language' => [
+                'description' => 'Preferred language of the user',
+                'example' => 'en',
+            ],
+            'avatar' => [
+                'description' => 'Avatar image of the user',
+                'example' => 'avatar.jpg',
+            ],
+        ];
     }
 }

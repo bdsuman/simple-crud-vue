@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api\Auth;
 use App\Models\User;
 use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\RegisterRequest;
-use App\Http\Resources\Api\AuthUserResource;
+use App\Http\Requests\Api\User\RegisterRequest;
+use App\Http\Resources\Api\User\UserResource;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 
@@ -51,7 +51,7 @@ class RegisterController extends Controller
                 'access_token' => $token,
                 'token_type' => 'Bearer',
                 'expires_in' => null,
-                'user' => new AuthUserResource($user),
+                'user' => new UserResource($user),
             ],
         ], 201);
     }

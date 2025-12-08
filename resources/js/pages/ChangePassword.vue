@@ -9,7 +9,7 @@
             </div>
         </div>
         <div
-            class="self-stretch p-8 bg-white rounded-2xl inline-flex flex-col items-end w-full max-w-2xl !min-h-[400px] overflow-y-auto"
+            class="self-stretch p-8 bg-white rounded-2xl inline-flex flex-col items-end w-full !min-h-[calc(100vh-160px)] overflow-y-auto"
         >
             <div class="w-full">
                 <form @submit.prevent="handleSubmit" class="space-y-6">
@@ -179,23 +179,19 @@ const handleSubmit = async () => {
     successMessage.value = "";
 
     try {
-        const res = await axios.put("/change-password", {
+        await axios.put("/change-password", {
             current_password: form.current_password,
             password: form.password,
             password_confirmation: form.password_confirmation,
         });
 
-        successMessage.value = trans("password_changed");
+        notify.success({ message: trans("password_changed") });
 
         // Clear form after successful change
         setTimeout(() => {
             resetForm();
         }, 2000);
 
-        // Auto-hide success message after 5 seconds
-        setTimeout(() => {
-            successMessage.value = "";
-        }, 5000);
     } catch (error) {
         if (error.response?.data?.errors) {
             const errors = error.response.data.errors;
@@ -207,6 +203,8 @@ const handleSubmit = async () => {
         } else {
             errorMessage.value = trans("something_went_wrong");
         }
+
+        notify.error({ message: errorMessage.value });
 
         // Auto-hide error message after 5 seconds
         setTimeout(() => {
