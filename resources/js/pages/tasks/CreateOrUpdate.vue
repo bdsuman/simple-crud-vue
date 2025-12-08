@@ -118,7 +118,7 @@ const handleSubmit = async () => {
   try {
     form.avatar = isEdit ? resetIfUrlObject(form.avatar) : form.avatar;
 
-    await axios.post(
+    const { data } = await axios.post(
       isEdit
         ? route("tasks.update", {
             task: isEdit,
@@ -131,7 +131,7 @@ const handleSubmit = async () => {
     notify.success({
       message: trans(message),
     });
-    isEdit ? getDetails(form.language) : vRouter.push({ name: "TaskIndex" });
+    isEdit ? setEditData(data) : vRouter.push({ name: "TaskIndex" });
   } catch (error) {
     // console.error(error);
   }
@@ -150,15 +150,20 @@ const getDetails = async (lang) => {
         "X-Request-Language": lang,
       },
     });
-    form.title = data.data.title;
-    form.description = data.data.description;
-    form.avatar = data?.data?.avatar_url
-      ? { url: data.data.avatar_url, file_type: "image" }
-      : null;
+    setEditData(data);
   } catch (error) {
     // console.error("error_fetching_data_for_edit:", error);
   }
 };
+
+function setEditData(data) {
+  form.language = data?.data?.language || store.user?.language || "en";
+  form.title = data.data.title;
+  form.description = data.data.description;
+  form.avatar = data?.data?.avatar_url
+    ? { url: data.data.avatar_url, file_type: "image" }
+    : null;
+}
 
 onMounted(async () => {
   if (isEdit) {

@@ -103,7 +103,7 @@ const props = defineProps({
     languages: {
         type: Array,
         default: () => [
-            { code: "de", name: "Deutsch" },
+            { code: "bn", name: "Bengali" },
             { code: "en", name: "English" },
             // { code: "fr", name: "Français" },
             // { code: "es", name: "Español" },
