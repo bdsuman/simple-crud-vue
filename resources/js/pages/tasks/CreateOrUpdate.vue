@@ -26,7 +26,7 @@
             v-model="form.avatar"
             required
             class="w-full"
-            label="image"
+            label="avatar"
             attachmentLabelClass="!py-10"
             :placeholder="$t('click_or_drag_&_drop_files_here_to_upload')"
             :show-file-names="true"
@@ -86,7 +86,6 @@ const notify = useNotify();
 const vRoute = useRoute();
 const vRouter = useRouter();
 
-const props = defineProps(["show", "editItemId"]);
 const isEdit = vRoute.params?.id || null;
 
 const form = reactive(
