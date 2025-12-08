@@ -5,11 +5,14 @@ namespace App\Http\Controllers\Api\Auth;
 use App\Enums\UserRoleEnum;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\LoginRequest;
+use App\Http\Requests\Api\ChangePasswordRequest;
+use App\Http\Requests\Api\UpdateProfileRequest;
 use App\Http\Resources\Api\AuthUserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * @group Auth
@@ -110,17 +113,64 @@ class AuthController extends Controller
      * @group Auth
      * @authenticated
      * 
+     * @param UpdateProfileRequest $request
      * @return JsonResponse
      */
-    public function updateProfile(Request $request): JsonResponse
+    public function updateProfile(UpdateProfileRequest $request): JsonResponse
     {
         $user = $request->user();
+        $validated = $request->validated();
 
-        $requestData = request()->only(['full_name', 'language']);
+        // Update full_name and language
+        $user->full_name = $validated['full_name'];
+        $user->language = $validated['language'] ?? $user->language;
 
-        $user->fill($requestData);
+        // Update password if provided
+        if (!empty($validated['password'])) {
+            $user->password = Hash::make($validated['password']);
+        }
+
+        // Handle avatar upload
+        if ($request->hasFile('avatar')) {
+            // Delete old avatar if exists
+            if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+                Storage::disk('public')->delete($user->avatar);
+            }
+
+            // Store new avatar
+            $avatarPath = $request->file('avatar')->store('avatars', 'public');
+            $user->avatar = $avatarPath;
+        }
+
         $user->save();
 
         return success_response(new AuthUserResource($user), false, 'profile_updated');
     }
+
+    /**
+     * Change Password
+     * 
+     * @group Auth
+     * @authenticated
+     * 
+     * @param ChangePasswordRequest $request
+     * @return JsonResponse
+     */
+    public function changePassword(ChangePasswordRequest $request): JsonResponse
+    {
+        $user = $request->user();
+        $validated = $request->validated();
+
+        // Verify current password
+        if (!Hash::check($validated['current_password'], $user->password)) {
+            return error_response('current_password_is_incorrect', 422);
+        }
+
+        // Update with new password
+        $user->password = Hash::make($validated['password']);
+        $user->save();
+
+        return success_response(new AuthUserResource($user), false, 'password_changed');
+    }
 }
+

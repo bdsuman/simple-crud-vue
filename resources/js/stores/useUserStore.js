@@ -31,6 +31,24 @@ export const useUserStore = defineStore({
             return res;
         },
 
+        async register(fullName, email, password, passwordConfirmation) {
+            const res = await axios.post('/register', {
+                full_name: fullName,
+                email: email,
+                password: password,
+                password_confirmation: passwordConfirmation,
+            });
+            const tok = res.data.data.access_token;
+
+            this.setToken(tok);
+
+            if (res.data.data.user) {
+                await this.setUser(res.data.data.user);
+            }
+
+            return res;
+        },
+
         setToken(token) {
             this.token = token;
             localStorage.setItem('token', token);
@@ -49,6 +67,43 @@ export const useUserStore = defineStore({
             } catch (e) {
                 console.error("Failed to load language:", lang, e);
             }
+        },
+
+        async updateProfile(fullName, language, password = null, passwordConfirmation = null, avatar = null) {
+            const formData = new FormData();
+            formData.append('full_name', fullName);
+            formData.append('language', language);
+
+            if (password) {
+                formData.append('password', password);
+                formData.append('password_confirmation', passwordConfirmation);
+            }
+
+            if (avatar && avatar instanceof File) {
+                formData.append('avatar', avatar);
+            }
+
+            formData.append('_method', 'PUT');
+
+            const res = await axios.post('/update-profile', formData, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            });
+
+            if (res.data.data) {
+                await this.setUser(res.data.data);
+            }
+
+            return res;
+        },
+
+        async changePassword(currentPassword, password, passwordConfirmation) {
+            const res = await axios.post('/change-password', {
+                current_password: currentPassword,
+                password: password,
+                password_confirmation: passwordConfirmation,
+            });
+
+            return res;
         },
 
         async logout() {

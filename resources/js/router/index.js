@@ -20,6 +20,24 @@ const routes = [
                     title: "Home",
                 },
             },
+            {
+                path: "/profile",
+                name: "profile",
+                component: () => import("@/pages/Profile.vue"),
+                meta: {
+                    requiresAuth: true,
+                    title: "Profile",
+                },
+            },
+            {
+                path: "/change-password",
+                name: "changePassword",
+                component: () => import("@/pages/ChangePassword.vue"),
+                meta: {
+                    requiresAuth: true,
+                    title: "Change Password",
+                },
+            },
         ],
     },
     ...userRoutes,
@@ -31,6 +49,15 @@ const routes = [
         meta: {
             requiresAuth: false,
             title: "Login",
+        },
+    },
+    {
+        path: "/signup",
+        name: "signup",
+        component: () => import("@/pages/auth/Signup.vue"),
+        meta: {
+            requiresAuth: false,
+            title: "Signup",
         },
     },
     {

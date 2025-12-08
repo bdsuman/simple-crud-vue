@@ -6,13 +6,20 @@
         <GuestLogo class="min-h-[117.83px]" />
         <div
           class="self-stretch text-center justify-start text-[#002d45] text-[32px] font-semibold capitalize">
-          {{ $t("Log In") }}
+          {{ $t("Sign Up") }}
         </div>
       </div>
       <form
-        @submit.prevent="handleLogin"
+        @submit.prevent="handleSignup"
         class="w-[400.46px] grid grid-cols-1 gap-4"
         autocomplete="off">
+        <TextInput
+          label="Full Name"
+          placeholder="Enter full name"
+          required
+          validationType="text"
+          v-model="form.full_name"
+          :isTextarea="false" />
         <TextInput
           label="Email"
           placeholder="Enter email"
@@ -22,24 +29,31 @@
           :isTextarea="false" />
         <TextInput
           label="Password"
-          placeholder="Enter Password"
+          placeholder="Enter password"
           required
           validationType="password"
           v-model="form.password"
+          :isTextarea="false" />
+        <TextInput
+          label="Confirm Password"
+          placeholder="Confirm password"
+          required
+          validationType="password"
+          v-model="form.password_confirmation"
           :isTextarea="false" />
         <div class="text-xs font-normal text-red-500" v-if="errorMessage">
           {{ errorMessage }}
         </div>
         <Button
           :show="true"
-          title="Login"
+          title="Sign Up"
           :width="'w-full'"
           :disabled="isDisabled"
           :class="{ 'opacity-50 !cursor-not-allowed': isDisabled }" />
         <div class="text-center text-sm text-gray-600">
-          Don't have an account?
-          <router-link to="/signup" class="text-primary hover:text-primary-hover font-semibold">
-            Sign Up
+          Already have an account?
+          <router-link to="/login" class="text-primary hover:text-primary-hover font-semibold">
+            Log In
           </router-link>
         </div>
       </form>
@@ -67,32 +81,62 @@ const store = useUserStore();
 
 const form = reactive(
   new Form({
+    full_name: "",
     email: "",
     password: "",
+    password_confirmation: "",
   })
 );
 let error = ref("");
 let errorMessage = ref("");
 let fromError = ref(false);
+
 const isDisabled = computed(() => {
-  return form.email.trim() === "" || form.password.trim() === "";
+  return (
+    form.full_name.trim() === "" ||
+    form.email.trim() === "" ||
+    form.password.trim() === "" ||
+    form.password_confirmation.trim() === ""
+  );
 });
 
-const showPassword = ref(false);
-
-const handleLogin = async () => {
+const handleSignup = async () => {
   if (isDisabled.value) {
     return;
   }
 
+  // Check if passwords match
+  if (form.password !== form.password_confirmation) {
+    errorMessage.value = trans("Passwords do not match!");
+    setTimeout(() => {
+      errorMessage.value = "";
+    }, 5000);
+    return;
+  }
+
   try {
-    await store.login(form.email, form.password);
+    await store.register(
+      form.full_name,
+      form.email,
+      form.password,
+      form.password_confirmation
+    );
     router.push({ name: "home" });
   } catch (error) {
-    errorMessage.value = trans("Wrong credentials!");
+    // Check for specific error messages
+    if (error.response?.data?.message === "email_already_exists") {
+      errorMessage.value = trans("Email already exists!");
+    } else if (error.response?.data?.errors) {
+      // Handle validation errors
+      const errors = error.response.data.errors;
+      const firstError = Object.values(errors)[0];
+      errorMessage.value = Array.isArray(firstError) ? firstError[0] : firstError;
+    } else {
+      errorMessage.value = trans("Registration failed! Please try again.");
+    }
 
     setTimeout(() => {
-      errorMessage.value = ""; // clear after 5 seconds
+      errorMessage.value = "";
     }, 5000);
 
     fromError.value = true;

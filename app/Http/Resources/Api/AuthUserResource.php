@@ -25,6 +25,7 @@ class AuthUserResource extends JsonResource
             'date_of_birth' => $this->date_of_birth,
             'language'      => $this->language,
             'avatar'        => $this->avatar,
+            'avatar_url'    => $this->avatar_url,
 
             // Contact & auth (no tokens exposed)
             'email'              => $this->email,
