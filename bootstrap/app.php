@@ -9,10 +9,6 @@ use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Illuminate\Database\QueryException;
-// use Tymon\JWTAuth\Exceptions\JWTException;
-// use Tymon\JWTAuth\Exceptions\TokenExpiredException;
-// use Tymon\JWTAuth\Exceptions\TokenInvalidException;
-// use Tymon\JWTAuth\Exceptions\TokenBlacklistedException;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -28,7 +24,6 @@ return Application::configure(basePath: dirname(__DIR__))
 
         // Register route middleware (alias → middleware class)
         $middleware->alias([
-            'role' => \App\Http\Middleware\RoleMiddleware::class,
             // 'language.header' => \App\Http\Middleware\LanguageMiddleware::class,
         ]);
 
