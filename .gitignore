@@ -4,6 +4,8 @@
 /.env.*
 !.env.example
 /public/storage
+/public/scribe
+/public/scribe_mobile
 /storage/*.key
 /storage/logs
 /storage/framework
@@ -23,3 +25,5 @@ coverage
 Homestead.json
 Homestead.yaml
 /public/build/*
+/.scribe
+/.scribe_mobile
