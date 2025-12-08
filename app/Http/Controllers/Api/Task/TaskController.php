@@ -114,7 +114,7 @@ class TaskController extends Controller
             if ($request->hasFile('avatar')) {
                 $data['avatar'] = $this->uploadFile(
                     $request->avatar,
-                    'task/avatar',
+                    'tasks/avatar',
                     config('filesystems.default'),
                     null,
                     self::UPLOAD_OPTIONS
@@ -127,7 +127,8 @@ class TaskController extends Controller
             return success_response(
                 new TaskResource($task->makeHidden('avatar_url')->append('avatar_url')),
                 false,
-                'success_task_created'
+                'success_task_created',
+                201
             );
         } catch (Exception $e) {
             DB::rollBack();
@@ -202,7 +203,7 @@ class TaskController extends Controller
             if ($request->hasFile('avatar')) {
                 $data['avatar'] = $this->uploadFile(
                     $request->avatar,
-                    'task/avatar',
+                    'tasks/avatar',
                     config('filesystems.default'),
                     null,
                     self::UPLOAD_OPTIONS

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('description')->nullable(); 
             $table->string('avatar')->nullable();
-            $table->boolean('is_completed')->default(true);
+            $table->boolean('is_completed')->default(false);
             $table->timestamps();
         });
     }

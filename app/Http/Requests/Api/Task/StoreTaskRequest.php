@@ -14,11 +14,9 @@ class StoreTaskRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'author_name' => ['required', 'string', 'max:250'],
-            'job_title'   => ['required', 'string', 'max:250'],
             'title'       => ['required', 'string', 'max:250'],
-            'content'     => ['required', 'string', 'max:500'],
-            'avatar'      => ['required', 'file', 'mimes:jpg,jpeg,png', 'max:20480'],
+            'description' => ['nullable', 'string', 'max:500'],
+            'avatar'      => ['nullable', 'file', 'mimes:jpg,jpeg,png', 'max:20480'],
         ];
     }
 
@@ -28,19 +26,10 @@ class StoreTaskRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'author_name.required' => 'author_name_is_required',
-            'author_name.max'      => 'author_name_must_not_exceed_250_characters',
-
-            'job_title.required'   => 'job_title_is_required',
-            'job_title.max'        => 'job_title_must_not_exceed_250_characters',
 
             'title.required'       => 'title_is_required',
             'title.max'            => 'title_must_not_exceed_250_characters',
-
-            'content.required'     => 'content_is_required',
-            'content.max'          => 'content_must_not_exceed_500_characters',
-
-            'avatar.required'      => 'avatar_is_required',
+            'description.max'      => 'description_must_not_exceed_500_characters',
             'avatar.mimes'         => 'avatar_must_be_jpg_jpeg_or_png',
             'avatar.max'           => 'avatar_must_not_exceed_20MB',
         ];
@@ -52,19 +41,11 @@ class StoreTaskRequest extends FormRequest
     public function bodyParameters(): array
     {
         return [
-            'author_name' => [
-                'example' => 'John Doe',
-                'description' => 'The full name of the testimonial author'
-            ],
-            'job_title' => [
-                'example' => 'Software Engineer',
-                'description' => 'The job title or designation of the author'
-            ],
             'title' => [
                 'example' => 'Excellent Service!',
                 'description' => 'Short title or heading of the testimonial'
             ],
-            'content' => [
+            'description' => [
                 'example' => 'The service was outstanding and exceeded expectations.',
                 'description' => 'Main testimonial content (max 500 characters)'
             ],
