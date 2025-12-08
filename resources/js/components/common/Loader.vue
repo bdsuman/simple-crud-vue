@@ -6,5 +6,5 @@
 
 <script setup>
 import { isLoading } from "@/globalLoader";
-import LogoFull from "@/components/common/LogoFull.vue";
+import LogoFull from "@/components/common/Logo.vue";
 </script>

@@ -216,7 +216,7 @@ import { useRoute } from "vue-router";
 import axios from "axios";
 
 import Logo from "@/components/common/Logo.vue";
-import LogoFull from "@/components/common/LogoFull.vue";
+import LogoFull from "@/components/common/Logo.vue";
 import Tooltip from "@/layouts/includes/sidebar/Tooltip.vue";
 
 import UserManagementIcon from "@/components/icons/sidebar/UserManagementIcon.vue";

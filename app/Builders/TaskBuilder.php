@@ -11,7 +11,7 @@ class TaskBuilder extends Builder
      */
     public function searchFilter($search): self
     {
-        return $this->when($search, fn($q) => $q->whereAny(['tasks.title', 'tasks.description'], 'ILIKE', "%$search%"));
+        return $this->when($search, fn($q) => $q->whereAny(['tasks.title', 'tasks.description'], 'LIKE', "%$search%"));
     }
 
      public function isCompletedFilter($isCompleted): self
