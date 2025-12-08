@@ -52,7 +52,7 @@ const langArr = ref({
 const store = useUserStore();
 
 const showLangOption = ref(false);
-const selectedLang = ref(localStorage.getItem("language") || "de");
+const selectedLang = ref(localStorage.getItem("language") || "en");
 
 const toggleRef = ref(null);
 

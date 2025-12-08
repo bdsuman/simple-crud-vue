@@ -2,17 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import { trans, loadLanguageAsync } from "laravel-vue-i18n";
 import { useUserStore } from "@/stores/useUserStore";
 import userRoutes from "./users";
-import session from "./session";
-import music_management from "./music_management";
-import componentsRoutes from "./components";
-import profiling from "./profiling";
 import testimonial from "./testimonial";
-import feedback from "./feedback";
-import background_image from "./background_image";
-import development_journey from "./development_journey";
-import journal from "./journal";
-import journal_user_response from "./journal_user_response";
-import expert from "./expert";
 
 const AuthenticatedLayout = () => import("@/layouts/AuthenticatedLayout.vue");
 
@@ -33,20 +23,7 @@ const routes = [
         ],
     },
     ...userRoutes,
-    ...componentsRoutes,
-    ...profiling,
-    ...session,
     ...testimonial,
-    ...music_management,
-    ...feedback,
-    ...background_image,
-    ...development_journey,
-    ...journal,
-    ...journal_user_response,
-    ...expert,
-    // {
-    //   path: "/",
-    // },
     {
         path: "/login",
         name: "login",
@@ -54,14 +31,6 @@ const routes = [
         meta: {
             requiresAuth: false,
             title: "Login",
-        },
-    },
-    {
-        path: "/test",
-        name: "test",
-        component: () => import("@/pages/test/TestComponent.vue"),
-        meta: {
-            requiresAuth: false,
         },
     },
     {
@@ -108,14 +77,6 @@ router.beforeEach(async (to, from) => {
         to.name !== "Error"
     ) {
         return { name: "home" };
-    }
-
-    // Restrict dummy components route for non-dev users
-    if (to.path.startsWith("/dummy-components") && store.user?.role !== "dev") {
-        return {
-            path: "/error",
-            query: { code: 403, message: "Forbidden", from: to.fullPath },
-        };
     }
 });
 

@@ -8,7 +8,7 @@ export const useUserStore = defineStore({
     state: () => ({
         token: localStorage.getItem('token') || 0,
         user: JSON.parse(localStorage.getItem('user')) || null,
-        language: localStorage.getItem('language') || 'de',
+        language: localStorage.getItem('language') || 'en',
     }),
 
     getters: {
@@ -40,7 +40,7 @@ export const useUserStore = defineStore({
             this.user = user;
             localStorage.setItem('user', JSON.stringify(user));
 
-            const lang = user.language || 'de';
+            const lang = user.language || 'en';
             this.language = lang;
             localStorage.setItem('language', lang);
 

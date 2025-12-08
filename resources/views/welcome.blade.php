@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Deep Grow</title>
+    <title>Simple CRUD Vue</title>
     <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @routes

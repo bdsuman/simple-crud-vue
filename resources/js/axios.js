@@ -98,7 +98,7 @@ axios.interceptors.request.use(
             }
         }
 
-        config.headers.set("language", localStorage.getItem("language") || "de");
+        config.headers.set("language", localStorage.getItem("language") || "en");
         return config;
     },
     (error) => {

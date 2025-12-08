@@ -37,47 +37,21 @@ class AuthController extends Controller
             return error_response('unauthorized', 401);
         }
 
-        if ($user->status === UserAccountStatusEnum::PENDING) {
-            return error_response('otp_not_verified', 403);
-        }
+    
 
-        if ($user->role !== UserRoleEnum::USER) {
-            return error_response('forbidden', 403);
-        }
-
-        if ($user->status !== UserAccountStatusEnum::ACTIVE) {
-            return error_response('unauthorized', 403);
-        }
+       
 
         // Issue a fresh Sanctum token for mobile clients
         $user->tokens()->delete();
         $token = $user->createToken('mobile')->plainTextToken;
 
-        if (!empty($credentials['fcm_token'])) {
-            $user->devices()->firstOrCreate([
-                'fcm_token' => $credentials['fcm_token'],
-            ]);
-        }
 
         $lang = $request->header('X-Language', $request->header('language'));
         if (!empty($lang)) {
             $user->update(['language' => $lang]);
         }
 
-        // save activity log
-        activity()
-            ->causedBy($user)
-            ->performedOn($user)
-            ->withProperties([
-                'ip' => request()->ip(),
-                'user_agent' => request()->userAgent(),
-            ])
-            ->event('login:mobile')
-            ->createdAt(now()->subDays(10))
-            ->tap(function ($activity) {
-                $activity->log_name = 'user_activity';
-            })
-            ->log('user_logged_in');
+     
 
         return $this->respondWithToken($token, $user);
     }

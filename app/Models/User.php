@@ -64,11 +64,6 @@ class User extends Authenticatable
         return self::where('email', $email)->first();
     }
 
-    static function getActiveUserByEmail($email)
-    {
-        return self::where('email', $email)->where('status', UserAccountStatusEnum::ACTIVE)->first();
-    }
-
     public function newEloquentBuilder($query)
     {
         return new UserBuilder($query);

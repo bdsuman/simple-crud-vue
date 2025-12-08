@@ -117,7 +117,7 @@ class TaskController extends Controller
 
             $task = Task::create($data);
             DB::commit();
-            return success_response(new :TaskResource($task->fresh()), false, 'success_task_created');
+            return success_response(new TaskResource($task->fresh()), false, 'success_task_created');
         } catch (Exception $e) {
             DB::rollBack();
             return error_response('task_update_failed', 500);
@@ -151,7 +151,7 @@ class TaskController extends Controller
      */
     public function show(Task $task): JsonResponse
     {
-        return success_response(new :TaskResource($task), false, 'task_fetched_successfully');
+        return success_response(new TaskResource($task), false, 'task_fetched_successfully');
     }
 
     /**
@@ -203,7 +203,7 @@ class TaskController extends Controller
             DB::commit();
 
             return success_response(
-                new :TaskResource($task->fresh()),
+                new TaskResource($task->fresh()),
                 false,
                 'success_task_updated'
             );

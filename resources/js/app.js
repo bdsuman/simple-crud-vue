@@ -11,8 +11,6 @@ import "../css/app.css";
 import vDateFormat from "./directives/vDateFormat";
 import vTrans from "./directives/vTrans";
 import App from "./App.vue";
-import PrimeVue from "primevue/config";
-import Aura from "@primevue/themes/aura";
 import mitt from "mitt";
 import mixin from "./mixins";
 
@@ -30,25 +28,20 @@ const app = createApp(App);
 const pinia = createPinia();
 const langs = import.meta.glob('../lang/*.json', { eager: true });
 
+// Initialize default language in localStorage if not set
+if (!localStorage.getItem("language")) {
+    localStorage.setItem("language", "en");
+}
+
 app.mixin(mixin)
     .use(router)
     .use(pinia)
     .use(VueClickAway)
     .use(i18nVue, {
-        lang: localStorage.getItem("language") || "de",
+        lang: localStorage.getItem("language") || "en",
         resolve: (lang) => {
             const file = langs[`../lang/${lang}.json`];
-            return Promise.resolve(file || langs["../lang/de.json"]);
-        },
-    })
-    .use(PrimeVue, {
-        theme: {
-            preset: Aura,
-            options: {
-                prefix: "p",
-                darkModeSelector: false,
-                cssLayer: false,
-            },
+            return Promise.resolve(file || langs["../lang/en.json"]);
         },
     })
     .directive("date-format", vDateFormat)

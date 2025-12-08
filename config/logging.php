@@ -127,32 +127,6 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
-
-        'teams' => [
-            'driver' => 'custom',
-            'via' => App\Logging\TeamsLoggerFactory::class,
-            'level' => 'error',
-            'webhookUrl' => env('TEAMS_WEBHOOK_URL'),
-        ],
-        'firebase' => [
-            'driver' => 'daily',
-            'path' => storage_path('logs/firebase.log'),
-            'level' => 'info',
-            'days' => 14,
-        ],
-        'gpt' => [
-            'driver' => 'daily',
-            'path' => storage_path('logs/gpt.log'),
-            'level' => 'info',
-            'days' => 14,
-        ],
-        'elevenlabs' => [
-            'driver' => 'daily',
-            'path' => storage_path('logs/elevenlabs.log'),
-            'level' => 'info',
-            'days' => 14,
-        ],
-
     ],
 
 ];

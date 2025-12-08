@@ -34,7 +34,6 @@ return Application::configure(basePath: dirname(__DIR__))
 
         // Apply LanguageMiddleware middleware to API group
         $middleware->prependToGroup('api', \App\Http\Middleware\LanguageMiddleware::class);
-        $middleware->prependToGroup('api', \App\Http\Middleware\HTTPLoggerMiddleware::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         // 401 from guards (no user / not authenticated)
