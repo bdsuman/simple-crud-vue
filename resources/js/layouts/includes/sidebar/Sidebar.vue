@@ -220,13 +220,6 @@ import LogoFull from "@/components/common/LogoFull.vue";
 import Tooltip from "@/layouts/includes/sidebar/Tooltip.vue";
 
 import UserManagementIcon from "@/components/icons/sidebar/UserManagementIcon.vue";
-import PersonalityProfileIcon from "@/components/icons/sidebar/PersonalityProfileIcon.vue";
-import DevelopmentJourneyIcon from "@/components/icons/sidebar/DevelopmentJourneyIcon.vue";
-import SessionIcon from "@/components/icons/sidebar/SessionIcon.vue";
-import MusicManagementIcon from "@/components/icons/sidebar/MusicManagementIcon.vue";
-import ContentManagementIcon from "@/components/icons/sidebar/ContentManagementIcon.vue";
-import FeedbackManagementIcon from "@/components/icons/sidebar/FeedbackManagementIcon.vue";
-import ReportManagementIcon from "@/components/icons/sidebar/ReportManagementIcon.vue";
 import RightArrowIcon from "@/components/icons/sidebar/RightArrowIcon.vue";
 
 import { useUserStore } from "@/stores/useUserStore";
