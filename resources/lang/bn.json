@@ -128,5 +128,7 @@
     "Max size :value MB": "সর্বোচ্চ আকার :value MB",
     "Max video size :value MB": "সর্বোচ্চ ভিডিও আকার :value MB",
     "View": "দেখুন",
-    "Delete": "মুছুন"
+    "Delete": "মুছুন",
+    "task_updated": "টাস্ক আপডেট হয়েছে",
+    "task_created": "টাস্ক তৈরি হয়েছে"
 }
