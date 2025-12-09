@@ -20,8 +20,8 @@
           v-model="form.email"
           :isTextarea="false" />
         <TextInput
-          label="Password"
-          placeholder="Enter Password"
+          label="password"
+          placeholder="enter_password"
           required
           validationType="password"
           v-model="form.password"
@@ -36,9 +36,9 @@
           :disabled="isDisabled"
           :class="{ 'opacity-50 !cursor-not-allowed': isDisabled }" />
         <div class="text-center text-sm text-gray-600">
-          Don't have an account?
+          {{ $t("Dont have an account?") }}
           <router-link to="/signup" class="text-primary hover:text-primary-hover font-semibold">
-            Sign Up
+            {{ $t("Sign Up") }}
           </router-link>
         </div>
       </form>

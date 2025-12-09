@@ -60,7 +60,7 @@ const setLang = async (lang, index) => {
     showLangOption.value = false;
     selectedLang.value = index;
 
-    const res = await axios.put(route("auth.update-profile"), {
+    const res = await axios.put(route("update-profile"), {
         full_name: store.user.full_name,
         language: index,
     });

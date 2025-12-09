@@ -42,7 +42,9 @@
             optionValue="value"
             endpoint="v1/admin/enums/gender"
             :searchable="false"
-            :showClear="true" />
+            :showClear="true"
+            :translateOptions="true"
+            />
         </div>
         <div class="flex-col justify-start items-start flex">
           <DragAndDropUpload

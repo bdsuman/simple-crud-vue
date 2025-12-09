@@ -81,7 +81,7 @@
                     <div class="flex gap-4 pt-6">
                         <OutlineButton :show="true" title="reset" @click="resetForm" />
                         <Button
-                            title="change_password"
+                            title="save"
                             :width="'w-40'"
                             @click="handleSubmit"
                             :disabled="isSubmitting"
@@ -126,30 +126,11 @@ const validate = (fieldName) => {
 
 const dynamicRules = computed(() => ({
     current_password: {
-        required: helpers.withMessage(
-            trans("field_input_is_missing"),
-            required
-        ),
-        minLength: helpers.withMessage(
-            trans("password_must_be_at_least_8_characters"),
-            minLength(8)
-        ),
+
     },
     password: {
-        required: helpers.withMessage(
-            trans("field_input_is_missing"),
-            required
-        ),
-        minLength: helpers.withMessage(
-            trans("password_must_be_at_least_8_characters"),
-            minLength(8)
-        ),
     },
     password_confirmation: {
-        required: helpers.withMessage(
-            trans("field_input_is_missing"),
-            required
-        ),
         sameAs: helpers.withMessage(
             trans("passwords_do_not_match"),
             (value) => value === form.password

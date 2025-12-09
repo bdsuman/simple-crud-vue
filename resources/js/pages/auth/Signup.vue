@@ -13,8 +13,8 @@
         class="w-[400.46px] grid grid-cols-1 gap-4"
         autocomplete="off">
         <TextInput
-          label="Full Name"
-          placeholder="Enter full name"
+          label="full_name"
+          placeholder="enter_full_name"
           required
           validationType="text"
           v-model="form.full_name"
@@ -34,8 +34,8 @@
           v-model="form.password"
           :isTextarea="false" />
         <TextInput
-          label="Confirm Password"
-          placeholder="Confirm password"
+          label="confirm_password"
+          placeholder="confirm_password"
           required
           validationType="password"
           v-model="form.password_confirmation"
@@ -50,9 +50,11 @@
           :disabled="isDisabled"
           :class="{ 'opacity-50 !cursor-not-allowed': isDisabled }" />
         <div class="text-center text-sm text-gray-600">
-          Already have an account?
-          <router-link to="/login" class="text-primary hover:text-primary-hover font-semibold">
-            Log In
+          {{ $t("Already have an account?") }}
+          <router-link
+            to="/login"
+            class="text-primary hover:text-primary-hover font-semibold">
+            {{ $t("Login") }}
           </router-link>
         </div>
       </form>
@@ -105,7 +107,7 @@ const handleSignup = async () => {
 
   // Check if passwords match
   if (form.password !== form.password_confirmation) {
-    errorMessage.value = trans("Passwords do not match!");
+    errorMessage.value = trans("passwords_do_not_match");
     setTimeout(() => {
       errorMessage.value = "";
     }, 5000);
@@ -128,7 +130,9 @@ const handleSignup = async () => {
       // Handle validation errors
       const errors = error.response.data.errors;
       const firstError = Object.values(errors)[0];
-      errorMessage.value = Array.isArray(firstError) ? firstError[0] : firstError;
+      errorMessage.value = Array.isArray(firstError)
+        ? firstError[0]
+        : firstError;
     } else {
       errorMessage.value = trans("Registration failed! Please try again.");
     }

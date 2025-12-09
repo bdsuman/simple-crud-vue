@@ -8,7 +8,7 @@ export const baseTableProps = {
     page: { type: Number, default: 1 },
     pageSize: { type: Number, default: 10 },
     pageSizeOptions: { type: Array, default: () => [5, 10, 20, 50] },
-    pageSizeLabel: { type: String, default: "Per page:" },
+    pageSizeLabel: { type: String, default: "Per page" },
 
     search: { type: String, default: "" },
     searchPlaceholder: { type: String, default: "Search…" },

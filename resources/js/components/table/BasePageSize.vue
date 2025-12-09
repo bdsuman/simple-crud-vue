@@ -76,7 +76,7 @@ import { ref, watch, onMounted, onBeforeUnmount, computed } from "vue";
 const props = defineProps({
     pageSize: { type: Number, required: true },
     options: { type: Array, default: () => [5, 10, 20, 50] },
-    label: { type: String, default: "Per page:" },
+    label: { type: String, default: "Per page" },
 });
 
 const emit = defineEmits(["update:pageSize", "change"]);
