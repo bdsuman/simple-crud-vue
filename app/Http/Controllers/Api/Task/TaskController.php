@@ -73,13 +73,17 @@ class TaskController extends Controller
     public function index(Request $request): JsonResponse
     {
         $perPage = min(max((int) $request->input('per_page', 10), 1), 100);
+        $userId = $request->user()->id;
+        $cacheKey = "tasks_user_{$userId}_page_{$request->input('page', 1)}_per_{$perPage}";
 
-        $tasks = Task::query()
-            ->where('user_id', $request->user()->id)
-            ->isCompletedFilter($request->is_completed)
-            ->searchFilter($request->search)
-            ->orderBy('id', 'DESC')
-            ->paginate($perPage);
+        $tasks = cache()->remember($cacheKey, 3600, function () use ($request, $perPage, $userId) {
+            return Task::query()
+                ->where('user_id', $userId)
+                ->isCompletedFilter($request->is_completed)
+                ->searchFilter($request->search)
+                ->orderBy('id', 'DESC')
+                ->paginate($perPage);
+        });
 
         return success_response(TaskResource::collection($tasks), true, 'task_fetched_successfully');
     }
