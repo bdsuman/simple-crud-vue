@@ -1,8 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import { trans, loadLanguageAsync } from "laravel-vue-i18n";
 import { useUserStore } from "@/stores/useUserStore";
-import userRoutes from "./users";
-import testimonial from "./task";
+import task from "./task";
 
 const AuthenticatedLayout = () => import("@/layouts/AuthenticatedLayout.vue");
 
@@ -23,7 +22,7 @@ const routes = [
       {
         path: "/profile",
         name: "profile",
-        component: () => import("@/pages/Profile.vue"),
+        component: () => import("@/pages/auth/Profile.vue"),
         meta: {
           requiresAuth: true,
           title: "Profile",
@@ -32,7 +31,7 @@ const routes = [
       {
         path: "/change-password",
         name: "changePassword",
-        component: () => import("@/pages/ChangePassword.vue"),
+        component: () => import("@/pages/auth/ChangePassword.vue"),
         meta: {
           requiresAuth: true,
           title: "Change Password",
@@ -40,8 +39,7 @@ const routes = [
       },
     ],
   },
-  ...userRoutes,
-  ...testimonial,
+  ...task,
   {
     path: "/login",
     name: "login",
