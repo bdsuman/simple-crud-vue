@@ -57,11 +57,15 @@ class RegisterRequest extends FormRequest
                 'example' => 'user@example.com',
             ],
             'password' => [
-                'description' => 'Password of the user',
+                'description' => 'Password of the user (minimum 8 characters)',
+                'example' => 'password123',
+            ],
+            'password_confirmation' => [
+                'description' => 'Password confirmation (must match password)',
                 'example' => 'password123',
             ],
             'language' => [
-                'description' => 'Preferred language of the user',
+                'description' => 'Preferred language of the user (en, es, fr, etc.)',
                 'example' => 'en',
             ],
         ];

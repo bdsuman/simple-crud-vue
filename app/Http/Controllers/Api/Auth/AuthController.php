@@ -32,7 +32,38 @@ class AuthController extends Controller
     ];
     /**
      * Login
-     * @unauthenticated 
+     * 
+     * Authenticate user with email and password, returns access token.
+     * 
+     * @group Auth
+     * @unauthenticated
+     * 
+     * @response 200 scenario="Successful login" {
+     *   "success": true,
+     *   "message": "success",
+     *   "data": {
+     *     "message": "login_successful",
+     *     "access_token": "1|abcdefghijklmnopqrstuvwxyz1234567890",
+     *     "token_type": "Bearer",
+     *     "expires_in": null,
+     *     "user": {
+     *       "id": 1,
+     *       "full_name": "John Doe",
+     *       "email": "user@example.com",
+     *       "avatar": "avatars/avatar.jpg",
+     *       "language": "en",
+     *       "gender": "male",
+     *       "created_at": "2024-01-01T00:00:00.000000Z",
+     *       "updated_at": "2024-01-01T00:00:00.000000Z"
+     *     }
+     *   }
+     * }
+     * 
+     * @response 401 scenario="Invalid credentials" {
+     *   "success": false,
+     *   "message": "invalid_credentials",
+     *   "data": []
+     * }
      * 
      * @param LoginRequest $request
      * @return JsonResponse
@@ -55,7 +86,47 @@ class AuthController extends Controller
 
     /**
      * Register
+     * 
+     * Create a new user account and return access token.
+     * 
+     * @group Auth
      * @unauthenticated
+     *
+     * @response 201 scenario="Successful registration" {
+     *   "success": true,
+     *   "message": "success",
+     *   "data": {
+     *     "message": "registration_successful",
+     *     "access_token": "2|abcdefghijklmnopqrstuvwxyz1234567890",
+     *     "token_type": "Bearer",
+     *     "expires_in": null,
+     *     "user": {
+     *       "id": 2,
+     *       "full_name": "John Doe",
+     *       "email": "user@example.com",
+     *       "avatar": null,
+     *       "language": "en",
+     *       "gender": null,
+     *       "created_at": "2024-01-01T00:00:00.000000Z",
+     *       "updated_at": "2024-01-01T00:00:00.000000Z"
+     *     }
+     *   }
+     * }
+     * 
+     * @response 409 scenario="Email already exists" {
+     *   "success": false,
+     *   "message": "email_already_exists",
+     *   "data": []
+     * }
+     * 
+     * @response 422 scenario="Validation error" {
+     *   "success": false,
+     *   "message": "The given data was invalid.",
+     *   "data": {
+     *     "email": ["The email has already been taken."],
+     *     "password": ["The password confirmation does not match."]
+     *   }
+     * }
      *
      * @param \App\Http\Requests\Api\User\RegisterRequest $request
      * @param RegisterAction $action
@@ -94,8 +165,25 @@ class AuthController extends Controller
     /**
      * User Profile
      * 
+     * Get the authenticated user's profile information.
+     * 
      * @group Auth
      * @authenticated
+     * 
+     * @response 200 scenario="Profile retrieved" {
+     *   "success": true,
+     *   "message": "success",
+     *   "data": {
+     *     "id": 1,
+     *     "full_name": "John Doe",
+     *     "email": "user@example.com",
+     *     "avatar": "avatars/avatar.jpg",
+     *     "language": "en",
+     *     "gender": "male",
+     *     "created_at": "2024-01-01T00:00:00.000000Z",
+     *     "updated_at": "2024-01-01T00:00:00.000000Z"
+     *   }
+     * }
      * 
      * @return JsonResponse
      */
@@ -107,8 +195,16 @@ class AuthController extends Controller
     /**
      * Logout
      * 
+     * Invalidate the current access token and logout the user.
+     * 
      * @group Auth
      * @authenticated
+     * 
+     * @response 200 scenario="Successful logout" {
+     *   "success": true,
+     *   "message": "logged_out",
+     *   "data": []
+     * }
      * 
      * @return JsonResponse
      */
@@ -162,8 +258,34 @@ class AuthController extends Controller
     /**
      * Update Profile
      * 
+     * Update the authenticated user's profile information including avatar upload.
+     * 
      * @group Auth
      * @authenticated
+     * 
+     * @response 200 scenario="Profile updated successfully" {
+     *   "success": true,
+     *   "message": "profile_updated",
+     *   "data": {
+     *     "id": 1,
+     *     "full_name": "John Doe Updated",
+     *     "email": "user@example.com",
+     *     "avatar": "avatars/new-avatar.jpg",
+     *     "language": "es",
+     *     "gender": "male",
+     *     "created_at": "2024-01-01T00:00:00.000000Z",
+     *     "updated_at": "2024-01-02T00:00:00.000000Z"
+     *   }
+     * }
+     * 
+     * @response 422 scenario="Validation error" {
+     *   "success": false,
+     *   "message": "The given data was invalid.",
+     *   "data": {
+     *     "full_name": ["The full name field is required."],
+     *     "avatar": ["The avatar must be an image."]
+     *   }
+     * }
      * 
      * @param UpdateProfileRequest $request
      * @return JsonResponse
@@ -206,8 +328,39 @@ class AuthController extends Controller
     /**
      * Change Password
      * 
+     * Change the authenticated user's password.
+     * 
      * @group Auth
      * @authenticated
+     * 
+     * @response 200 scenario="Password changed successfully" {
+     *   "success": true,
+     *   "message": "password_changed",
+     *   "data": {
+     *     "id": 1,
+     *     "full_name": "John Doe",
+     *     "email": "user@example.com",
+     *     "avatar": "avatars/avatar.jpg",
+     *     "language": "en",
+     *     "gender": "male",
+     *     "created_at": "2024-01-01T00:00:00.000000Z",
+     *     "updated_at": "2024-01-01T00:00:00.000000Z"
+     *   }
+     * }
+     * 
+     * @response 422 scenario="Current password incorrect" {
+     *   "success": false,
+     *   "message": "current_password_incorrect",
+     *   "data": []
+     * }
+     * 
+     * @response 422 scenario="Validation error" {
+     *   "success": false,
+     *   "message": "The given data was invalid.",
+     *   "data": {
+     *     "password": ["The password confirmation does not match."]
+     *   }
+     * }
      * 
      * @param ChangePasswordRequest $request
      * @return JsonResponse

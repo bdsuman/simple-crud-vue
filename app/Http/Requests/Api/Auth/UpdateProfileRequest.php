@@ -58,20 +58,24 @@ class UpdateProfileRequest extends FormRequest
                 'example' => 'John Doe',
             ],
             'password' => [
-                'description' => 'Password of the user',
+                'description' => 'Password of the user (optional, only required if changing password)',
+                'example' => 'password123',
+            ],
+            'password_confirmation' => [
+                'description' => 'Password confirmation (required if password is provided)',
                 'example' => 'password123',
             ],
             'language' => [
-                'description' => 'Preferred language of the user',
+                'description' => 'Preferred language of the user (en, es, fr, etc.)',
                 'example' => 'en',
             ],
             'gender' => [
-                'description' => 'Gender of the user',
+                'description' => 'Gender of the user (male, female, other)',
                 'example' => 'male',
             ],
             'avatar' => [
-                'description' => 'Avatar image of the user',
-                'example' => 'avatar.jpg',
+                'description' => 'Avatar image of the user (JPEG, PNG, JPG - max 20MB)',
+                'type' => 'file',
             ],
         ];
     }
