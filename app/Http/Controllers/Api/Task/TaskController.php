@@ -2,19 +2,23 @@
 
 namespace App\Http\Controllers\Api\Task;
 
-use App\Enums\AppLanguageEnum;
+use App\Actions\Task\DestroyTaskAction;
+use App\Actions\Task\StoreTaskAction;
+use App\Actions\Task\ToggleTaskCompletedAction;
+use App\Actions\Task\UpdateTaskAction;
+use App\DataTransferObjects\Task\CreateTaskDTO;
+use App\DataTransferObjects\Task\UpdateTaskDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\Task\StoreTaskRequest;
 use App\Http\Requests\Api\Task\UpdateTaskRequest;
 use App\Http\Resources\Api\Task\TaskResource;
 use App\Models\Task;
-use App\Models\TaskArchives;
-use App\Models\Translation;
+use App\Traits\UploadAble;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use App\Traits\UploadAble;
+
+use function Laravel\Prompts\info;
 
 /** 
  * @group Task Module
@@ -24,9 +28,6 @@ class TaskController extends Controller
 {
     use UploadAble;
 
-    /**
-     * Upload options for image optimization
-     */
     private const UPLOAD_OPTIONS = [
         'resize' => ['width' => 800, 'height' => 600],
         'quality' => 85
@@ -106,17 +107,13 @@ class TaskController extends Controller
      *  }
      * }
      */
-    public function store(StoreTaskRequest $request): JsonResponse
+    public function store(StoreTaskRequest $request, StoreTaskAction $action): JsonResponse
     {
-        DB::beginTransaction();
-
         try {
-            $data = $request->safe()->except('avatar');
-            $data['user_id'] = $request->user()->id;
-
+            $avatarPath = null;
             if ($request->hasFile('avatar')) {
-                $data['avatar'] = $this->uploadFile(
-                    $request->avatar,
+                $avatarPath = $this->uploadFile(
+                    $request->file('avatar'),
                     'tasks/avatar',
                     config('filesystems.default'),
                     null,
@@ -124,28 +121,24 @@ class TaskController extends Controller
                 );
             }
 
-            $task = Task::create($data);
-            foreach ($task->translatable as $field) {
+            $dto = new CreateTaskDTO(
+                user_id: $request->user()->id,
+                title: $request->input('title'),
+                description: $request->input('description'),
+                is_completed: $request->boolean('is_completed'),
+                avatar: $avatarPath,
+            );
+            info('Created CreateTaskDTO', ['dto' => $dto]);
 
-                // Check if request has this field
-                if ($request->has($field)) {
-                    $value = $request->input($field);
-
-                    foreach (AppLanguageEnum::cases() as $langEnum) {
-                        $task->setTranslation($field, $value, $langEnum->value);
-                    }
-                }
-            }
-            DB::commit();
+            $task = $action->execute($dto);
 
             return success_response(
-                new TaskResource($task->makeHidden('avatar_url')->append('avatar_url')),
+                new TaskResource($task),
                 false,
                 'success_task_created',
                 201
             );
         } catch (Exception $e) {
-            DB::rollBack();
             return error_response('task_creation_failed', 500);
         }
     }
@@ -205,17 +198,18 @@ class TaskController extends Controller
      *  }
      * }
      */
-    public function update(UpdateTaskRequest $request, Task $task): JsonResponse
+    public function update(UpdateTaskRequest $request, Task $task, UpdateTaskAction $action): JsonResponse
     {
-        DB::beginTransaction();
-
         try {
-            $data = $request->safe()->except('avatar');
-            $lang = $request->has('language') ? $request->language : app('language');
-
+            $avatarPath = null;
             if ($request->hasFile('avatar')) {
-                $data['avatar'] = $this->uploadFile(
-                    $request->avatar,
+                // Delete old file if exists
+                if ($task->avatar) {
+                    $this->deleteFile($task->avatar, config('filesystems.default'));
+                }
+
+                $avatarPath = $this->uploadFile(
+                    $request->file('avatar'),
                     'tasks/avatar',
                     config('filesystems.default'),
                     null,
@@ -223,23 +217,22 @@ class TaskController extends Controller
                 );
             }
 
-            $task->update($data);
-            foreach ($task->translatable as $field) {
-                // Check if request has this field
-                if ($request->has($field)) {
-                    $value = $request->input($field);
-                    $task->setTranslation($field, $value, $lang);
-                }
-            }
-            DB::commit();
+            $dto = new UpdateTaskDTO(
+                title: $request->input('title'),
+                description: $request->input('description'),
+                is_completed: $request->boolean('is_completed'),
+                language: $request->input('language', app('language')),
+                avatar: $avatarPath,
+            );
+
+            $updatedTask = $action->execute($task, $dto);
 
             return success_response(
-                new TaskResource($task->fresh()),
+                new TaskResource($updatedTask),
                 false,
                 'success_task_updated'
             );
         } catch (Exception $e) {
-            DB::rollBack();
             return error_response('task_update_failed', 500);
         }
     }
@@ -260,23 +253,9 @@ class TaskController extends Controller
      *   "data": []
      * }
      */
-    public function destroy(Task $task): JsonResponse
+    public function destroy(Task $task, DestroyTaskAction $action): JsonResponse
     {
-        $task_archives = TaskArchives::create([
-            'user_id' => $task->user_id,
-            'original_task_id' => $task->id,
-            'avatar' => $task->avatar,
-            'is_completed' => $task->is_completed,
-        ]);
-
-        Translation::where('translatable_type', Task::class)
-            ->where('translatable_id', $task->id)->update([
-                'translatable_type' => TaskArchives::class,
-                'translatable_id' => $task_archives->id,
-            ]);
-
-
-        $task->delete();
+        $action->execute($task);
 
         return success_response([], false, 'success_task_deleted');
     }
@@ -307,12 +286,12 @@ class TaskController extends Controller
      *  }
      * }
      */
-    public function toggleCompleted(Task $task): JsonResponse
+    public function toggleCompleted(Task $task, ToggleTaskCompletedAction $action): JsonResponse
     {
-        $task->update(['is_completed' => !$task->is_completed]);
+        $updatedTask = $action->execute($task);
 
         return success_response(
-            new TaskResource($task->fresh()),
+            new TaskResource($updatedTask),
             false,
             'success_task_updated'
         );
