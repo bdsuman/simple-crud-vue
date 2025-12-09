@@ -5,7 +5,11 @@ namespace App\Http\Controllers\Api\Common;
 use App\Enums\UserGenderEnum;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
-
+/**
+ * Enum Controller
+ * 
+ * @group Common
+ */
 class EnumController extends Controller
 {
     /**
