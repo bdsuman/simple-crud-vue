@@ -50,11 +50,8 @@ class TaskController extends Controller
      *     "data": [
      *              {
      *                  "id": 9,
-     *                  "author_name": "Mrs. Petra Pollich",
-     *                  "job_title": "Credit Checkers Clerk",
      *                  "title": "Voluptatibus quidem minima atque.",
-     *                  "content": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
-     *                  "rating": 5,
+     *                  "description": "Temporibus tempora eum nesciunt doloremque. ae nostrum.",
      *                  "avatar": "https://placehold.co/100x100",
      *                  "avatar_url": "https://placehold.co/100x100",
      *                  "status": true,
