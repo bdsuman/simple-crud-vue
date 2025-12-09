@@ -37,7 +37,6 @@ export default defineConfig({
             output: {
                 manualChunks: {
                     vue: ['vue', 'vue-router', 'pinia'],
-                    primevue: ['primevue', '@primevue/themes'],
                     validation: ['@vuelidate/core', '@vuelidate/validators'],
                     utils: ['lodash', 'moment', 'dayjs', 'date-fns', 'xlsx'],
                 },
