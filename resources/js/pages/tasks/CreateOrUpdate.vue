@@ -156,7 +156,6 @@ const getDetails = async (lang) => {
 };
 
 function setEditData(data) {
-  form.language = data?.data?.language || store.user?.language || "en";
   form.title = data.data.title;
   form.description = data.data.description;
   form.avatar = data?.data?.avatar_url
