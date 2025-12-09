@@ -193,6 +193,7 @@ class AuthController extends Controller
         $dto = new UpdateProfileDTO(
             full_name: $validated['full_name'],
             language: $validated['language'] ?? null,
+            gender: $validated['gender'] ?? null,
             password: $validated['password'] ?? null,
             avatar: $avatarPath,
         );

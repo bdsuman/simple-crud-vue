@@ -179,7 +179,7 @@ const handleSubmit = async () => {
     successMessage.value = "";
 
     try {
-        await axios.put("/change-password", {
+        await axios.put(route("change-password"), {
             current_password: form.current_password,
             password: form.password,
             password_confirmation: form.password_confirmation,

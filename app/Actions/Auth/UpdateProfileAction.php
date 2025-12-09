@@ -16,6 +16,10 @@ class UpdateProfileAction
             $user->language = $dto->language;
         }
 
+        if ($dto->gender) {
+            $user->gender = $dto->gender;
+        }
+
         if ($dto->password) {
             $user->password = Hash::make($dto->password);
         }

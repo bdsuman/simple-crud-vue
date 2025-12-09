@@ -3,7 +3,6 @@
     <div
       class="p-10 bg-white rounded-3xl inline-flex flex-col justify-center items-center gap-14 z-50">
       <div class="self-stretch flex flex-col justify-start items-center gap-5">
-        <GuestLogo class="min-h-[117.83px]" />
         <div
           class="self-stretch text-center justify-start text-[#002d45] text-[32px] font-semibold capitalize">
           {{ $t("Log In") }}
@@ -49,7 +48,6 @@
 
 <script setup>
 import GuestLayout from "@/layouts/GuestLayout.vue";
-import GuestLogo from "@/components/common/GuestLogo.vue";
 import TextInput from "@/components/form/TextInput.vue";
 import Button from "@/components/buttons/Button.vue";
 

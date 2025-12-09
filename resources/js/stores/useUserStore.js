@@ -19,7 +19,7 @@ export const useUserStore = defineStore({
 
     actions: {
         async login(email, password) {
-            const res = await axios.post('/login', { email, password });
+            const res = await axios.post(route('login'), { email, password });
             const tok = res.data.data.access_token;
 
             this.setToken(tok);
@@ -32,7 +32,7 @@ export const useUserStore = defineStore({
         },
 
         async register(fullName, email, password, passwordConfirmation) {
-            const res = await axios.post('/register', {
+            const res = await axios.post(route('register'), {
                 full_name: fullName,
                 email: email,
                 password: password,
@@ -69,46 +69,9 @@ export const useUserStore = defineStore({
             }
         },
 
-        async updateProfile(fullName, language, password = null, passwordConfirmation = null, avatar = null) {
-            const formData = new FormData();
-            formData.append('full_name', fullName);
-            formData.append('language', language);
-
-            if (password) {
-                formData.append('password', password);
-                formData.append('password_confirmation', passwordConfirmation);
-            }
-
-            if (avatar && avatar instanceof File) {
-                formData.append('avatar', avatar);
-            }
-
-            formData.append('_method', 'PUT');
-
-            const res = await axios.post('/update-profile', formData, {
-                headers: { 'Content-Type': 'multipart/form-data' }
-            });
-
-            if (res.data.data) {
-                await this.setUser(res.data.data);
-            }
-
-            return res;
-        },
-
-        async changePassword(currentPassword, password, passwordConfirmation) {
-            const res = await axios.post('/change-password', {
-                current_password: currentPassword,
-                password: password,
-                password_confirmation: passwordConfirmation,
-            });
-
-            return res;
-        },
-
         async logout() {
             try {
-                await axios.post('/logout');
+                await axios.post(route('logout'));
             } catch (_) {
                 // ignore
             } finally {

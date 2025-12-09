@@ -40,6 +40,18 @@
 
             <div class="w-full grid grid-cols-2 gap-4 mt-4">
                 <div class="flex-col justify-start items-start flex">
+                    <SingleSelect
+                        v-model="form.gender"
+                        label="gender"
+                        :placeholder="$t('Select gender')"
+                        optionLabel="label"
+                        optionValue="value"
+                        endpoint="v1/admin/enums/gender"
+                        :searchable="false"
+                        :showClear="true"
+                    />
+                </div>
+                <div class="flex-col justify-start items-start flex">
                     <DragAndDropUpload
                         v-model="form.avatar"
                         class="w-full"
@@ -97,6 +109,7 @@ import { required, minLength, helpers } from "@vuelidate/validators";
 import { trans } from "laravel-vue-i18n";
 import { useRouter } from "vue-router";
 import LanguageDropdown from "@/components/form/LanguageDropdown.vue";
+import SingleSelect from "@/components/form/SingleSelect.vue";
 import { useUserStore } from "@/stores/useUserStore";
 
 const store = useUserStore();
@@ -111,6 +124,7 @@ const form = reactive(
         full_name: store.user?.full_name || "",
         email: store.user?.email || "",
         language: store.user?.language ?? "en",
+        gender: store.user?.gender || null,
         avatar: null,
     })
 );
@@ -149,6 +163,9 @@ const handleSubmit = async () => {
         const formData = new FormData();
         formData.append("full_name", form.full_name);
         formData.append("language", form.language);
+        if (form.gender) {
+            formData.append("gender", form.gender);
+        }
 
         if (form.avatar && typeof form.avatar !== "string") {
             if (form.avatar.file) {
@@ -160,7 +177,7 @@ const handleSubmit = async () => {
 
         formData.append("_method", "PUT");
 
-        const res = await axios.post(route("auth.update-profile"), formData, {
+        const res = await axios.post(route("update-profile"), formData, {
             headers: { "Content-Type": "multipart/form-data" },
         });
 
@@ -194,6 +211,7 @@ onMounted(() => {
         form.full_name = store.user.full_name;
         form.email = store.user.email;
         form.language = store.user.language || "en";
+        form.gender = store.user.gender || null;
         form.avatar = store.user.avatar_url
             ? { url: store.user.avatar_url, file_type: "image" }
             : null;

@@ -4,7 +4,6 @@
             class="p-10 bg-white rounded-3xl inline-flex flex-col justify-center items-center gap-10 z-50 w-full max-w-xl"
         >
             <div class="self-stretch flex flex-col items-center gap-4">
-                <GuestLogo class="min-h-[90px]" />
                 <div
                     class="text-center text-[#002d45] text-[32px] font-semibold"
                 >
@@ -96,7 +95,6 @@
 
 <script setup>
 import GuestLayout from "@/layouts/GuestLayout.vue";
-import GuestLogo from "@/components/common/GuestLogo.vue";
 import Button from "@/components/buttons/Button.vue";
 import OutlineButton from "@/components/buttons/OutlineButton.vue";
 import { useUserStore } from "@/stores/useUserStore";

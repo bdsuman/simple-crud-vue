@@ -154,9 +154,9 @@ let isFetching = ref(false);
 let searchQuery = ref("");
 
 const toggleDropdown = () => {
-    if (disabled) return;
+    if (props.disabled) return;
     isOpen.value = !isOpen.value;
-    if (isOpen.value && searchable) {
+    if (isOpen.value && props.searchable) {
         nextTick(() => searchInput.value?.focus());
     }
 };
@@ -195,7 +195,7 @@ const fetchData = async (search = "", pageNum = 1, append = false) => {
     isFetching.value = true;
     loading.value = true;
     try {
-        const response = await axios.get(`/${props.endpoint}`, {
+        const response = await axios.get(props.endpoint.startsWith('/') ? props.endpoint : `/${props.endpoint}`, {
             params: {
                 page: pageNum,
                 pageSize: pageSize,

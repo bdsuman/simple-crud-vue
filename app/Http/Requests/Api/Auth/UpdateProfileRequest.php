@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Api\Auth;
 
 use App\Enums\AppLanguageEnum;
+use App\Enums\UserGenderEnum;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateProfileRequest extends FormRequest
@@ -26,6 +27,7 @@ class UpdateProfileRequest extends FormRequest
             'full_name' => 'required|string|min:2|max:255',
             'password' => 'nullable|string|min:8|confirmed',
             'language' => 'nullable|string|in:' . implode(',', array_column(AppLanguageEnum::cases(), 'value')),
+            'gender' => 'nullable|string|in:' . implode(',', array_column(UserGenderEnum::cases(), 'value')),
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg|max:20480',
         ];
     }
@@ -42,6 +44,7 @@ class UpdateProfileRequest extends FormRequest
             'full_name.min' => 'must_be_at_least_2_characters',
             'password.min' => 'password_must_be_at_least_8_characters',
             'password.confirmed' => 'passwords_do_not_match',
+            'gender.in' => 'invalid_gender_value',
             'avatar.image' => 'avatar_must_be_an_image',
             'avatar.mimes' => 'avatar_must_be_jpg_or_png',
             'avatar.max' => 'avatar_size_exceeds_limit',
@@ -61,6 +64,10 @@ class UpdateProfileRequest extends FormRequest
             'language' => [
                 'description' => 'Preferred language of the user',
                 'example' => 'en',
+            ],
+            'gender' => [
+                'description' => 'Gender of the user',
+                'example' => 'male',
             ],
             'avatar' => [
                 'description' => 'Avatar image of the user',

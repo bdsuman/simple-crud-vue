@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\Common\EnumController;
 
 Route::get('/health', function () {
     return response()->json([
@@ -30,6 +31,8 @@ Route::get('/status', function () {
         'environment' => app()->environment(),
     ]);
 });
+
+// Enum endpoints
 
 // get all routes link with method 
 Route::get('/routes', function () {
