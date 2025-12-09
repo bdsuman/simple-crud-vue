@@ -244,6 +244,7 @@ return [
             Strategies\StaticData::withSettings(data: [
                 'Content-Type' => 'application/json',
                 'Accept' => 'application/json',
+                'language' => env('APP_LOCALE','en'),
             ]),
         ],
         'urlParameters' => [

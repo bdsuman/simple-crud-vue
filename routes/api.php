@@ -6,8 +6,6 @@ use Illuminate\Support\Facades\Route;
 
 // Group all routes under /v1 prefix
 Route::prefix('v1')->group(function () {
-    // Health Check & Common Endpoints (enum, etc.)
-    require __DIR__ . '/api/v1/common/health.php';
 
     // Without Authentication (admin endpoints)
     Route::prefix('admin')->group(function () {

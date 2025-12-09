@@ -317,10 +317,10 @@
                                                     <div class="children" style="display: none;">
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-auth-POSTapi-login">
+                                             id="toc-item-auth-POSTapi-v1-admin-login">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Login">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#auth-POSTapi-login">
+                                                   href="#auth-POSTapi-v1-admin-login">
                                                     Login
                                                 </a>
                                             </div>
@@ -329,10 +329,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-auth-POSTapi-register">
+                                             id="toc-item-auth-POSTapi-v1-admin-register">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Register">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#auth-POSTapi-register">
+                                                   href="#auth-POSTapi-v1-admin-register">
                                                     Register
                                                 </a>
                                             </div>
@@ -341,10 +341,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-auth-POSTapi-logout">
+                                             id="toc-item-auth-POSTapi-v1-admin-logout">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Logout">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#auth-POSTapi-logout">
+                                                   href="#auth-POSTapi-v1-admin-logout">
                                                     Logout
                                                 </a>
                                             </div>
@@ -353,10 +353,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-auth-GETapi-user-details">
+                                             id="toc-item-auth-GETapi-v1-admin-user-details">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="User Profile">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#auth-GETapi-user-details">
+                                                   href="#auth-GETapi-v1-admin-user-details">
                                                     User Profile
                                                 </a>
                                             </div>
@@ -365,10 +365,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-auth-PUTapi-change-password">
+                                             id="toc-item-auth-PUTapi-v1-admin-change-password">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Change Password">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#auth-PUTapi-change-password">
+                                                   href="#auth-PUTapi-v1-admin-change-password">
                                                     Change Password
                                                 </a>
                                             </div>
@@ -396,35 +396,11 @@
                                                     <div class="children" style="display: none;">
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-endpoints-GETapi-health">
-                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="GET api/health">
+                                             id="toc-item-endpoints-GETapi-v1-admin-enums-gender">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Get Gender Enum options">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#endpoints-GETapi-health">
-                                                    GET api/health
-                                                </a>
-                                            </div>
-                                                                                    </div>
-
-                                                                            </div>
-                                                                    <div class="expandable">
-                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-endpoints-GETapi-status">
-                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="GET api/status">
-                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#endpoints-GETapi-status">
-                                                    GET api/status
-                                                </a>
-                                            </div>
-                                                                                    </div>
-
-                                                                            </div>
-                                                                    <div class="expandable">
-                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-endpoints-GETapi-routes">
-                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="GET api/routes">
-                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#endpoints-GETapi-routes">
-                                                    GET api/routes
+                                                   href="#endpoints-GETapi-v1-admin-enums-gender">
+                                                    Get Gender Enum options
                                                 </a>
                                             </div>
                                                                                     </div>
@@ -451,10 +427,10 @@
                                                     <div class="children" style="display: none;">
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-GETapi-tasks">
+                                             id="toc-item-task-module-GETapi-v1-admin-tasks">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="List">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-GETapi-tasks">
+                                                   href="#task-module-GETapi-v1-admin-tasks">
                                                     List
                                                 </a>
                                             </div>
@@ -463,10 +439,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-POSTapi-tasks">
+                                             id="toc-item-task-module-POSTapi-v1-admin-tasks">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Store">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-POSTapi-tasks">
+                                                   href="#task-module-POSTapi-v1-admin-tasks">
                                                     Store
                                                 </a>
                                             </div>
@@ -475,10 +451,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-GETapi-tasks--id-">
+                                             id="toc-item-task-module-GETapi-v1-admin-tasks--id-">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Show">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-GETapi-tasks--id-">
+                                                   href="#task-module-GETapi-v1-admin-tasks--id-">
                                                     Show
                                                 </a>
                                             </div>
@@ -487,10 +463,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-PUTapi-tasks--id-">
+                                             id="toc-item-task-module-PUTapi-v1-admin-tasks--id-">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Update">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-PUTapi-tasks--id-">
+                                                   href="#task-module-PUTapi-v1-admin-tasks--id-">
                                                     Update
                                                 </a>
                                             </div>
@@ -499,10 +475,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-DELETEapi-tasks--id-">
+                                             id="toc-item-task-module-DELETEapi-v1-admin-tasks--id-">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Delete">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-DELETEapi-tasks--id-">
+                                                   href="#task-module-DELETEapi-v1-admin-tasks--id-">
                                                     Delete
                                                 </a>
                                             </div>
@@ -511,10 +487,10 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
-                                             id="toc-item-task-module-PUTapi-tasks-completed--task_id-">
+                                             id="toc-item-task-module-PUTapi-v1-admin-tasks-completed--task_id-">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Toggle Completed">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
-                                                   href="#task-module-PUTapi-tasks-completed--task_id-">
+                                                   href="#task-module-PUTapi-v1-admin-tasks-completed--task_id-">
                                                     Toggle Completed
                                                 </a>
                                             </div>
@@ -527,7 +503,7 @@
 
         </div>
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
-            Last updated: December 8, 2025
+            Last updated: December 9, 2025
         </div>
 
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
@@ -611,14 +587,14 @@
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="auth-POSTapi-login">
+                    id="auth-POSTapi-v1-admin-login">
                     Login
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/login"
+            <div title="http://localhost:8000/api/v1/admin/login"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -629,7 +605,7 @@
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/login</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/login</div>
                     </div>
 
                                                                                     </div>
@@ -677,6 +653,24 @@
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -764,7 +758,7 @@
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="POST"
-              data-path="api/login"
+              data-path="api/v1/admin/login"
               data-hasfiles="0"
               data-hasjsonbody="1">
             
@@ -787,24 +781,35 @@
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-login-Content-Type">Content-Type</label>
+                                       for="header-POSTapi-v1-admin-login-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-POSTapi-login-Content-Type"
+                                               id="header-POSTapi-v1-admin-login-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-login-Accept">Accept</label>
+                                       for="header-POSTapi-v1-admin-login-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-POSTapi-login-Accept"
+                                               id="header-POSTapi-v1-admin-login-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-POSTapi-v1-admin-login-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-POSTapi-v1-admin-login-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -833,7 +838,7 @@
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                                                     <div class="TextRequestBody sl-p-4">
                                 <div class="code-editor language-json"
-                                     id="json-body-POSTapi-login"
+                                     id="json-body-POSTapi-v1-admin-login"
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
     "email": "user@example.com",
@@ -845,7 +850,7 @@
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="POSTapi-login"
+                    <button type="button" data-endpoint="POSTapi-v1-admin-login"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -853,7 +858,7 @@
                 </div>
             </div>
 
-            <div data-endpoint="POSTapi-login"
+            <div data-endpoint="POSTapi-v1-admin-login"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -880,7 +885,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="POSTapi-login"
+                <div data-endpoint="POSTapi-v1-admin-login"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -929,9 +934,10 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/login" \
+    "http://localhost:8000/api/v1/admin/login" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
+    --header "language: en" \
     --data "{
     \"email\": \"user@example.com\",
     \"password\": \"password123\"
@@ -944,12 +950,13 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/login"
+    "http://localhost:8000/api/v1/admin/login"
 );
 
 const headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 let body = {
@@ -975,14 +982,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="auth-POSTapi-register">
+                    id="auth-POSTapi-v1-admin-register">
                     Register
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/register"
+            <div title="http://localhost:8000/api/v1/admin/register"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -993,7 +1000,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/register</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/register</div>
                     </div>
 
                                                                                     </div>
@@ -1046,12 +1053,150 @@ fetch(url, {
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
                     
 
                     
+                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">Body Parameters</h3>
+
+                                <div class="sl-text-sm">
+                                    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">full_name</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Full name of the user. Must be at least 2 characters. Must not be greater than 255 characters.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        John Doe
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">email</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Email address of the user. Must be a valid email address.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        user@example.com
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">password</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                            <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                        <div class="sl-flex sl-items-center">
+                                                            <span class="sl-ml-2 sl-text-warning">required</span>
+                                                                                </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Password of the user. Must be at least 8 characters.</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        password123
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+    <div class="expandable sl-text-sm sl-border-l sl-ml-px">
+        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                        </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>Preferred language of the user.</p>
+        </div>
+                            Must be one of:
+            <ul style="list-style-position: inside; list-style-type: square;"><li><code>en</code></li> <li><code>bn</code></li></ul>
+                                    <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+
+            </div>
+                            </div>
+                        </div>
                     
                                     </div>
             </div>
@@ -1064,9 +1209,9 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="POST"
-              data-path="api/register"
+              data-path="api/v1/admin/register"
               data-hasfiles="0"
-              data-hasjsonbody="0">
+              data-hasjsonbody="1">
             
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
@@ -1087,24 +1232,35 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-register-Content-Type">Content-Type</label>
+                                       for="header-POSTapi-v1-admin-register-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-POSTapi-register-Content-Type"
+                                               id="header-POSTapi-v1-admin-register-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-register-Accept">Accept</label>
+                                       for="header-POSTapi-v1-admin-register-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-POSTapi-register-Accept"
+                                               id="header-POSTapi-v1-admin-register-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-POSTapi-v1-admin-register-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-POSTapi-v1-admin-register-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -1114,10 +1270,40 @@ fetch(url, {
             
             
             
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Body
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                                                    <div class="TextRequestBody sl-p-4">
+                                <div class="code-editor language-json"
+                                     id="json-body-POSTapi-v1-admin-register"
+                                     style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
+                                >{
+    "full_name": "John Doe",
+    "email": "user@example.com",
+    "password": "password123",
+    "language": "en"
+}</div>
+                            </div>
+                                            </div>
+                </div>
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="POSTapi-register"
+                    <button type="button" data-endpoint="POSTapi-v1-admin-register"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -1125,7 +1311,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="POSTapi-register"
+            <div data-endpoint="POSTapi-v1-admin-register"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -1152,7 +1338,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="POSTapi-register"
+                <div data-endpoint="POSTapi-v1-admin-register"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -1201,9 +1387,17 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/register" \
+    "http://localhost:8000/api/v1/admin/register" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en" \
+    --data "{
+    \"full_name\": \"John Doe\",
+    \"email\": \"user@example.com\",
+    \"password\": \"password123\",
+    \"language\": \"en\"
+}"
+</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -1211,17 +1405,26 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/register"
+    "http://localhost:8000/api/v1/admin/register"
 );
 
 const headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
+};
+
+let body = {
+    "full_name": "John Doe",
+    "email": "user@example.com",
+    "password": "password123",
+    "language": "en"
 };
 
 fetch(url, {
     method: "POST",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre>                                        </div>
                                     </div>
                                 </div>
@@ -1236,14 +1439,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="auth-POSTapi-logout">
+                    id="auth-POSTapi-v1-admin-logout">
                     Logout
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/logout"
+            <div title="http://localhost:8000/api/v1/admin/logout"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -1254,7 +1457,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/logout</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/logout</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -1329,6 +1532,24 @@ fetch(url, {
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
@@ -1347,7 +1568,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="POST"
-              data-path="api/logout"
+              data-path="api/v1/admin/logout"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -1369,13 +1590,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-POSTapi-logout">Authorization</label>
+                                   for="auth-POSTapi-v1-admin-logout">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-POSTapi-logout"
+                                           id="auth-POSTapi-v1-admin-logout"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -1406,24 +1627,35 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-logout-Content-Type">Content-Type</label>
+                                       for="header-POSTapi-v1-admin-logout-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-POSTapi-logout-Content-Type"
+                                               id="header-POSTapi-v1-admin-logout-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-logout-Accept">Accept</label>
+                                       for="header-POSTapi-v1-admin-logout-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-POSTapi-logout-Accept"
+                                               id="header-POSTapi-v1-admin-logout-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-POSTapi-v1-admin-logout-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-POSTapi-v1-admin-logout-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -1436,7 +1668,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="POSTapi-logout"
+                    <button type="button" data-endpoint="POSTapi-v1-admin-logout"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -1444,7 +1676,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="POSTapi-logout"
+            <div data-endpoint="POSTapi-v1-admin-logout"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -1471,7 +1703,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="POSTapi-logout"
+                <div data-endpoint="POSTapi-v1-admin-logout"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -1520,10 +1752,11 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/logout" \
+    "http://localhost:8000/api/v1/admin/logout" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -1531,13 +1764,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/logout"
+    "http://localhost:8000/api/v1/admin/logout"
 );
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -1557,14 +1791,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="auth-GETapi-user-details">
+                    id="auth-GETapi-v1-admin-user-details">
                     User Profile
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/user-details"
+            <div title="http://localhost:8000/api/v1/admin/user-details"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -1575,7 +1809,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/user-details</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/user-details</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -1645,6 +1879,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -1668,7 +1920,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="GET"
-              data-path="api/user-details"
+              data-path="api/v1/admin/user-details"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -1690,13 +1942,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-GETapi-user-details">Authorization</label>
+                                   for="auth-GETapi-v1-admin-user-details">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-GETapi-user-details"
+                                           id="auth-GETapi-v1-admin-user-details"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -1727,24 +1979,35 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-user-details-Content-Type">Content-Type</label>
+                                       for="header-GETapi-v1-admin-user-details-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-user-details-Content-Type"
+                                               id="header-GETapi-v1-admin-user-details-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-user-details-Accept">Accept</label>
+                                       for="header-GETapi-v1-admin-user-details-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-user-details-Accept"
+                                               id="header-GETapi-v1-admin-user-details-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-admin-user-details-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-GETapi-v1-admin-user-details-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -1757,7 +2020,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-user-details"
+                    <button type="button" data-endpoint="GETapi-v1-admin-user-details"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -1765,7 +2028,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="GETapi-user-details"
+            <div data-endpoint="GETapi-v1-admin-user-details"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -1792,7 +2055,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="GETapi-user-details"
+                <div data-endpoint="GETapi-v1-admin-user-details"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -1841,10 +2104,11 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/user-details" \
+    --get "http://localhost:8000/api/v1/admin/user-details" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -1852,13 +2116,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/user-details"
+    "http://localhost:8000/api/v1/admin/user-details"
 );
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -1877,10 +2142,10 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-GETapi-user-details-toggle sl-text-base"
+                                                        class="example-response-GETapi-v1-admin-user-details-toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-user-details', event.target.value);">
-                                                                                                            <option value="0">422</option>
+                                                        onchange="switchExampleResponse('GETapi-v1-admin-user-details', event.target.value);">
+                                                                                                            <option value="0">401</option>
                                                                                                     </select></div>
                                         </div>
                                     </div>
@@ -1897,7 +2162,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-user-details example-response-GETapi-user-details-0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-admin-user-details example-response-GETapi-v1-admin-user-details-0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                            <details class="sl-pl-2">
@@ -1923,8 +2188,9 @@ access-control-allow-origin: *</code></pre>
                                                                                                                                                                         
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
-    &quot;success&quot;: false,
-    &quot;message&quot;: &quot;missing_required_language_in_header&quot;
+    &quot;status&quot;: false,
+    &quot;message&quot;: &quot;unauthenticated&quot;,
+    &quot;data&quot;: []
 }</code></pre>
                                                                             </div>
                                 </div>
@@ -1938,14 +2204,14 @@ access-control-allow-origin: *</code></pre>
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="auth-PUTapi-change-password">
+                    id="auth-PUTapi-v1-admin-change-password">
                     Change Password
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/change-password"
+            <div title="http://localhost:8000/api/v1/admin/change-password"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -1956,7 +2222,7 @@ access-control-allow-origin: *</code></pre>
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/change-password</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/change-password</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -2026,6 +2292,24 @@ access-control-allow-origin: *</code></pre>
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -2113,7 +2397,7 @@ access-control-allow-origin: *</code></pre>
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="PUT"
-              data-path="api/change-password"
+              data-path="api/v1/admin/change-password"
               data-hasfiles="0"
               data-hasjsonbody="1">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -2135,13 +2419,13 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-PUTapi-change-password">Authorization</label>
+                                   for="auth-PUTapi-v1-admin-change-password">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-PUTapi-change-password"
+                                           id="auth-PUTapi-v1-admin-change-password"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -2172,24 +2456,35 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-change-password-Content-Type">Content-Type</label>
+                                       for="header-PUTapi-v1-admin-change-password-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-PUTapi-change-password-Content-Type"
+                                               id="header-PUTapi-v1-admin-change-password-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-change-password-Accept">Accept</label>
+                                       for="header-PUTapi-v1-admin-change-password-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-PUTapi-change-password-Accept"
+                                               id="header-PUTapi-v1-admin-change-password-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-PUTapi-v1-admin-change-password-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-PUTapi-v1-admin-change-password-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -2218,7 +2513,7 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                                                     <div class="TextRequestBody sl-p-4">
                                 <div class="code-editor language-json"
-                                     id="json-body-PUTapi-change-password"
+                                     id="json-body-PUTapi-v1-admin-change-password"
                                      style="font-family: var(--font-code); font-size: 12px; line-height: var(--lh-code);"
                                 >{
     "current_password": "currentpassword123",
@@ -2230,7 +2525,7 @@ access-control-allow-origin: *</code></pre>
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="PUTapi-change-password"
+                    <button type="button" data-endpoint="PUTapi-v1-admin-change-password"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -2238,7 +2533,7 @@ access-control-allow-origin: *</code></pre>
                 </div>
             </div>
 
-            <div data-endpoint="PUTapi-change-password"
+            <div data-endpoint="PUTapi-v1-admin-change-password"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -2265,7 +2560,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="PUTapi-change-password"
+                <div data-endpoint="PUTapi-v1-admin-change-password"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -2314,10 +2609,11 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/change-password" \
+    "http://localhost:8000/api/v1/admin/change-password" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
+    --header "language: en" \
     --data "{
     \"current_password\": \"currentpassword123\",
     \"password\": \"newsecurepassword456\"
@@ -2330,13 +2626,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/change-password"
+    "http://localhost:8000/api/v1/admin/change-password"
 );
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 let body = {
@@ -2370,14 +2667,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="endpoints-GETapi-health">
-                    GET api/health
+                    id="endpoints-GETapi-v1-admin-enums-gender">
+                    Get Gender Enum options
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/health"
+            <div title="http://localhost:8000/api/v1/admin/enums/gender"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -2388,7 +2685,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/health</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/enums/gender</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -2463,6 +2760,24 @@ fetch(url, {
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
@@ -2481,7 +2796,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="GET"
-              data-path="api/health"
+              data-path="api/v1/admin/enums/gender"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -2503,13 +2818,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-GETapi-health">Authorization</label>
+                                   for="auth-GETapi-v1-admin-enums-gender">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-GETapi-health"
+                                           id="auth-GETapi-v1-admin-enums-gender"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -2540,24 +2855,35 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-health-Content-Type">Content-Type</label>
+                                       for="header-GETapi-v1-admin-enums-gender-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-health-Content-Type"
+                                               id="header-GETapi-v1-admin-enums-gender-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-health-Accept">Accept</label>
+                                       for="header-GETapi-v1-admin-enums-gender-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-health-Accept"
+                                               id="header-GETapi-v1-admin-enums-gender-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-admin-enums-gender-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-GETapi-v1-admin-enums-gender-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -2570,7 +2896,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-health"
+                    <button type="button" data-endpoint="GETapi-v1-admin-enums-gender"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -2578,7 +2904,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="GETapi-health"
+            <div data-endpoint="GETapi-v1-admin-enums-gender"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -2605,7 +2931,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="GETapi-health"
+                <div data-endpoint="GETapi-v1-admin-enums-gender"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -2654,10 +2980,11 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/health" \
+    --get "http://localhost:8000/api/v1/admin/enums/gender" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -2665,13 +2992,14 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/health"
+    "http://localhost:8000/api/v1/admin/enums/gender"
 );
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -2690,10 +3018,10 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-GETapi-health-toggle sl-text-base"
+                                                        class="example-response-GETapi-v1-admin-enums-gender-toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-health', event.target.value);">
-                                                                                                            <option value="0">422</option>
+                                                        onchange="switchExampleResponse('GETapi-v1-admin-enums-gender', event.target.value);">
+                                                                                                            <option value="0">401</option>
                                                                                                     </select></div>
                                         </div>
                                     </div>
@@ -2710,7 +3038,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-health example-response-GETapi-health-0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-admin-enums-gender example-response-GETapi-v1-admin-enums-gender-0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                            <details class="sl-pl-2">
@@ -2736,770 +3064,9 @@ access-control-allow-origin: *</code></pre>
                                                                                                                                                                         
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
-    &quot;success&quot;: false,
-    &quot;message&quot;: &quot;missing_required_language_in_header&quot;
-}</code></pre>
-                                                                            </div>
-                                </div>
-                                                    </div>
-                            </div>
-    </div>
-</div>
-
-                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
-    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-        <div class="sl-relative">
-            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
-                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="endpoints-GETapi-status">
-                    GET api/status
-                </h2>
-            </div>
-        </div>
-
-        <div class="sl-relative">
-            <div title="http://localhost:8000/api/status"
-                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
-                >
-                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
-                             style="background-color: green;"
-                        >
-                            GET
-                        </div>
-                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
-                        <div dir="rtl"
-                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/status</div>
-                    </div>
-
-                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
-                                 style="background-color: darkred"
-                            >requires authentication
-                            </div>
-                                                                                    </div>
-        </div>
-
-        
-    </div>
-    <div class="sl-flex">
-        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
-            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
-                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
-                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
-                                Headers
-                            </h3>
-                            <div class="sl-text-sm">
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        Bearer {YOUR_AUTH_KEY}
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                            </div>
-                        </div>
-                    
-                    
-
-                    
-                    
-                                    </div>
-            </div>
-        </div>
-
-        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
-            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
-
-                                    <div class="sl-inverted">
-    <div class="sl-overflow-y-hidden sl-rounded-lg">
-        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
-              data-method="GET"
-              data-path="api/status"
-              data-hasfiles="0"
-              data-hasjsonbody="0">
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Auth
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                            <label aria-hidden="true"
-                                   for="auth-GETapi-status">Authorization</label>
-                            <span class="sl-mx-3">:</span>
-                            <div class="sl-flex sl-flex-1">
-                                <div class="sl-input sl-flex-1 sl-relative">
-                                    <code>Bearer </code>
-                                    <input aria-label="Authorization"
-                                           id="auth-GETapi-status"
-                                           data-component="header"
-                                           data-prefix="Bearer "
-                                           name="Authorization"
-                                           placeholder="{YOUR_AUTH_KEY}"
-                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Headers
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                                                                                                                            <label aria-hidden="true"
-                                       for="header-GETapi-status-Content-Type">Content-Type</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-status-Content-Type"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                                                            <label aria-hidden="true"
-                                       for="header-GETapi-status-Accept">Accept</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-status-Accept"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                    </div>
-                    </div>
-                </div>
-            
-            
-            
-            
-            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
-                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-status"
-                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
-                    >
-                        Send Request 💥
-                    </button>
-                </div>
-            </div>
-
-            <div data-endpoint="GETapi-status"
-                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
-                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                     role="button">
-                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 data-icon="caret-down"
-                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path fill="currentColor"
-                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                            </svg>
-                        </div>
-                        Request failed with error
-                    </div>
-                </div>
-                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                    <div class="sl-panel__content sl-p-4">
-                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
-                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</p>
-                    </div>
-                </div>
-            </div>
-
-                <div data-endpoint="GETapi-status"
-                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Received response
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="sl-panel__content sl-p-4">
-                            <p class="sl-pb-2 response-status"></p>
-                            <pre><code class="sl-pb-2 response-content language-json"
-                                       data-empty-response-text="<Empty response>"
-                                       style="max-height: 300px;"></code></pre>
-                        </div>
-                    </div>
-                </div>
-        </form>
-    </div>
-</div>
-                
-                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
-                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
-                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                                    <div class="sl--ml-2">
-                                        Example request:
-                                        <select class="example-request-lang-toggle sl-text-base"
-                                                aria-label="Request Sample Language"
-                                                onchange="switchExampleLanguage(event.target.value);">
-                                                                                            <option>bash</option>
-                                                                                            <option>javascript</option>
-                                                                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
-                                     style="">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/status" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
-                                     style="display: none;">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/status"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                    </div>
-                    
-                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
-                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
-                                <div class="sl-flex sl-flex-1 sl-items-center sl-py-2">
-                                    <div class="sl--ml-2">
-                                        <div class="sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-text-muted sl-rounded sl-border-transparent sl-border">
-                                            <div class="sl-mb-2 sl-inline-block">Example response:</div>
-                                            <div class="sl-mb-2 sl-inline-block">
-                                                <select
-                                                        class="example-response-GETapi-status-toggle sl-text-base"
-                                                        aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-status', event.target.value);">
-                                                                                                            <option value="0">422</option>
-                                                                                                    </select></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button"
-                                        class="sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 hover:sl-bg-canvas-50 active:sl-bg-canvas-100 sl-text-muted hover:sl-text-body focus:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70">
-                                    <div class="sl-mx-0">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy"
-                                             class="svg-inline--fa fa-copy fa-fw fa-sm sl-icon" role="img"
-                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path fill="currentColor"
-                                                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-status example-response-GETapi-status-0"
-                                     style=" "
-                                >
-                                    <div class="sl-panel__content sl-p-0">                                            <details class="sl-pl-2">
-                                                <summary style="cursor: pointer; list-style: none;">
-                                                    <small>
-                                                        <span class="expansion-chevrons">
-
-    <svg aria-hidden="true" focusable="false" data-prefix="fas"
-         data-icon="chevron-right"
-         class="svg-inline--fa fa-chevron-right fa-fw sl-icon sl-text-muted"
-         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-        <path fill="currentColor"
-              d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"></path>
-    </svg>
-                                                            </span>
-                                                        Headers
-                                                    </small>
-                                                </summary>
-                                                                                                <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *</code></pre>
-                                            </details>
-                                                                                                                                                                        
-                                            <pre><code style="max-height: 300px;"
-                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
-    &quot;success&quot;: false,
-    &quot;message&quot;: &quot;missing_required_language_in_header&quot;
-}</code></pre>
-                                                                            </div>
-                                </div>
-                                                    </div>
-                            </div>
-    </div>
-</div>
-
-                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
-    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-        <div class="sl-relative">
-            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
-                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="endpoints-GETapi-routes">
-                    GET api/routes
-                </h2>
-            </div>
-        </div>
-
-        <div class="sl-relative">
-            <div title="http://localhost:8000/api/routes"
-                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
-                >
-                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
-                             style="background-color: green;"
-                        >
-                            GET
-                        </div>
-                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
-                        <div dir="rtl"
-                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/routes</div>
-                    </div>
-
-                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
-                                 style="background-color: darkred"
-                            >requires authentication
-                            </div>
-                                                                                    </div>
-        </div>
-
-        
-    </div>
-    <div class="sl-flex">
-        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
-            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
-                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
-                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
-                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
-                                Headers
-                            </h3>
-                            <div class="sl-text-sm">
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        Bearer {YOUR_AUTH_KEY}
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
-                                    </div>
-                                        </div>
-                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        application/json
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-                                                            </div>
-                        </div>
-                    
-                    
-
-                    
-                    
-                                    </div>
-            </div>
-        </div>
-
-        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
-            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
-
-                                    <div class="sl-inverted">
-    <div class="sl-overflow-y-hidden sl-rounded-lg">
-        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
-              data-method="GET"
-              data-path="api/routes"
-              data-hasfiles="0"
-              data-hasjsonbody="0">
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Auth
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                            <label aria-hidden="true"
-                                   for="auth-GETapi-routes">Authorization</label>
-                            <span class="sl-mx-3">:</span>
-                            <div class="sl-flex sl-flex-1">
-                                <div class="sl-input sl-flex-1 sl-relative">
-                                    <code>Bearer </code>
-                                    <input aria-label="Authorization"
-                                           id="auth-GETapi-routes"
-                                           data-component="header"
-                                           data-prefix="Bearer "
-                                           name="Authorization"
-                                           placeholder="{YOUR_AUTH_KEY}"
-                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                            <div class="sl-panel sl-outline-none sl-w-full expandable">
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Headers
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="ParameterGrid sl-p-4">
-                                                                                                                            <label aria-hidden="true"
-                                       for="header-GETapi-routes-Content-Type">Content-Type</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-routes-Content-Type"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                                                            <label aria-hidden="true"
-                                       for="header-GETapi-routes-Accept">Accept</label>
-                                <span class="sl-mx-3">:</span>
-                                <div class="sl-flex sl-flex-1">
-                                    <div class="sl-input sl-flex-1 sl-relative">
-                                        <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-routes-Accept"
-                                               value="application/json" data-component="header"
-                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
-                                    </div>
-                                </div>
-                                                    </div>
-                    </div>
-                </div>
-            
-            
-            
-            
-            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
-                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-routes"
-                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
-                    >
-                        Send Request 💥
-                    </button>
-                </div>
-            </div>
-
-            <div data-endpoint="GETapi-routes"
-                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
-                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                     role="button">
-                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 data-icon="caret-down"
-                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path fill="currentColor"
-                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                            </svg>
-                        </div>
-                        Request failed with error
-                    </div>
-                </div>
-                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                    <div class="sl-panel__content sl-p-4">
-                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
-                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</p>
-                    </div>
-                </div>
-            </div>
-
-                <div data-endpoint="GETapi-routes"
-                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
-                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
-                         role="button">
-                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                     data-icon="caret-down"
-                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
-                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                    <path fill="currentColor"
-                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
-                                </svg>
-                            </div>
-                            Received response
-                        </div>
-                    </div>
-                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
-                        <div class="sl-panel__content sl-p-4">
-                            <p class="sl-pb-2 response-status"></p>
-                            <pre><code class="sl-pb-2 response-content language-json"
-                                       data-empty-response-text="<Empty response>"
-                                       style="max-height: 300px;"></code></pre>
-                        </div>
-                    </div>
-                </div>
-        </form>
-    </div>
-</div>
-                
-                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
-                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
-                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
-                                    <div class="sl--ml-2">
-                                        Example request:
-                                        <select class="example-request-lang-toggle sl-text-base"
-                                                aria-label="Request Sample Language"
-                                                onchange="switchExampleLanguage(event.target.value);">
-                                                                                            <option>bash</option>
-                                                                                            <option>javascript</option>
-                                                                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
-                                     style="">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/routes" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
-                                     style="display: none;">
-                                    <div class="sl-px-0 sl-py-1">
-                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
-                                            <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/routes"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre>                                        </div>
-                                    </div>
-                                </div>
-                                                    </div>
-                    
-                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
-                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
-                                <div class="sl-flex sl-flex-1 sl-items-center sl-py-2">
-                                    <div class="sl--ml-2">
-                                        <div class="sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-text-muted sl-rounded sl-border-transparent sl-border">
-                                            <div class="sl-mb-2 sl-inline-block">Example response:</div>
-                                            <div class="sl-mb-2 sl-inline-block">
-                                                <select
-                                                        class="example-response-GETapi-routes-toggle sl-text-base"
-                                                        aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-routes', event.target.value);">
-                                                                                                            <option value="0">422</option>
-                                                                                                    </select></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button"
-                                        class="sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 hover:sl-bg-canvas-50 active:sl-bg-canvas-100 sl-text-muted hover:sl-text-body focus:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70">
-                                    <div class="sl-mx-0">
-                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy"
-                                             class="svg-inline--fa fa-copy fa-fw fa-sm sl-icon" role="img"
-                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                            <path fill="currentColor"
-                                                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-routes example-response-GETapi-routes-0"
-                                     style=" "
-                                >
-                                    <div class="sl-panel__content sl-p-0">                                            <details class="sl-pl-2">
-                                                <summary style="cursor: pointer; list-style: none;">
-                                                    <small>
-                                                        <span class="expansion-chevrons">
-
-    <svg aria-hidden="true" focusable="false" data-prefix="fas"
-         data-icon="chevron-right"
-         class="svg-inline--fa fa-chevron-right fa-fw sl-icon sl-text-muted"
-         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-        <path fill="currentColor"
-              d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"></path>
-    </svg>
-                                                            </span>
-                                                        Headers
-                                                    </small>
-                                                </summary>
-                                                                                                <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *</code></pre>
-                                            </details>
-                                                                                                                                                                        
-                                            <pre><code style="max-height: 300px;"
-                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
-    &quot;success&quot;: false,
-    &quot;message&quot;: &quot;missing_required_language_in_header&quot;
+    &quot;status&quot;: false,
+    &quot;message&quot;: &quot;unauthenticated&quot;,
+    &quot;data&quot;: []
 }</code></pre>
                                                                             </div>
                                 </div>
@@ -3521,14 +3088,14 @@ access-control-allow-origin: *</code></pre>
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-GETapi-tasks">
+                    id="task-module-GETapi-v1-admin-tasks">
                     List
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks"
+            <div title="http://localhost:8000/api/v1/admin/tasks"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -3539,7 +3106,7 @@ access-control-allow-origin: *</code></pre>
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -3627,6 +3194,24 @@ access-control-allow-origin: *</code></pre>
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -3788,7 +3373,7 @@ access-control-allow-origin: *</code></pre>
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="GET"
-              data-path="api/tasks"
+              data-path="api/v1/admin/tasks"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -3810,13 +3395,13 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-GETapi-tasks">Authorization</label>
+                                   for="auth-GETapi-v1-admin-tasks">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-GETapi-tasks"
+                                           id="auth-GETapi-v1-admin-tasks"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -3847,35 +3432,46 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks-X-Request-Language">X-Request-Language</label>
+                                       for="header-GETapi-v1-admin-tasks-X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-GETapi-tasks-X-Request-Language"
+                                               id="header-GETapi-v1-admin-tasks-X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks-Content-Type">Content-Type</label>
+                                       for="header-GETapi-v1-admin-tasks-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-tasks-Content-Type"
+                                               id="header-GETapi-v1-admin-tasks-Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks-Accept">Accept</label>
+                                       for="header-GETapi-v1-admin-tasks-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-tasks-Accept"
+                                               id="header-GETapi-v1-admin-tasks-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-admin-tasks-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-GETapi-v1-admin-tasks-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -3903,12 +3499,12 @@ access-control-allow-origin: *</code></pre>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-sort_by">sort_by</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-sort_by">sort_by</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="sort_by" name="sort_by"
-                                                   id="queryparam-GETapi-tasks-sort_by"
+                                                   id="queryparam-GETapi-v1-admin-tasks-sort_by"
                                                    placeholder="The column to order by."
                                                    value="id" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3916,12 +3512,12 @@ access-control-allow-origin: *</code></pre>
                                                                             </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-sort_dir">sort_dir</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-sort_dir">sort_dir</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="sort_dir" name="sort_dir"
-                                                   id="queryparam-GETapi-tasks-sort_dir"
+                                                   id="queryparam-GETapi-v1-admin-tasks-sort_dir"
                                                    placeholder="Order direction (ASC|DESC)."
                                                    value="DESC" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3929,12 +3525,12 @@ access-control-allow-origin: *</code></pre>
                                                                             </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-page">page</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-page">page</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="page" name="page"
-                                                   id="queryparam-GETapi-tasks-page"
+                                                   id="queryparam-GETapi-v1-admin-tasks-page"
                                                    placeholder="Number of page."
                                                    value="1" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3942,12 +3538,12 @@ access-control-allow-origin: *</code></pre>
                                                                             </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-per_page">per_page</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-per_page">per_page</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="per_page" name="per_page"
-                                                   id="queryparam-GETapi-tasks-per_page"
+                                                   id="queryparam-GETapi-v1-admin-tasks-per_page"
                                                    placeholder="Number of items per page."
                                                    value="10" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3955,12 +3551,12 @@ access-control-allow-origin: *</code></pre>
                                                                             </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-search">search</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-search">search</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="search" name="search"
-                                                   id="queryparam-GETapi-tasks-search"
+                                                   id="queryparam-GETapi-v1-admin-tasks-search"
                                                    placeholder="Search by title,author_name,job_title"
                                                    value="Jhon" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3968,12 +3564,12 @@ access-control-allow-origin: *</code></pre>
                                                                             </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="queryparam-GETapi-tasks-publish">publish</label>
+                                       for="queryparam-GETapi-v1-admin-tasks-publish">publish</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                                                                     <input aria-label="publish" name="publish"
-                                                   id="queryparam-GETapi-tasks-publish"
+                                                   id="queryparam-GETapi-v1-admin-tasks-publish"
                                                    placeholder="Filter by publish status."
                                                    value="1" data-component="query"
                                                    class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -3987,7 +3583,7 @@ access-control-allow-origin: *</code></pre>
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-tasks"
+                    <button type="button" data-endpoint="GETapi-v1-admin-tasks"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -3995,7 +3591,7 @@ access-control-allow-origin: *</code></pre>
                 </div>
             </div>
 
-            <div data-endpoint="GETapi-tasks"
+            <div data-endpoint="GETapi-v1-admin-tasks"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -4022,7 +3618,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="GETapi-tasks"
+                <div data-endpoint="GETapi-v1-admin-tasks"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -4071,11 +3667,12 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tasks?sort_by=id&amp;sort_dir=DESC&amp;page=1&amp;per_page=10&amp;search=Jhon&amp;publish=1" \
+    --get "http://localhost:8000/api/v1/admin/tasks?sort_by=id&amp;sort_dir=DESC&amp;page=1&amp;per_page=10&amp;search=Jhon&amp;publish=1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -4083,7 +3680,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks"
+    "http://localhost:8000/api/v1/admin/tasks"
 );
 
 const params = {
@@ -4102,6 +3699,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -4120,9 +3718,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-GETapi-tasks-toggle sl-text-base"
+                                                        class="example-response-GETapi-v1-admin-tasks-toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-tasks', event.target.value);">
+                                                        onchange="switchExampleResponse('GETapi-v1-admin-tasks', event.target.value);">
                                                                                                             <option value="0">200</option>
                                                                                                     </select></div>
                                         </div>
@@ -4140,7 +3738,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-tasks example-response-GETapi-tasks-0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-admin-tasks example-response-GETapi-v1-admin-tasks-0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -4182,14 +3780,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-POSTapi-tasks">
+                    id="task-module-POSTapi-v1-admin-tasks">
                     Store
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks"
+            <div title="http://localhost:8000/api/v1/admin/tasks"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -4200,7 +3798,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -4293,6 +3891,24 @@ fetch(url, {
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
@@ -4378,7 +3994,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php1tr1io5sh1j98fgt5b7
+                        /tmp/phpnimpufat62r1bFtgitv
                     </div>
                 </div>
             </div>
@@ -4400,7 +4016,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="POST"
-              data-path="api/tasks"
+              data-path="api/v1/admin/tasks"
               data-hasfiles="1"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -4422,13 +4038,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-POSTapi-tasks">Authorization</label>
+                                   for="auth-POSTapi-v1-admin-tasks">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-POSTapi-tasks"
+                                           id="auth-POSTapi-v1-admin-tasks"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -4459,35 +4075,46 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-tasks-X-Request-Language">X-Request-Language</label>
+                                       for="header-POSTapi-v1-admin-tasks-X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-POSTapi-tasks-X-Request-Language"
+                                               id="header-POSTapi-v1-admin-tasks-X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-tasks-Content-Type">Content-Type</label>
+                                       for="header-POSTapi-v1-admin-tasks-Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-POSTapi-tasks-Content-Type"
+                                               id="header-POSTapi-v1-admin-tasks-Content-Type"
                                                value="multipart/form-data" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-POSTapi-tasks-Accept">Accept</label>
+                                       for="header-POSTapi-v1-admin-tasks-Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-POSTapi-tasks-Accept"
+                                               id="header-POSTapi-v1-admin-tasks-Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-POSTapi-v1-admin-tasks-language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-POSTapi-v1-admin-tasks-language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -4516,12 +4143,12 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                                                     <div class="ParameterGrid sl-p-4">
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-POSTapi-tasks-title">title</label>
+                                           for="bodyparam-POSTapi-v1-admin-tasks-title">title</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="title" name="title"
-                                                       id="bodyparam-POSTapi-tasks-title"
+                                                       id="bodyparam-POSTapi-v1-admin-tasks-title"
                                                        placeholder="Short title or heading of the testimonial. Must not be greater than 250 characters."
                                                        value="Excellent Service!" data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -4529,12 +4156,12 @@ fetch(url, {
                                                                                     </div>
                                     </div>
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-POSTapi-tasks-description">description</label>
+                                           for="bodyparam-POSTapi-v1-admin-tasks-description">description</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="description" name="description"
-                                                       id="bodyparam-POSTapi-tasks-description"
+                                                       id="bodyparam-POSTapi-v1-admin-tasks-description"
                                                        placeholder="Main testimonial content (max 500 characters). Must not be greater than 500 characters."
                                                        value="The service was outstanding and exceeded expectations." data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -4542,12 +4169,12 @@ fetch(url, {
                                                                                     </div>
                                     </div>
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-POSTapi-tasks-avatar">avatar</label>
+                                           for="bodyparam-POSTapi-v1-admin-tasks-avatar">avatar</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="avatar" name="avatar"
-                                                       id="bodyparam-POSTapi-tasks-avatar"
+                                                       id="bodyparam-POSTapi-v1-admin-tasks-avatar"
                                                        type="file" data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
                                                 >
@@ -4559,7 +4186,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="POSTapi-tasks"
+                    <button type="button" data-endpoint="POSTapi-v1-admin-tasks"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -4567,7 +4194,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="POSTapi-tasks"
+            <div data-endpoint="POSTapi-v1-admin-tasks"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -4594,7 +4221,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="POSTapi-tasks"
+                <div data-endpoint="POSTapi-v1-admin-tasks"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -4643,14 +4270,15 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/tasks" \
+    "http://localhost:8000/api/v1/admin/tasks" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
+    --header "language: en" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/php1tr1io5sh1j98fgt5b7" </code></pre>                                        </div>
+    --form "avatar=@/tmp/phpnimpufat62r1bFtgitv" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -4658,7 +4286,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks"
+    "http://localhost:8000/api/v1/admin/tasks"
 );
 
 const headers = {
@@ -4666,6 +4294,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
+    "language": "en",
 };
 
 const body = new FormData();
@@ -4690,9 +4319,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-POSTapi-tasks-toggle sl-text-base"
+                                                        class="example-response-POSTapi-v1-admin-tasks-toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('POSTapi-tasks', event.target.value);">
+                                                        onchange="switchExampleResponse('POSTapi-v1-admin-tasks', event.target.value);">
                                                                                                             <option value="0">201</option>
                                                                                                     </select></div>
                                         </div>
@@ -4710,7 +4339,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-POSTapi-tasks example-response-POSTapi-tasks-0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-POSTapi-v1-admin-tasks example-response-POSTapi-v1-admin-tasks-0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -4742,14 +4371,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-GETapi-tasks--id-">
+                    id="task-module-GETapi-v1-admin-tasks--id-">
                     Show
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks/{id}"
+            <div title="http://localhost:8000/api/v1/admin/tasks/{id}"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -4760,7 +4389,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks/{id}</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks/{id}</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -4848,6 +4477,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -4903,7 +4550,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="GET"
-              data-path="api/tasks/{id}"
+              data-path="api/v1/admin/tasks/{id}"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -4925,13 +4572,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-GETapi-tasks--id-">Authorization</label>
+                                   for="auth-GETapi-v1-admin-tasks--id-">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-GETapi-tasks--id-"
+                                           id="auth-GETapi-v1-admin-tasks--id-"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -4962,35 +4609,46 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                       for="header-GETapi-v1-admin-tasks--id--X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-GETapi-tasks--id--X-Request-Language"
+                                               id="header-GETapi-v1-admin-tasks--id--X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks--id--Content-Type">Content-Type</label>
+                                       for="header-GETapi-v1-admin-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-GETapi-tasks--id--Content-Type"
+                                               id="header-GETapi-v1-admin-tasks--id--Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-GETapi-tasks--id--Accept">Accept</label>
+                                       for="header-GETapi-v1-admin-tasks--id--Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-GETapi-tasks--id--Accept"
+                                               id="header-GETapi-v1-admin-tasks--id--Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-admin-tasks--id--language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-GETapi-v1-admin-tasks--id--language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -5017,12 +4675,12 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                             <label aria-hidden="true"
-                                       for="urlparam-GETapi-tasks--id--id">id</label>
+                                       for="urlparam-GETapi-v1-admin-tasks--id--id">id</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="id" name="id"
-                                               id="urlparam-GETapi-tasks--id--id"
+                                               id="urlparam-GETapi-v1-admin-tasks--id--id"
                                                placeholder="The ID of the task."
                                                value="1" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
@@ -5036,7 +4694,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="GETapi-tasks--id-"
+                    <button type="button" data-endpoint="GETapi-v1-admin-tasks--id-"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -5044,7 +4702,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="GETapi-tasks--id-"
+            <div data-endpoint="GETapi-v1-admin-tasks--id-"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -5071,7 +4729,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="GETapi-tasks--id-"
+                <div data-endpoint="GETapi-v1-admin-tasks--id-"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -5120,11 +4778,12 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/tasks/1" \
+    --get "http://localhost:8000/api/v1/admin/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -5132,7 +4791,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks/1"
+    "http://localhost:8000/api/v1/admin/tasks/1"
 );
 
 const headers = {
@@ -5140,6 +4799,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -5158,9 +4818,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-GETapi-tasks--id--toggle sl-text-base"
+                                                        class="example-response-GETapi-v1-admin-tasks--id--toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('GETapi-tasks--id-', event.target.value);">
+                                                        onchange="switchExampleResponse('GETapi-v1-admin-tasks--id-', event.target.value);">
                                                                                                             <option value="0">200</option>
                                                                                                     </select></div>
                                         </div>
@@ -5178,7 +4838,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-tasks--id- example-response-GETapi-tasks--id--0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-admin-tasks--id- example-response-GETapi-v1-admin-tasks--id--0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -5210,14 +4870,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-PUTapi-tasks--id-">
+                    id="task-module-PUTapi-v1-admin-tasks--id-">
                     Update
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks/{id}"
+            <div title="http://localhost:8000/api/v1/admin/tasks/{id}"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -5233,7 +4893,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks/{id}</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks/{id}</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -5321,6 +4981,24 @@ fetch(url, {
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
                         application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
                     </div>
                 </div>
             </div>
@@ -5443,7 +5121,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php28s1156bmn5l7lADU7q
+                        /tmp/php0jj1ob7mdjbgblYzqAc
                     </div>
                 </div>
             </div>
@@ -5465,7 +5143,7 @@ fetch(url, {
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="PUT"
-              data-path="api/tasks/{id}"
+              data-path="api/v1/admin/tasks/{id}"
               data-hasfiles="1"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -5487,13 +5165,13 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-PUTapi-tasks--id-">Authorization</label>
+                                   for="auth-PUTapi-v1-admin-tasks--id-">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-PUTapi-tasks--id-"
+                                           id="auth-PUTapi-v1-admin-tasks--id-"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -5524,35 +5202,46 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                       for="header-PUTapi-v1-admin-tasks--id--X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-PUTapi-tasks--id--X-Request-Language"
+                                               id="header-PUTapi-v1-admin-tasks--id--X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks--id--Content-Type">Content-Type</label>
+                                       for="header-PUTapi-v1-admin-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-PUTapi-tasks--id--Content-Type"
+                                               id="header-PUTapi-v1-admin-tasks--id--Content-Type"
                                                value="multipart/form-data" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks--id--Accept">Accept</label>
+                                       for="header-PUTapi-v1-admin-tasks--id--Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-PUTapi-tasks--id--Accept"
+                                               id="header-PUTapi-v1-admin-tasks--id--Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-PUTapi-v1-admin-tasks--id--language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-PUTapi-v1-admin-tasks--id--language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -5579,12 +5268,12 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                             <label aria-hidden="true"
-                                       for="urlparam-PUTapi-tasks--id--id">id</label>
+                                       for="urlparam-PUTapi-v1-admin-tasks--id--id">id</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="id" name="id"
-                                               id="urlparam-PUTapi-tasks--id--id"
+                                               id="urlparam-PUTapi-v1-admin-tasks--id--id"
                                                placeholder="The ID of the task."
                                                value="1" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
@@ -5614,12 +5303,12 @@ fetch(url, {
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                                                     <div class="ParameterGrid sl-p-4">
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-PUTapi-tasks--id--title">title</label>
+                                           for="bodyparam-PUTapi-v1-admin-tasks--id--title">title</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="title" name="title"
-                                                       id="bodyparam-PUTapi-tasks--id--title"
+                                                       id="bodyparam-PUTapi-v1-admin-tasks--id--title"
                                                        placeholder="Short title or heading of the testimonial. Must not be greater than 250 characters."
                                                        value="Excellent Service!" data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -5627,12 +5316,12 @@ fetch(url, {
                                                                                     </div>
                                     </div>
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-PUTapi-tasks--id--description">description</label>
+                                           for="bodyparam-PUTapi-v1-admin-tasks--id--description">description</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="description" name="description"
-                                                       id="bodyparam-PUTapi-tasks--id--description"
+                                                       id="bodyparam-PUTapi-v1-admin-tasks--id--description"
                                                        placeholder="Main testimonial content (max 500 characters). Must not be greater than 500 characters."
                                                        value="The service was outstanding and exceeded expectations." data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
@@ -5640,12 +5329,12 @@ fetch(url, {
                                                                                     </div>
                                     </div>
                                                                                                         <label aria-hidden="true"
-                                           for="bodyparam-PUTapi-tasks--id--avatar">avatar</label>
+                                           for="bodyparam-PUTapi-v1-admin-tasks--id--avatar">avatar</label>
                                     <span class="sl-mx-3">:</span>
                                     <div class="sl-flex sl-flex-1">
                                         <div class="sl-input sl-flex-1 sl-relative">
                                                                                             <input aria-label="avatar" name="avatar"
-                                                       id="bodyparam-PUTapi-tasks--id--avatar"
+                                                       id="bodyparam-PUTapi-v1-admin-tasks--id--avatar"
                                                        type="file" data-component="body"
                                                        class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border"
                                                 >
@@ -5657,7 +5346,7 @@ fetch(url, {
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="PUTapi-tasks--id-"
+                    <button type="button" data-endpoint="PUTapi-v1-admin-tasks--id-"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -5665,7 +5354,7 @@ fetch(url, {
                 </div>
             </div>
 
-            <div data-endpoint="PUTapi-tasks--id-"
+            <div data-endpoint="PUTapi-v1-admin-tasks--id-"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -5692,7 +5381,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="PUTapi-tasks--id-"
+                <div data-endpoint="PUTapi-v1-admin-tasks--id-"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -5741,14 +5430,15 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/tasks/1" \
+    "http://localhost:8000/api/v1/admin/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
+    --header "language: en" \
     --form "title=Excellent Service!"\
     --form "description=The service was outstanding and exceeded expectations."\
-    --form "avatar=@/tmp/php28s1156bmn5l7lADU7q" </code></pre>                                        </div>
+    --form "avatar=@/tmp/php0jj1ob7mdjbgblYzqAc" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -5756,7 +5446,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks/1"
+    "http://localhost:8000/api/v1/admin/tasks/1"
 );
 
 const headers = {
@@ -5764,6 +5454,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "multipart/form-data",
     "Accept": "application/json",
+    "language": "en",
 };
 
 const body = new FormData();
@@ -5788,9 +5479,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-PUTapi-tasks--id--toggle sl-text-base"
+                                                        class="example-response-PUTapi-v1-admin-tasks--id--toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('PUTapi-tasks--id-', event.target.value);">
+                                                        onchange="switchExampleResponse('PUTapi-v1-admin-tasks--id-', event.target.value);">
                                                                                                             <option value="0">200</option>
                                                                                                     </select></div>
                                         </div>
@@ -5808,7 +5499,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-PUTapi-tasks--id- example-response-PUTapi-tasks--id--0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-PUTapi-v1-admin-tasks--id- example-response-PUTapi-v1-admin-tasks--id--0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -5840,14 +5531,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-DELETEapi-tasks--id-">
+                    id="task-module-DELETEapi-v1-admin-tasks--id-">
                     Delete
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks/{id}"
+            <div title="http://localhost:8000/api/v1/admin/tasks/{id}"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -5858,7 +5549,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks/{id}</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks/{id}</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -5953,6 +5644,24 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
@@ -6003,7 +5712,7 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="DELETE"
-              data-path="api/tasks/{id}"
+              data-path="api/v1/admin/tasks/{id}"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -6025,13 +5734,13 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-DELETEapi-tasks--id-">Authorization</label>
+                                   for="auth-DELETEapi-v1-admin-tasks--id-">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-DELETEapi-tasks--id-"
+                                           id="auth-DELETEapi-v1-admin-tasks--id-"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -6062,35 +5771,46 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-DELETEapi-tasks--id--X-Request-Language">X-Request-Language</label>
+                                       for="header-DELETEapi-v1-admin-tasks--id--X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-DELETEapi-tasks--id--X-Request-Language"
+                                               id="header-DELETEapi-v1-admin-tasks--id--X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-DELETEapi-tasks--id--Content-Type">Content-Type</label>
+                                       for="header-DELETEapi-v1-admin-tasks--id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-DELETEapi-tasks--id--Content-Type"
+                                               id="header-DELETEapi-v1-admin-tasks--id--Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-DELETEapi-tasks--id--Accept">Accept</label>
+                                       for="header-DELETEapi-v1-admin-tasks--id--Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-DELETEapi-tasks--id--Accept"
+                                               id="header-DELETEapi-v1-admin-tasks--id--Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-DELETEapi-v1-admin-tasks--id--language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-DELETEapi-v1-admin-tasks--id--language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -6117,12 +5837,12 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                             <label aria-hidden="true"
-                                       for="urlparam-DELETEapi-tasks--id--id">id</label>
+                                       for="urlparam-DELETEapi-v1-admin-tasks--id--id">id</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="id" name="id"
-                                               id="urlparam-DELETEapi-tasks--id--id"
+                                               id="urlparam-DELETEapi-v1-admin-tasks--id--id"
                                                placeholder="The ID of the task."
                                                value="1" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
@@ -6136,7 +5856,7 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="DELETEapi-tasks--id-"
+                    <button type="button" data-endpoint="DELETEapi-v1-admin-tasks--id-"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -6144,7 +5864,7 @@ and the <code>title</code> &amp; <code>author_name</code> is updated with a <cod
                 </div>
             </div>
 
-            <div data-endpoint="DELETEapi-tasks--id-"
+            <div data-endpoint="DELETEapi-v1-admin-tasks--id-"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -6171,7 +5891,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="DELETEapi-tasks--id-"
+                <div data-endpoint="DELETEapi-v1-admin-tasks--id-"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -6220,11 +5940,12 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/tasks/1" \
+    "http://localhost:8000/api/v1/admin/tasks/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -6232,7 +5953,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks/1"
+    "http://localhost:8000/api/v1/admin/tasks/1"
 );
 
 const headers = {
@@ -6240,6 +5961,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -6258,9 +5980,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-DELETEapi-tasks--id--toggle sl-text-base"
+                                                        class="example-response-DELETEapi-v1-admin-tasks--id--toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('DELETEapi-tasks--id-', event.target.value);">
+                                                        onchange="switchExampleResponse('DELETEapi-v1-admin-tasks--id-', event.target.value);">
                                                                                                             <option value="0">200</option>
                                                                                                     </select></div>
                                         </div>
@@ -6278,7 +6000,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-tasks--id- example-response-DELETEapi-tasks--id--0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-v1-admin-tasks--id- example-response-DELETEapi-v1-admin-tasks--id--0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -6300,14 +6022,14 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
-                    id="task-module-PUTapi-tasks-completed--task_id-">
+                    id="task-module-PUTapi-v1-admin-tasks-completed--task_id-">
                     Toggle Completed
                 </h2>
             </div>
         </div>
 
         <div class="sl-relative">
-            <div title="http://localhost:8000/api/tasks/completed/{task_id}"
+            <div title="http://localhost:8000/api/v1/admin/tasks/completed/{task_id}"
                      class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
                 >
                                             <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
@@ -6318,7 +6040,7 @@ fetch(url, {
                                         <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
                         <div dir="rtl"
                              class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
-                        <div class="sl-flex-1 sl-font-semibold">/api/tasks/completed/{task_id}</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/admin/tasks/completed/{task_id}</div>
                     </div>
 
                                                     <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
@@ -6412,6 +6134,24 @@ If it was published, it will be unpublished, and vice versa.</p>
             </div>
             </div>
 </div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">language</div>
+                                    </div>
+                                        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        en
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
                                                             </div>
                         </div>
                     
@@ -6462,7 +6202,7 @@ If it was published, it will be unpublished, and vice versa.</p>
     <div class="sl-overflow-y-hidden sl-rounded-lg">
         <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
               data-method="PUT"
-              data-path="api/tasks/completed/{task_id}"
+              data-path="api/v1/admin/tasks/completed/{task_id}"
               data-hasfiles="0"
               data-hasjsonbody="0">
                             <div class="sl-panel sl-outline-none sl-w-full expandable">
@@ -6484,13 +6224,13 @@ If it was published, it will be unpublished, and vice versa.</p>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                             <label aria-hidden="true"
-                                   for="auth-PUTapi-tasks-completed--task_id-">Authorization</label>
+                                   for="auth-PUTapi-v1-admin-tasks-completed--task_id-">Authorization</label>
                             <span class="sl-mx-3">:</span>
                             <div class="sl-flex sl-flex-1">
                                 <div class="sl-input sl-flex-1 sl-relative">
                                     <code>Bearer </code>
                                     <input aria-label="Authorization"
-                                           id="auth-PUTapi-tasks-completed--task_id-"
+                                           id="auth-PUTapi-v1-admin-tasks-completed--task_id-"
                                            data-component="header"
                                            data-prefix="Bearer "
                                            name="Authorization"
@@ -6521,35 +6261,46 @@ If it was published, it will be unpublished, and vice versa.</p>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks-completed--task_id--X-Request-Language">X-Request-Language</label>
+                                       for="header-PUTapi-v1-admin-tasks-completed--task_id--X-Request-Language">X-Request-Language</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="X-Request-Language" name="X-Request-Language"
-                                               id="header-PUTapi-tasks-completed--task_id--X-Request-Language"
+                                               id="header-PUTapi-v1-admin-tasks-completed--task_id--X-Request-Language"
                                                value="string Optional language for translated fields. Example: en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks-completed--task_id--Content-Type">Content-Type</label>
+                                       for="header-PUTapi-v1-admin-tasks-completed--task_id--Content-Type">Content-Type</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Content-Type" name="Content-Type"
-                                               id="header-PUTapi-tasks-completed--task_id--Content-Type"
+                                               id="header-PUTapi-v1-admin-tasks-completed--task_id--Content-Type"
                                                value="application/json" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
                                                                                             <label aria-hidden="true"
-                                       for="header-PUTapi-tasks-completed--task_id--Accept">Accept</label>
+                                       for="header-PUTapi-v1-admin-tasks-completed--task_id--Accept">Accept</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="Accept" name="Accept"
-                                               id="header-PUTapi-tasks-completed--task_id--Accept"
+                                               id="header-PUTapi-v1-admin-tasks-completed--task_id--Accept"
                                                value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-PUTapi-v1-admin-tasks-completed--task_id--language">language</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="language" name="language"
+                                               id="header-PUTapi-v1-admin-tasks-completed--task_id--language"
+                                               value="en" data-component="header"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -6576,12 +6327,12 @@ If it was published, it will be unpublished, and vice versa.</p>
                     <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
                         <div class="ParameterGrid sl-p-4">
                                                             <label aria-hidden="true"
-                                       for="urlparam-PUTapi-tasks-completed--task_id--task_id">task_id</label>
+                                       for="urlparam-PUTapi-v1-admin-tasks-completed--task_id--task_id">task_id</label>
                                 <span class="sl-mx-3">:</span>
                                 <div class="sl-flex sl-flex-1">
                                     <div class="sl-input sl-flex-1 sl-relative">
                                         <input aria-label="task_id" name="task_id"
-                                               id="urlparam-PUTapi-tasks-completed--task_id--task_id"
+                                               id="urlparam-PUTapi-v1-admin-tasks-completed--task_id--task_id"
                                                placeholder="The ID of the task."
                                                value="1" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
@@ -6595,7 +6346,7 @@ If it was published, it will be unpublished, and vice versa.</p>
             
             <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
                 <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
-                    <button type="button" data-endpoint="PUTapi-tasks-completed--task_id-"
+                    <button type="button" data-endpoint="PUTapi-v1-admin-tasks-completed--task_id-"
                             class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
                     >
                         Send Request 💥
@@ -6603,7 +6354,7 @@ If it was published, it will be unpublished, and vice versa.</p>
                 </div>
             </div>
 
-            <div data-endpoint="PUTapi-tasks-completed--task_id-"
+            <div data-endpoint="PUTapi-v1-admin-tasks-completed--task_id-"
                  class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
                 <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                      role="button">
@@ -6630,7 +6381,7 @@ You can check the Dev Tools console for debugging information.</p>
                 </div>
             </div>
 
-                <div data-endpoint="PUTapi-tasks-completed--task_id-"
+                <div data-endpoint="PUTapi-v1-admin-tasks-completed--task_id-"
                      class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
                     <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
                          role="button">
@@ -6679,11 +6430,12 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/tasks/completed/1" \
+    "http://localhost:8000/api/v1/admin/tasks/completed/1" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "X-Request-Language: string Optional language for translated fields. Example: en" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre>                                        </div>
+    --header "Accept: application/json" \
+    --header "language: en"</code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -6691,7 +6443,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/tasks/completed/1"
+    "http://localhost:8000/api/v1/admin/tasks/completed/1"
 );
 
 const headers = {
@@ -6699,6 +6451,7 @@ const headers = {
     "X-Request-Language": "string Optional language for translated fields. Example: en",
     "Content-Type": "application/json",
     "Accept": "application/json",
+    "language": "en",
 };
 
 fetch(url, {
@@ -6717,9 +6470,9 @@ fetch(url, {
                                             <div class="sl-mb-2 sl-inline-block">Example response:</div>
                                             <div class="sl-mb-2 sl-inline-block">
                                                 <select
-                                                        class="example-response-PUTapi-tasks-completed--task_id--toggle sl-text-base"
+                                                        class="example-response-PUTapi-v1-admin-tasks-completed--task_id--toggle sl-text-base"
                                                         aria-label="Response sample"
-                                                        onchange="switchExampleResponse('PUTapi-tasks-completed--task_id-', event.target.value);">
+                                                        onchange="switchExampleResponse('PUTapi-v1-admin-tasks-completed--task_id-', event.target.value);">
                                                                                                             <option value="0">200</option>
                                                                                                     </select></div>
                                         </div>
@@ -6737,7 +6490,7 @@ fetch(url, {
                                     </div>
                                 </button>
                             </div>
-                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-PUTapi-tasks-completed--task_id- example-response-PUTapi-tasks-completed--task_id--0"
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-PUTapi-v1-admin-tasks-completed--task_id- example-response-PUTapi-v1-admin-tasks-completed--task_id--0"
                                      style=" "
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
