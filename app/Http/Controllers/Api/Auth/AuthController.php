@@ -2,13 +2,21 @@
 
 namespace App\Http\Controllers\Api\Auth;
 
+use App\Actions\Auth\ChangePasswordAction;
+use App\Actions\Auth\LoginAction;
+use App\Actions\Auth\RegisterAction;
+use App\Actions\Auth\UpdateProfileAction;
+use App\DataTransferObjects\Auth\ChangePasswordDTO;
+use App\DataTransferObjects\Auth\LoginDTO;
+use App\DataTransferObjects\Auth\RegisterDTO;
+use App\DataTransferObjects\Auth\UpdateProfileDTO;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\User\{LoginRequest, ChangePasswordRequest, UpdateProfileRequest};
+use App\Http\Requests\Api\Auth\{LoginRequest, ChangePasswordRequest, UpdateProfileRequest};
 use App\Http\Resources\Api\User\UserResource;
 use App\Models\User;
+use App\Traits\UploadAble;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 /**
@@ -16,6 +24,12 @@ use Illuminate\Support\Facades\Storage;
  */
 class AuthController extends Controller
 {
+    use UploadAble;
+
+    private const UPLOAD_OPTIONS = [
+        'resize' => ['width' => 400, 'height' => 400],
+        'quality' => 90
+    ];
     /**
      * Login
      * @unauthenticated 
@@ -23,23 +37,58 @@ class AuthController extends Controller
      * @param LoginRequest $request
      * @return JsonResponse
      */
-    public function login(LoginRequest $request): JsonResponse
+    public function login(LoginRequest $request, LoginAction $action): JsonResponse
+    {
+        $dto = new LoginDTO(
+            email: $request->input('email'),
+            password: $request->input('password'),
+        );
+
+        $result = $action->execute($dto);
+
+        if (!$result['success']) {
+            return error_response($result['message'], 401);
+        }
+
+        return $this->respondWithToken($result['token'], $result['user']);
+    }
+
+    /**
+     * Register
+     * @unauthenticated
+     *
+     * @param \App\Http\Requests\Api\User\RegisterRequest $request
+     * @param RegisterAction $action
+     * @return JsonResponse
+     */
+    public function register(\App\Http\Requests\Api\Auth\RegisterRequest $request, RegisterAction $action): JsonResponse
     {
         $credentials = $request->validated();
 
-        $user = User::getUserByEmail($credentials['email']);
+        $dto = new RegisterDTO(
+            full_name: $credentials['full_name'],
+            email: $credentials['email'],
+            password: $credentials['password'],
+            language: $credentials['language'] ?? 'en',
+        );
 
-        if (! $user || ! Hash::check($credentials['password'], $user->password)) {
-            return error_response('unauthorized', 401);
+        $result = $action->execute($dto);
+
+        if (!$result['success']) {
+            return error_response($result['message'], 409);
         }
 
-
-
-        // Issue a fresh Sanctum token
-        $user->tokens()->delete();
-        $token = $user->createToken('admin')->plainTextToken;
-
-        return $this->respondWithToken($token, $user);
+        return response()->json([
+            'success' => true,
+            'message' => 'success',
+            'data' => [
+                'message' => 'registration_successful',
+                'access_token' => $result['token'],
+                'token_type' => 'Bearer',
+                'expires_in' => null,
+                'user' => new UserResource($result['user']),
+            ],
+        ], 201);
     }
 
     /**
@@ -119,35 +168,38 @@ class AuthController extends Controller
      * @param UpdateProfileRequest $request
      * @return JsonResponse
      */
-    public function updateProfile(UpdateProfileRequest $request): JsonResponse
+    public function updateProfile(UpdateProfileRequest $request, UpdateProfileAction $action): JsonResponse
     {
         $user = $request->user();
         $validated = $request->validated();
 
-        // Update full_name and language
-        $user->full_name = $validated['full_name'];
-        $user->language = $validated['language'] ?? $user->language;
-
-        // Update password if provided
-        if (!empty($validated['password'])) {
-            $user->password = Hash::make($validated['password']);
-        }
-
-        // Handle avatar upload
+        $avatarPath = null;
         if ($request->hasFile('avatar')) {
             // Delete old avatar if exists
             if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
                 Storage::disk('public')->delete($user->avatar);
             }
 
-            // Store new avatar
-            $avatarPath = $request->file('avatar')->store('avatars', 'public');
-            $user->avatar = $avatarPath;
+            // Upload new avatar
+            $avatarPath = $this->uploadFile(
+                $request->file('avatar'),
+                'avatars',
+                'public',
+                null,
+                self::UPLOAD_OPTIONS
+            );
         }
 
-        $user->save();
+        $dto = new UpdateProfileDTO(
+            full_name: $validated['full_name'],
+            language: $validated['language'] ?? null,
+            password: $validated['password'] ?? null,
+            avatar: $avatarPath,
+        );
 
-        return success_response(new UserResource($user), false, 'profile_updated');
+        $updatedUser = $action->execute($user, $dto);
+
+        return success_response(new UserResource($updatedUser), false, 'profile_updated');
     }
 
     /**
@@ -159,20 +211,22 @@ class AuthController extends Controller
      * @param ChangePasswordRequest $request
      * @return JsonResponse
      */
-    public function changePassword(ChangePasswordRequest $request): JsonResponse
+    public function changePassword(ChangePasswordRequest $request, ChangePasswordAction $action): JsonResponse
     {
         $user = $request->user();
         $validated = $request->validated();
 
-        // Verify current password
-        if (!Hash::check($validated['current_password'], $user->password)) {
-            return error_response('current_password_is_incorrect', 422);
+        $dto = new ChangePasswordDTO(
+            current_password: $validated['current_password'],
+            password: $validated['password'],
+        );
+
+        $result = $action->execute($user, $dto);
+
+        if (!$result['success']) {
+            return error_response($result['message'], 422);
         }
 
-        // Update with new password
-        $user->password = Hash::make($validated['password']);
-        $user->save();
-
-        return success_response(new UserResource($user), false, 'password_changed');
+        return success_response(new UserResource($result['user']), false, 'password_changed');
     }
 }
